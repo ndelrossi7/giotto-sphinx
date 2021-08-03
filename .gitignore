@@ -42,3 +42,4 @@ vignettes/*.pdf
 # OS generated files
 .DS_Store
 .DS_Store?
+source/subsections/documentation_functions/createSpatialGrid.rst
