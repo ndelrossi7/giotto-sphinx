@@ -251,7 +251,7 @@
 <a class="reference internal image-reference" href="../../_images/visium_technology.png"><img alt="Visium Technology" src="../../_images/visium_technology.png" style="width: 500px;" /></a>
 </div>
 <p>High resolution png from original tissue:</p>
-<a class="reference internal image-reference" href="../../_images/mouse_kidney_highres.png"><img alt="mouse_kidney_highres.png" src="../../_images/mouse_kidney_highres.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/mouse_kidney_highres.png"><img alt="mouse_kidney_highres.png" src="images/other/mouse_Visium_kidney/mouse_kidney_highres.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="giotto-global-instructions-and-preparations">
 <h2>1. Giotto Global Instructions and Preparations<a class="headerlink" href="#giotto-global-instructions-and-preparations" title="Permalink to this headline">¶</a></h2>
@@ -279,7 +279,7 @@
                                  <span class="n">gene_column_index</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">instructions</span> <span class="o">=</span> <span class="n">instrs</span><span class="p">)</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/2_a_spatplot_image1.png"><img alt="2_a_spatplot_image.png" src="../../_images/2_a_spatplot_image1.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/2_a_spatplot_image.png"><img alt="2_a_spatplot_image.png" src="images/other/mouse_Visium_kidney/vignette_200916/2_a_spatplot_image.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># check name</span>
 <span class="n">showGiottoImageNames</span><span class="p">(</span><span class="n">visium_kidney</span><span class="p">)</span> <span class="c1"># &quot;image&quot; is the default name</span>
 <span class="c1"># adjust parameters to align image (iterative approach)</span>
@@ -292,7 +292,7 @@
         <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;2_b_spatplot_image_adjusted&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/2_b_spatplot_image_adjusted1.png"><img alt="2_b_spatplot_image_adjusted.png" src="../../_images/2_b_spatplot_image_adjusted1.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/2_b_spatplot_image_adjusted.png"><img alt="2_b_spatplot_image_adjusted.png" src="images/other/mouse_Visium_kidney/vignette_200916/2_b_spatplot_image_adjusted.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## check metadata</span>
 <span class="n">pDataDT</span><span class="p">(</span><span class="n">visium_kidney</span><span class="p">)</span>
 
@@ -302,7 +302,7 @@
         <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;2_c_in_tissue&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/2_c_in_tissue1.png"><img alt="2_c_in_tissue.png" src="../../_images/2_c_in_tissue1.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/2_c_in_tissue.png"><img alt="2_c_in_tissue.png" src="images/other/mouse_Visium_kidney/vignette_200916/2_c_in_tissue.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>## subset on spots that were covered by tissue
 metadata = pDataDT(visium_kidney)
 in_tissue_barcodes = metadata[in_tissue == 1]$cell_ID
@@ -323,13 +323,13 @@ visium_kidney &lt;- normalizeGiotto(gobject = visium_kidney, scalefactor = 6000,
 visium_kidney &lt;- addStatistics(gobject = visium_kidney)
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/2_d_spatial_locations1.png"><img alt="2_d_spatial_locations.png" src="../../_images/2_d_spatial_locations1.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/2_d_spatial_locations.png"><img alt="2_d_spatial_locations.png" src="images/other/mouse_Visium_kidney/vignette_200916/2_d_spatial_locations.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spatPlot2D</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">visium_kidney</span><span class="p">,</span> <span class="n">show_image</span> <span class="o">=</span> <span class="n">T</span><span class="p">,</span> <span class="n">point_alpha</span> <span class="o">=</span> <span class="mf">0.7</span><span class="p">,</span>
    <span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;nr_genes&#39;</span><span class="p">,</span> <span class="n">color_as_factor</span> <span class="o">=</span> <span class="n">F</span><span class="p">,</span>
    <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;2_e_nr_genes&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/2_e_nr_genes1.png"><img alt="2_e_nr_genes.png" src="../../_images/2_e_nr_genes1.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/2_e_nr_genes.png"><img alt="2_e_nr_genes.png" src="images/other/mouse_Visium_kidney/vignette_200916/2_e_nr_genes.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="dimension-reduction">
 <h2>3. Dimension Reduction<a class="headerlink" href="#dimension-reduction" title="Permalink to this headline">¶</a></h2>
@@ -338,31 +338,31 @@ visium_kidney &lt;- addStatistics(gobject = visium_kidney)
                       <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;3_a_HVGplot&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/3_a_HVGplot1.png"><img alt="3_a_HVGplot.png" src="../../_images/3_a_HVGplot1.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/3_a_HVGplot.png"><img alt="3_a_HVGplot.png" src="images/other/mouse_Visium_kidney/vignette_200916/3_a_HVGplot.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## run PCA on expression values (default)</span>
 <span class="n">visium_kidney</span> <span class="o">&lt;-</span> <span class="n">runPCA</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">visium_kidney</span><span class="p">,</span> <span class="n">center</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">,</span> <span class="n">scale_unit</span> <span class="o">=</span> <span class="n">TRUE</span><span class="p">)</span>
 <span class="n">screePlot</span><span class="p">(</span><span class="n">visium_kidney</span><span class="p">,</span> <span class="n">ncp</span> <span class="o">=</span> <span class="mi">30</span><span class="p">,</span> <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;3_b_screeplot&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/3_b_screeplot1.png"><img alt="3_b_screeplot.png" src="../../_images/3_b_screeplot1.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/3_b_screeplot.png"><img alt="3_b_screeplot.png" src="images/other/mouse_Visium_kidney/vignette_200916/3_b_screeplot.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">plotPCA</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">visium_kidney</span><span class="p">,</span>
                 <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;3_c_PCA_reduction&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/3_c_PCA_reduction1.png"><img alt="3_c_PCA_reduction.png" src="../../_images/3_c_PCA_reduction1.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/3_c_PCA_reduction.png"><img alt="3_c_PCA_reduction.png" src="images/other/mouse_Visium_kidney/vignette_200916/3_c_PCA_reduction.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## run UMAP and tSNE on PCA space (default)</span>
 <span class="n">visium_kidney</span> <span class="o">&lt;-</span> <span class="n">runUMAP</span><span class="p">(</span><span class="n">visium_kidney</span><span class="p">,</span> <span class="n">dimensions_to_use</span> <span class="o">=</span> <span class="mi">1</span><span class="p">:</span><span class="mi">10</span><span class="p">)</span>
 <span class="n">plotUMAP</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">visium_kidney</span><span class="p">,</span>
         <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;3_d_UMAP_reduction&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/3_d_UMAP_reduction1.png"><img alt="3_d_UMAP_reduction.png" src="../../_images/3_d_UMAP_reduction1.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/3_d_UMAP_reduction.png"><img alt="3_d_UMAP_reduction.png" src="images/other/mouse_Visium_kidney/vignette_200916/3_d_UMAP_reduction.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">visium_kidney</span> <span class="o">&lt;-</span> <span class="n">runtSNE</span><span class="p">(</span><span class="n">visium_kidney</span><span class="p">,</span> <span class="n">dimensions_to_use</span> <span class="o">=</span> <span class="mi">1</span><span class="p">:</span><span class="mi">10</span><span class="p">)</span>
 <span class="n">plotTSNE</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">visium_kidney</span><span class="p">,</span>
         <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;3_e_tSNE_reduction&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/3_e_tSNE_reduction1.png"><img alt="3_e_tSNE_reduction.png" src="../../_images/3_e_tSNE_reduction1.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/3_e_tSNE_reduction.png"><img alt="3_e_tSNE_reduction.png" src="images/other/mouse_Visium_kidney/vignette_200916/3_e_tSNE_reduction.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="clustering">
 <h2>4. Clustering<a class="headerlink" href="#clustering" title="Permalink to this headline">¶</a></h2>
@@ -375,7 +375,7 @@ visium_kidney &lt;- addStatistics(gobject = visium_kidney)
         <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;4_a_UMAP_leiden&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/4_a_UMAP_leiden1.png"><img alt="4_a_UMAP_leiden.png" src="../../_images/4_a_UMAP_leiden1.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/4_a_UMAP_leiden.png"><img alt="4_a_UMAP_leiden.png" src="images/other/mouse_Visium_kidney/vignette_200916/4_a_UMAP_leiden.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="co-visualize">
 <h2>5. Co-Visualize<a class="headerlink" href="#co-visualize" title="Permalink to this headline">¶</a></h2>
@@ -385,13 +385,13 @@ visium_kidney &lt;- addStatistics(gobject = visium_kidney)
     <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;5_a_covis_leiden&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/5_a_covis_leiden1.png"><img alt="5_a_covis_leiden.png" src="../../_images/5_a_covis_leiden1.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/5_a_covis_leiden.png"><img alt="5_a_covis_leiden.png" src="images/other/mouse_Visium_kidney/vignette_200916/5_a_covis_leiden.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spatDimPlot</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">visium_kidney</span><span class="p">,</span> <span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;nr_genes&#39;</span><span class="p">,</span> <span class="n">color_as_factor</span> <span class="o">=</span> <span class="n">F</span><span class="p">,</span>
     <span class="n">dim_point_size</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">spat_point_size</span> <span class="o">=</span> <span class="mf">2.5</span><span class="p">,</span>
     <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;5_b_nr_genes&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/5_b_nr_genes1.png"><img alt="5_b_nr_genes.png" src="../../_images/5_b_nr_genes1.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/5_b_nr_genes.png"><img alt="5_b_nr_genes.png" src="images/other/mouse_Visium_kidney/vignette_200916/5_b_nr_genes.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="cell-type-marker-gene-detection">
 <h2>6. Cell-Type Marker Gene Detection<a class="headerlink" href="#cell-type-marker-gene-detection" title="Permalink to this headline">¶</a></h2>
@@ -412,7 +412,7 @@ violinPlot(visium_kidney, genes = unique(topgenes_gini), cluster_column = &#39;l
         save_param = c(save_name = &#39;6_a_violinplot_gini&#39;, base_width = 5, base_height = 10))
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/6_a_violinplot_gini1.png"><img alt="6_a_violinplot_gini.png" src="../../_images/6_a_violinplot_gini1.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/6_a_violinplot_gini.png"><img alt="6_a_violinplot_gini.png" src="images/other/mouse_Visium_kidney/vignette_200916/6_a_violinplot_gini.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># cluster heatmap</span>
 <span class="n">plotMetaDataHeatmap</span><span class="p">(</span><span class="n">visium_kidney</span><span class="p">,</span> <span class="n">selected_genes</span> <span class="o">=</span> <span class="n">topgenes_gini</span><span class="p">,</span>
             <span class="n">metadata_cols</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s1">&#39;leiden_clus&#39;</span><span class="p">),</span>
@@ -420,7 +420,7 @@ violinPlot(visium_kidney, genes = unique(topgenes_gini), cluster_column = &#39;l
             <span class="n">save_param</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;6_b_metaheatmap_gini&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/6_b_metaheatmap_gini1.png"><img alt="6_b_metaheatmap_gini.png" src="../../_images/6_b_metaheatmap_gini1.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/6_b_metaheatmap_gini.png"><img alt="6_b_metaheatmap_gini.png" src="images/other/mouse_Visium_kidney/vignette_200916/6_b_metaheatmap_gini.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span># umap plots
 dimGenePlot2D(visium_kidney, expression_values = &#39;scaled&#39;,
       genes = gini_markers_subclusters[, head(.SD, 1), by = &#39;cluster&#39;]$genes,
@@ -428,7 +428,7 @@ dimGenePlot2D(visium_kidney, expression_values = &#39;scaled&#39;,
       save_param = c(save_name = &#39;6_c_gini_umap&#39;, base_width = 8, base_height = 5))
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/6_c_gini_umap1.png"><img alt="6_c_gini_umap.png" src="../../_images/6_c_gini_umap1.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/6_c_gini_umap.png"><img alt="6_c_gini_umap.png" src="images/other/mouse_Visium_kidney/vignette_200916/6_c_gini_umap.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="scran">
 <h3>6.2 Scran<a class="headerlink" href="#scran" title="Permalink to this headline">¶</a></h3>
@@ -444,14 +444,14 @@ violinPlot(visium_kidney, genes = unique(topgenes_scran), cluster_column = &#39;
         save_param = c(save_name = &#39;6_d_violinplot_scran&#39;, base_width = 5))
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/6_d_violinplot_scran1.png"><img alt="6_d_violinplot_scran.png" src="../../_images/6_d_violinplot_scran1.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/6_d_violinplot_scran.png"><img alt="6_d_violinplot_scran.png" src="images/other/mouse_Visium_kidney/vignette_200916/6_d_violinplot_scran.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># cluster heatmap</span>
 <span class="n">lotMetaDataHeatmap</span><span class="p">(</span><span class="n">visium_kidney</span><span class="p">,</span> <span class="n">selected_genes</span> <span class="o">=</span> <span class="n">topgenes_scran</span><span class="p">,</span>
             <span class="n">metadata_cols</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s1">&#39;leiden_clus&#39;</span><span class="p">),</span>
             <span class="n">save_param</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;6_e_metaheatmap_scran&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/6_e_metaheatmap_scran1.png"><img alt="6_e_metaheatmap_scran.png" src="../../_images/6_e_metaheatmap_scran1.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/6_e_metaheatmap_scran.png"><img alt="6_e_metaheatmap_scran.png" src="images/other/mouse_Visium_kidney/vignette_200916/6_e_metaheatmap_scran.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span># umap plots
 dimGenePlot(visium_kidney, expression_values = &#39;scaled&#39;,
         genes = scran_markers_subclusters[, head(.SD, 1), by = &#39;cluster&#39;]$genes,
@@ -459,7 +459,7 @@ dimGenePlot(visium_kidney, expression_values = &#39;scaled&#39;,
         save_param = c(save_name = &#39;6_f_scran_umap&#39;, base_width = 8, base_height = 5))
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/6_f_scran_umap1.png"><img alt="6_f_scran_umap.png" src="../../_images/6_f_scran_umap1.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/6_f_scran_umap.png"><img alt="6_f_scran_umap.png" src="images/other/mouse_Visium_kidney/vignette_200916/6_f_scran_umap.png" style="width: 400px;" /></a>
 </div>
 </div>
 <div class="section" id="cell-type-annotation">
@@ -483,7 +483,7 @@ dimGenePlot(visium_kidney, expression_values = &#39;scaled&#39;,
         <span class="n">save_param</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;8_grid&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/8_grid1.png"><img alt="8_grid.png" src="../../_images/8_grid1.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/8_grid.png"><img alt="8_grid.png" src="images/other/mouse_Visium_kidney/vignette_200916/8_grid.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="spatial-network">
 <h2>9. Spatial Network<a class="headerlink" href="#spatial-network" title="Permalink to this headline">¶</a></h2>
@@ -492,7 +492,7 @@ dimGenePlot(visium_kidney, expression_values = &#39;scaled&#39;,
                 <span class="n">save_param</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;9_a_delaunay_network&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/9_a_delaunay_network.png"><img alt="9_a_delaunay_network.png" src="../../_images/9_a_delaunay_network.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/9_a_delaunay_network.png"><img alt="9_a_delaunay_network.png" src="images/other/mouse_Visium_kidney/vignette_200916/9_a_delaunay_network.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">visium_kidney</span> <span class="o">=</span> <span class="n">createSpatialNetwork</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">visium_kidney</span><span class="p">,</span> <span class="n">minimum_k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
 <span class="n">showNetworks</span><span class="p">(</span><span class="n">visium_kidney</span><span class="p">)</span>
 <span class="n">spatPlot</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">visium_kidney</span><span class="p">,</span> <span class="n">show_network</span> <span class="o">=</span> <span class="n">T</span><span class="p">,</span>
@@ -500,7 +500,7 @@ dimGenePlot(visium_kidney, expression_values = &#39;scaled&#39;,
         <span class="n">save_param</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;9_b_delaunay_network&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/9_b_delaunay_network.png"><img alt="9_b_delaunay_network.png" src="../../_images/9_b_delaunay_network.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/9_b_delaunay_network.png"><img alt="9_b_delaunay_network.png" src="images/other/mouse_Visium_kidney/vignette_200916/9_b_delaunay_network.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="spatial-genes-and-co-expression-patterns">
 <h2>10. Spatial Genes and Co-Expression Patterns<a class="headerlink" href="#spatial-genes-and-co-expression-patterns" title="Permalink to this headline">¶</a></h2>
@@ -513,7 +513,7 @@ spatGenePlot(visium_kidney, expression_values = &#39;scaled&#39;,
      save_param = c(save_name = &#39;10_a_spatial_genes_km&#39;))
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/10_a_spatial_genes_km1.png"><img alt="10_a_spatial_genes_km.png" src="../../_images/10_a_spatial_genes_km1.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/10_a_spatial_genes_km.png"><img alt="10_a_spatial_genes_km.png" src="images/other/mouse_Visium_kidney/vignette_200916/10_a_spatial_genes_km.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>## rank binarization
 ranktest = binSpect(visium_kidney, bin_method = &#39;rank&#39;)
 spatGenePlot(visium_kidney, expression_values = &#39;scaled&#39;,
@@ -521,7 +521,7 @@ spatGenePlot(visium_kidney, expression_values = &#39;scaled&#39;,
      save_param = c(save_name = &#39;10_b_spatial_genes_rank&#39;))
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/10_b_spatial_genes_rank1.png"><img alt="10_b_spatial_genes_rank.png" src="../../_images/10_b_spatial_genes_rank1.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/10_b_spatial_genes_rank.png"><img alt="10_b_spatial_genes_rank.png" src="images/other/mouse_Visium_kidney/vignette_200916/10_b_spatial_genes_rank.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="spatial-co-expression-patterns">
 <h3>10.2 Spatial Co-Expression Patterns<a class="headerlink" href="#spatial-co-expression-patterns" title="Permalink to this headline">¶</a></h3>
@@ -542,7 +542,7 @@ spatGenePlot(visium_kidney, expression_values = &#39;scaled&#39;,
      save_param = c(save_name = &#39;10_d_Napsa_correlated_genes&#39;))
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/10_d_Napsa_correlated_genes.png"><img alt="10_d_Napsa_correlated_genes.png" src="../../_images/10_d_Napsa_correlated_genes.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/10_d_Napsa_correlated_genes.png"><img alt="10_d_Napsa_correlated_genes.png" src="images/other/mouse_Visium_kidney/vignette_200916/10_d_Napsa_correlated_genes.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># 3. cluster correlated genes &amp; visualize</span>
 <span class="n">spat_cor_netw_DT</span> <span class="o">=</span> <span class="n">clusterSpatialCorGenes</span><span class="p">(</span><span class="n">spat_cor_netw_DT</span><span class="p">,</span> <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;spat_netw_clus&#39;</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">8</span><span class="p">)</span>
 
@@ -559,7 +559,7 @@ spatGenePlot(visium_kidney, expression_values = &#39;scaled&#39;,
                                          <span class="n">base_height</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">base_width</span> <span class="o">=</span> <span class="mi">5</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/10_f_rank_correlated_groups.png"><img alt="10_f_rank_correlated_groups.png" src="../../_images/10_f_rank_correlated_groups.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/10_f_rank_correlated_groups.png"><img alt="10_f_rank_correlated_groups.png" src="images/other/mouse_Visium_kidney/vignette_200916/10_f_rank_correlated_groups.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>top_netw_spat_cluster = showSpatialCorGenes(spat_cor_netw_DT, use_clus_name = &#39;spat_netw_clus&#39;,
                                     selected_clusters = 6, show_top_genes = 1)
 
@@ -577,7 +577,7 @@ spatCellPlot(visium_kidney,
                     base_width = 13, base_height = 6))
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/10_g_spat_enrichment_score_plots.png"><img alt="10_g_spat_enrichment_score_plots.png" src="../../_images/10_g_spat_enrichment_score_plots.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/10_g_spat_enrichment_score_plots.png"><img alt="10_g_spat_enrichment_score_plots.png" src="images/other/mouse_Visium_kidney/vignette_200916/10_g_spat_enrichment_score_plots.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span># example for gene per cluster
 top_netw_spat_cluster = showSpatialCorGenes(spat_cor_netw_DT, use_clus_name = &#39;spat_netw_clus&#39;,
                                     selected_clusters = 1:8, show_top_genes = 1)
@@ -591,7 +591,7 @@ spatGenePlot(visium_kidney, genes = first_genes, expression_values = &#39;scaled
                     base_width = 11, base_height = 6))
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/10_h_spat_enrichment_score_plots_genes.png"><img alt="10_h_spat_enrichment_score_plots_genes.png" src="../../_images/10_h_spat_enrichment_score_plots_genes.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_Visium_kidney/vignette_200916/10_h_spat_enrichment_score_plots_genes.png"><img alt="10_h_spat_enrichment_score_plots_genes.png" src="images/other/mouse_Visium_kidney/vignette_200916/10_h_spat_enrichment_score_plots_genes.png" style="width: 400px;" /></a>
 </div>
 </div>
 <div class="section" id="hmrf-domains">

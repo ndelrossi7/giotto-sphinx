@@ -65,9 +65,12 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> Giotto
+            <a href="../../index.html">
           
 
+          
+            
+            <img src="../../_static/GiottoLogo.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -100,14 +103,28 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../general.html">General Information</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../gettingstarted.html">How to Get Started With Giotto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../giottoworkflowanalyses.html">Giotto Workflow</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Giotto Example Datasets</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../datasets.html">Mini Datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../datasets.html#full-datasets">Full Datasets</a></li>
 </ul>
+<p class="caption"><span class="caption-text">How Tos and Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tipsandtricks/giottoclass.html">Working with Giotto Class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tipsandtricks/howtosubsetgiottoobject.html">How to Subset Giotto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tipsandtricks/howtovisualizeandsaveplots.html">How to Visualize Giotto Object</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tipsandtricks/testandstoremultipleanayses.html">How to Test and Store Multiple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tipsandtricks/waystovisualizespatialdata.html">Ways to Visualize</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tipsandtricks/workingwithimages.html">Working with Images</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tipsandtricks/visualizewithvoronoiplots.html">Visulize Voronoi</a></li>
+</ul>
 <p class="caption"><span class="caption-text">Supplemental Information</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../errorsfaqsandtips.html">Errors and FAQS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../additionalinformation.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../additionalinformation.html#how-to-contribute">How to contribute?</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://​github.com/​RubD/​Giotto/​">Browse Source Code</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://​github.com/​RubD/​Giotto/​issues">Report a Bug</a></li>
 </ul>
@@ -264,20 +281,20 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">seqfish_mini</span> <span class="o">&lt;-</span> <span class="n">calculateHVG</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">seqfish_mini</span><span class="p">)</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mini_datasets/mini_seqfish/vignette_200921/3.1_HVGplot.png"><img alt="3.1_HVGplot" src="images/other/mini_datasets/mini_seqfish/vignette_200921/3.1_HVGplot.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/3.1_HVGplot.png"><img alt="3.1_HVGplot" src="../../_images/3.1_HVGplot.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">seqfish_mini</span> <span class="o">&lt;-</span> <span class="n">runPCA</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">seqfish_mini</span><span class="p">)</span>
 <span class="n">screePlot</span><span class="p">(</span><span class="n">seqfish_mini</span><span class="p">,</span> <span class="n">ncp</span> <span class="o">=</span> <span class="mi">20</span><span class="p">)</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mini_datasets/mini_seqfish/vignette_200921/3.2_screePlot.png"><img alt="3.2_screePlot.png" src="images/other/mini_datasets/mini_seqfish/vignette_200921/3.2_screePlot.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/3.2_screePlot.png"><img alt="3.2_screePlot.png" src="../../_images/3.2_screePlot.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jackstrawPlot</span><span class="p">(</span><span class="n">seqfish_mini</span><span class="p">,</span> <span class="n">ncp</span> <span class="o">=</span> <span class="mi">20</span><span class="p">)</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mini_datasets/mini_seqfish/vignette_200921/3.3_jackstrawPlot.png"><img alt="3.3_jackstrawPlot.png" src="images/other/mini_datasets/mini_seqfish/vignette_200921/3.3_jackstrawPlot.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/3.3_jackstrawPlot.png"><img alt="3.3_jackstrawPlot.png" src="../../_images/3.3_jackstrawPlot.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">plotPCA</span><span class="p">(</span><span class="n">seqfish_mini</span><span class="p">)</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mini_datasets/mini_seqfish/vignette_200921/3.4_PCA.png"><img alt="3.4_PCA.png" src="images/other/mini_datasets/mini_seqfish/vignette_200921/3.4_PCA.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/3.4_PCA.png"><img alt="3.4_PCA.png" src="../../_images/3.4_PCA.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">seqfish_mini</span> <span class="o">&lt;-</span> <span class="n">runUMAP</span><span class="p">(</span><span class="n">seqfish_mini</span><span class="p">,</span> <span class="n">dimensions_to_use</span> <span class="o">=</span> <span class="mi">1</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span> <span class="n">n_threads</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span>
 <span class="n">plotUMAP</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">seqfish_mini</span><span class="p">)</span>
 
@@ -285,7 +302,7 @@
 <span class="n">plotTSNE</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">seqfish_mini</span><span class="p">)</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mini_datasets/mini_seqfish/vignette_200921/3.5_tSNE.png"><img alt="3.5_tSNE.png" src="images/other/mini_datasets/mini_seqfish/vignette_200921/3.5_tSNE.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/3.5_tSNE.png"><img alt="3.5_tSNE.png" src="../../_images/3.5_tSNE.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="clustering">
 <h2>4. Clustering<a class="headerlink" href="#clustering" title="Permalink to this headline">¶</a></h2>
@@ -301,7 +318,7 @@
         <span class="n">show_NN_network</span> <span class="o">=</span> <span class="n">T</span><span class="p">,</span> <span class="n">point_size</span> <span class="o">=</span> <span class="mf">2.5</span><span class="p">)</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mini_datasets/mini_seqfish/vignette_200921/4.1_UMAP.png"><img alt="4.1_UMAP.png" src="images/other/mini_datasets/mini_seqfish/vignette_200921/4.1_UMAP.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/4.1_UMAP.png"><img alt="4.1_UMAP.png" src="../../_images/4.1_UMAP.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># visualize UMAP and spatial results</span>
 <span class="n">spatDimPlot</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">seqfish_mini</span><span class="p">,</span> <span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;leiden_clus&#39;</span><span class="p">,</span> <span class="n">spat_point_shape</span> <span class="o">=</span> <span class="s1">&#39;voronoi&#39;</span><span class="p">)</span>
 
@@ -309,11 +326,11 @@
 <span class="n">showClusterHeatmap</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">seqfish_mini</span><span class="p">,</span> <span class="n">cluster_column</span> <span class="o">=</span> <span class="s1">&#39;leiden_clus&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mini_datasets/mini_seqfish/vignette_200921/4.2_showClusterHeatmap.png"><img alt="4.2_showClusterHeatmap.png" src="images/other/mini_datasets/mini_seqfish/vignette_200921/4.2_showClusterHeatmap.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/4.2_showClusterHeatmap.png"><img alt="4.2_showClusterHeatmap.png" src="../../_images/4.2_showClusterHeatmap.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">showClusterDendrogram</span><span class="p">(</span><span class="n">seqfish_mini</span><span class="p">,</span> <span class="n">h</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">,</span> <span class="n">rotate</span> <span class="o">=</span> <span class="n">T</span><span class="p">,</span> <span class="n">cluster_column</span> <span class="o">=</span> <span class="s1">&#39;leiden_clus&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mini_datasets/mini_seqfish/vignette_200921/4.3_showClusterDendrogram.png"><img alt="4.3_showClusterDendrogram.png" src="images/other/mini_datasets/mini_seqfish/vignette_200921/4.3_showClusterDendrogram.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/4.3_showClusterDendrogram.png"><img alt="4.3_showClusterDendrogram.png" src="../../_images/4.3_showClusterDendrogram.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="differential-expression">
 <h2>5. Differential Expression<a class="headerlink" href="#differential-expression" title="Permalink to this headline">¶</a></h2>
@@ -330,14 +347,14 @@ topgenes_gini = gini_markers[, head(.SD, 2), by = &#39;cluster&#39;]
 violinPlot(seqfish_mini, genes = topgenes_gini$genes, cluster_column = &#39;leiden_clus&#39;)
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mini_datasets/mini_seqfish/vignette_200921/5.1_violinPlot.png"><img alt="5.1_violinPlot.png" src="images/other/mini_datasets/mini_seqfish/vignette_200921/5.1_violinPlot.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/5.1_violinPlot.png"><img alt="5.1_violinPlot.png" src="../../_images/5.1_violinPlot.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span># get top 6 genes per cluster and visualize with heatmap
 topgenes_gini2 = gini_markers[, head(.SD, 6), by = &#39;cluster&#39;]
 plotMetaDataHeatmap(seqfish_mini, selected_genes = topgenes_gini2$genes,
                 metadata_cols = c(&#39;leiden_clus&#39;))
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mini_datasets/mini_seqfish/vignette_200921/5.2_plotMetaDataHeatmap.png"><img alt="5.2_plotMetaDataHeatmap.png" src="images/other/mini_datasets/mini_seqfish/vignette_200921/5.2_plotMetaDataHeatmap.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/5.2_plotMetaDataHeatmap.png"><img alt="5.2_plotMetaDataHeatmap.png" src="../../_images/5.2_plotMetaDataHeatmap.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="cell-type-annotation">
 <h2>6. Cell Type Annotation<a class="headerlink" href="#cell-type-annotation" title="Permalink to this headline">¶</a></h2>
@@ -356,7 +373,7 @@ plotMetaDataHeatmap(seqfish_mini, selected_genes = topgenes_gini2$genes,
         <span class="n">spat_point_size</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">dim_point_size</span> <span class="o">=</span> <span class="mi">3</span><span class="p">)</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mini_datasets/mini_seqfish/vignette_200921/6.1_spatDimPlot2D.png"><img alt="6.1_spatDimPlot2D.png" src="images/other/mini_datasets/mini_seqfish/vignette_200921/6.1_spatDimPlot2D.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/6.1_spatDimPlot2D.png"><img alt="6.1_spatDimPlot2D.png" src="../../_images/6.1_spatDimPlot2D.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="spatial-grid">
 <h2>7. Spatial Grid<a class="headerlink" href="#spatial-grid" title="Permalink to this headline">¶</a></h2>
@@ -428,7 +445,7 @@ spatGenePlot(seqfish_mini, expression_values = &#39;scaled&#39;,
         cow_n_col = 2)
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mini_datasets/mini_seqfish/vignette_200921/9.1_spatGenePlot2D.png"><img alt="9.1_spatGenePlot2D.png" src="images/other/mini_datasets/mini_seqfish/vignette_200921/9.1_spatGenePlot2D.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/9.1_spatGenePlot2D.png"><img alt="9.1_spatGenePlot2D.png" src="../../_images/9.1_spatGenePlot2D.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="spatial-co-expression-patterns">
 <h2>10. Spatial Co-Expression Patterns<a class="headerlink" href="#spatial-co-expression-patterns" title="Permalink to this headline">¶</a></h2>
@@ -453,7 +470,7 @@ spat_cor_netw_DT = detectSpatialCorGenes(seqfish_mini,
                 <span class="n">use_clus_name</span> <span class="o">=</span> <span class="s1">&#39;spat_netw_clus&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mini_datasets/mini_seqfish/vignette_200921/10.1_heatmSpatialCorGenes.png"><img alt="10.1_heatmSpatialCorGenes.png" src="images/other/mini_datasets/mini_seqfish/vignette_200921/10.1_heatmSpatialCorGenes.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/10.1_heatmSpatialCorGenes.png"><img alt="10.1_heatmSpatialCorGenes.png" src="../../_images/10.1_heatmSpatialCorGenes.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>netw_ranks = rankSpatialCorGroups(seqfish_mini,
                                 spatCorObject = spat_cor_netw_DT,
                                 use_clus_name = &#39;spat_netw_clus&#39;)
@@ -474,7 +491,7 @@ spatCellPlot(seqfish_mini,
         point_size = 1.5, cow_n_col = 3)
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mini_datasets/mini_seqfish/vignette_200921/10.2_spatCellPlot2D.png"><img alt="10.2_spatCellPlot2D.png" src="images/other/mini_datasets/mini_seqfish/vignette_200921/10.2_spatCellPlot2D.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/10.2_spatCellPlot2D.png"><img alt="10.2_spatCellPlot2D.png" src="../../_images/10.2_spatCellPlot2D.png" style="width: 400px;" /></a>
 </div>
 </div>
 <div class="section" id="spatial-hmrf-domains">
@@ -527,7 +544,7 @@ spatPlot(gobject = seqfish_mini, cell_color = &#39;HMRF_k9_b.28&#39;,
                 <span class="n">min_orig_ints</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">min_sim_ints</span> <span class="o">=</span> <span class="mi">5</span><span class="p">)</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mini_datasets/mini_seqfish/vignette_200921/12.1_cellProximityBarplot.png"><img alt="12.1_cellProximityBarplot.png" src="images/other/mini_datasets/mini_seqfish/vignette_200921/12.1_cellProximityBarplot.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/12.1_cellProximityBarplot.png"><img alt="12.1_cellProximityBarplot.png" src="../../_images/12.1_cellProximityBarplot.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## heatmap</span>
 <span class="n">cellProximityHeatmap</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">seqfish_mini</span><span class="p">,</span> <span class="n">CPscore</span> <span class="o">=</span> <span class="n">cell_proximities</span><span class="p">,</span>
                 <span class="n">order_cell_types</span> <span class="o">=</span> <span class="n">T</span><span class="p">,</span> <span class="n">scale</span> <span class="o">=</span> <span class="n">T</span><span class="p">,</span>
@@ -541,7 +558,7 @@ spatPlot(gobject = seqfish_mini, cell_color = &#39;HMRF_k9_b.28&#39;,
                 <span class="n">remove_self_edges</span> <span class="o">=</span> <span class="n">T</span><span class="p">,</span> <span class="n">only_show_enrichment_edges</span> <span class="o">=</span> <span class="n">T</span><span class="p">)</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mini_datasets/mini_seqfish/vignette_200921/12.3_cellProximityHeatmap.png"><img alt="12.3_cellProximityHeatmap.png" src="images/other/mini_datasets/mini_seqfish/vignette_200921/12.3_cellProximityHeatmap.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/12.3_cellProximityHeatmap.png"><img alt="12.3_cellProximityHeatmap.png" src="../../_images/12.3_cellProximityHeatmap.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># network with self-edges</span>
 <span class="n">cellProximityNetwork</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">seqfish_mini</span><span class="p">,</span> <span class="n">CPscore</span> <span class="o">=</span> <span class="n">cell_proximities</span><span class="p">,</span>
                 <span class="n">remove_self_edges</span> <span class="o">=</span> <span class="n">F</span><span class="p">,</span> <span class="n">self_loop_strength</span> <span class="o">=</span> <span class="mf">0.3</span><span class="p">,</span>
@@ -552,7 +569,7 @@ spatPlot(gobject = seqfish_mini, cell_color = &#39;HMRF_k9_b.28&#39;,
                 <span class="n">edge_weight_range_enrichment</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mini_datasets/mini_seqfish/vignette_200921/12.4_cellProximityNetwork.png"><img alt="12.4_cellProximityNetwork.png" src="images/other/mini_datasets/mini_seqfish/vignette_200921/12.4_cellProximityNetwork.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/12.4_cellProximityNetwork.png"><img alt="12.4_cellProximityNetwork.png" src="../../_images/12.4_cellProximityNetwork.png" style="width: 400px;" /></a>
 <div class="section" id="visualization-of-specific-cell-types">
 <h3>12.1 Visualization of Specific Cell Types<a class="headerlink" href="#visualization-of-specific-cell-types" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="option-1">
@@ -568,7 +585,7 @@ spatPlot(gobject = seqfish_mini, cell_color = &#39;HMRF_k9_b.28&#39;,
                  <span class="n">point_size_select</span> <span class="o">=</span> <span class="mi">4</span><span class="p">,</span> <span class="n">point_size_other</span> <span class="o">=</span> <span class="mi">2</span><span class="p">)</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mini_datasets/mini_seqfish/vignette_200921/12.5_cellProximitySpatPlot2D.png"><img alt="12.5_cellProximitySpatPlot2D.png" src="images/other/mini_datasets/mini_seqfish/vignette_200921/12.5_cellProximitySpatPlot2D.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/12.5_cellProximitySpatPlot2D.png"><img alt="12.5_cellProximitySpatPlot2D.png" src="../../_images/12.5_cellProximitySpatPlot2D.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="option-2">
 <h4>Option 2<a class="headerlink" href="#option-2" title="Permalink to this headline">¶</a></h4>
@@ -582,7 +599,7 @@ spatPlot(gobject = seqfish_mini, cell_color = &#39;HMRF_k9_b.28&#39;,
         <span class="n">select_cell_groups</span> <span class="o">=</span>  <span class="n">c</span><span class="p">(</span><span class="s1">&#39;other_cell D&#39;</span><span class="p">,</span> <span class="s1">&#39;other_cell F&#39;</span><span class="p">,</span> <span class="s1">&#39;select_cell D&#39;</span><span class="p">,</span> <span class="s1">&#39;select_cell F&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mini_datasets/mini_seqfish/vignette_200921/12.6_spatPlot2D.png"><img alt="12.6_spatPlot2D.png" src="images/other/mini_datasets/mini_seqfish/vignette_200921/12.6_spatPlot2D.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/12.6_spatPlot2D.png"><img alt="12.6_spatPlot2D.png" src="../../_images/12.6_spatPlot2D.png" style="width: 400px;" /></a>
 </div>
 </div>
 </div>
@@ -610,7 +627,7 @@ ICGscoresHighGenes =  findICG(gobject = seqfish_mini,
 plotCellProximityGenes(seqfish_mini, cpgObject = ICGscoresHighGenes, method = &#39;dotplot&#39;)
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mini_datasets/mini_seqfish/vignette_200921/13.1_plotCellProximityGenes.png"><img alt="13.1_plotCellProximityGenes.png" src="images/other/mini_datasets/mini_seqfish/vignette_200921/13.1_plotCellProximityGenes.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/13.1_plotCellProximityGenes.png"><img alt="13.1_plotCellProximityGenes.png" src="../../_images/13.1_plotCellProximityGenes.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## filter genes</span>
 <span class="n">ICGscoresFilt</span> <span class="o">=</span> <span class="n">filterICG</span><span class="p">(</span><span class="n">ICGscoresHighGenes</span><span class="p">,</span>
                   <span class="n">min_cells</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">min_int_cells</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">min_fdr</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">,</span>
@@ -628,7 +645,7 @@ plotCellProximityGenes(seqfish_mini, cpgObject = ICGscoresHighGenes, method = &#
                 <span class="n">ICG_genes</span> <span class="o">=</span> <span class="n">ICG_genes</span><span class="p">)</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mini_datasets/mini_seqfish/vignette_200921/13.2_plotICG.png"><img alt="13.2_plotICG.png" src="images/other/mini_datasets/mini_seqfish/vignette_200921/13.2_plotICG.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/13.2_plotICG.png"><img alt="13.2_plotICG.png" src="../../_images/13.2_plotICG.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="cell-neighborhood-ligand-receptor-cell-cell-communication">
 <h2>14. Cell Neighborhood: Ligand-Receptor Cell-Cell Communication<a class="headerlink" href="#cell-neighborhood-ligand-receptor-cell-cell-communication" title="Permalink to this headline">¶</a></h2>
@@ -677,7 +694,7 @@ plotCCcomHeatmap(gobject = seqfish_mini,
                 show = &#39;LR_expr&#39;)
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mini_datasets/mini_seqfish/vignette_200921/14.1_plotCCcomHeatmap.png"><img alt="14.1_plotCCcomHeatmap.png" src="images/other/mini_datasets/mini_seqfish/vignette_200921/14.1_plotCCcomHeatmap.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/14.1_plotCCcomHeatmap.png"><img alt="14.1_plotCCcomHeatmap.png" src="../../_images/14.1_plotCCcomHeatmap.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">plotCCcomDotplot</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">seqfish_mini</span><span class="p">,</span>
                 <span class="n">comScores</span> <span class="o">=</span> <span class="n">spatial_all_scores</span><span class="p">,</span>
                 <span class="n">selected_LR</span> <span class="o">=</span> <span class="n">top_LR_ints</span><span class="p">,</span>
@@ -685,7 +702,7 @@ plotCCcomHeatmap(gobject = seqfish_mini,
                 <span class="n">cluster_on</span> <span class="o">=</span> <span class="s1">&#39;PI&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mini_datasets/mini_seqfish/vignette_200921/14.2_plotCCcomDotplot.png"><img alt="14.2_plotCCcomDotplot.png" src="images/other/mini_datasets/mini_seqfish/vignette_200921/14.2_plotCCcomDotplot.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/14.2_plotCCcomDotplot.png"><img alt="14.2_plotCCcomDotplot.png" src="../../_images/14.2_plotCCcomDotplot.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## * spatial vs rank ####</span>
 <span class="n">comb_comm</span> <span class="o">=</span> <span class="n">combCCcom</span><span class="p">(</span><span class="n">spatialCC</span> <span class="o">=</span> <span class="n">spatial_all_scores</span><span class="p">,</span>
               <span class="n">exprCC</span> <span class="o">=</span> <span class="n">expr_only_scores</span><span class="p">)</span>
@@ -698,7 +715,7 @@ plotCCcomHeatmap(gobject = seqfish_mini,
                 <span class="n">midpoint</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mini_datasets/mini_seqfish/vignette_200921/14.3_plotRankSpatvsExpr.png"><img alt="14.3_plotRankSpatvsExpr.png" src="images/other/mini_datasets/mini_seqfish/vignette_200921/14.3_plotRankSpatvsExpr.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/14.3_plotRankSpatvsExpr.png"><img alt="14.3_plotRankSpatvsExpr.png" src="../../_images/14.3_plotRankSpatvsExpr.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## * recovery ####</span>
 <span class="c1">## predict maximum differential activity</span>
 <span class="n">plotRecovery</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">seqfish_mini</span><span class="p">,</span>
@@ -708,7 +725,7 @@ plotCCcomHeatmap(gobject = seqfish_mini,
         <span class="n">ground_truth</span> <span class="o">=</span> <span class="s1">&#39;spatial&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mini_datasets/mini_seqfish/vignette_200921/14.4_plotRecovery.png"><img alt="14.4_plotRecovery.png" src="images/other/mini_datasets/mini_seqfish/vignette_200921/14.4_plotRecovery.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/14.4_plotRecovery.png"><img alt="14.4_plotRecovery.png" src="../../_images/14.4_plotRecovery.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="export-giotto-analyzer-to-viewer">
 <h2>15. Export Giotto Analyzer to Viewer<a class="headerlink" href="#export-giotto-analyzer-to-viewer" title="Permalink to this headline">¶</a></h2>

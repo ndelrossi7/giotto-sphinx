@@ -50,7 +50,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Mini Datasets" href="datasets.html" />
+    <link rel="next" title="Giotto Workflow" href="giottoworkflowanalyses.html" />
     <link rel="prev" title="General Information" href="general.html" /> 
 </head>
 
@@ -65,9 +65,12 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> Giotto
+            <a href="index.html">
           
 
+          
+            
+            <img src="_static/GiottoLogo.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -129,14 +132,28 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="giottoworkflowanalyses.html">Giotto Workflow</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Giotto Example Datasets</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="datasets.html">Mini Datasets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="datasets.html#full-datasets">Full Datasets</a></li>
 </ul>
+<p class="caption"><span class="caption-text">How Tos and Tutorials</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/giottoclass.html">Working with Giotto Class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/howtosubsetgiottoobject.html">How to Subset Giotto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/howtovisualizeandsaveplots.html">How to Visualize Giotto Object</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/testandstoremultipleanayses.html">How to Test and Store Multiple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/waystovisualizespatialdata.html">Ways to Visualize</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/workingwithimages.html">Working with Images</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/visualizewithvoronoiplots.html">Visulize Voronoi</a></li>
+</ul>
 <p class="caption"><span class="caption-text">Supplemental Information</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="errorsfaqsandtips.html">Errors and FAQS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="additionalinformation.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="additionalinformation.html#how-to-contribute">How to contribute?</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://​github.com/​RubD/​Giotto/​">Browse Source Code</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://​github.com/​RubD/​Giotto/​issues">Report a Bug</a></li>
 </ul>
@@ -382,24 +399,24 @@ prefix: /Users/your_username/anaconda3/envs/giotto_env
 <span id="howtolabel"></span><h2>HowTos<a class="headerlink" href="#howtos" title="Permalink to this headline">¶</a></h2>
 <p>Giotto provides a lot of analyses, visualizations and other options to facilitate your spatial dataset analysis. We are working on providing easy-to-understand examples or tutorials, but if anything is not clear or if there is something you would like to see in particular, then do not hesitate to <a class="reference external" href="https://github.com/RubD/Giotto/issues">contact us.</a></p>
 <div class="section" id="giotto-workflow-analyses-steps">
-<h3><span class="xref std std-doc">Giotto Workflow Analyses Steps</span><a class="headerlink" href="#giotto-workflow-analyses-steps" title="Permalink to this headline">¶</a></h3>
+<h3><a class="reference internal" href="giottoworkflowanalyses.html"><span class="doc">Giotto Workflow Analyses Steps</span></a><a class="headerlink" href="#giotto-workflow-analyses-steps" title="Permalink to this headline">¶</a></h3>
 <p><em>Optional</em>: Install a Giotto Environment</p>
 <ol class="arabic simple">
-<li><p><span class="xref std std-ref">Create a Giotto Object</span></p></li>
-<li><p><span class="xref std std-ref">Process and Filter a Giotto Object</span></p></li>
-<li><p><span class="xref std std-ref">Dimension Reduction</span></p></li>
-<li><p><span class="xref std std-ref">Cluster cells or spots</span></p></li>
-<li><p><span class="xref std std-ref">Identify differentially expressed genes</span></p></li>
-<li><p><span class="xref std std-ref">Annotate clusters</span></p></li>
-<li><p><span class="xref std std-ref">Cell-type enrichment or deconvolution per spot</span></p></li>
-<li><p><span class="xref std std-ref">Create a Spatial grid or Network</span></p></li>
-<li><p><span class="xref std std-ref">Find genes with a spatially coherent gene expression pattern</span></p></li>
-<li><p><span class="xref std std-ref">Identify genes that are spatially co-expressed</span></p></li>
-<li><p><span class="xref std std-ref">Explore spatial domains with HMRF</span></p></li>
-<li><p><span class="xref std std-ref">Calculate spatial cell-cell interaction enrichment</span></p></li>
-<li><p><span class="xref std std-ref">Find cell-cell interaction changed genes (ICG)</span></p></li>
-<li><p><span class="xref std std-ref">Identify enriched or depleted ligand-receptor interactions in hetero and homo-typic cell interactions</span></p></li>
-<li><p><span class="xref std std-ref">Export Giotto results to use in Giotto viewer</span></p></li>
+<li><p><a class="reference internal" href="giottoworkflowanalyses.html#create-a-giotto-object"><span class="std std-ref">Create a Giotto Object</span></a></p></li>
+<li><p><a class="reference internal" href="giottoworkflowanalyses.html#process-and-filter-a-giotto-object"><span class="std std-ref">Process and Filter a Giotto Object</span></a></p></li>
+<li><p><a class="reference internal" href="giottoworkflowanalyses.html#dimension-reduction"><span class="std std-ref">Dimension Reduction</span></a></p></li>
+<li><p><a class="reference internal" href="giottoworkflowanalyses.html#cluster-cells-or-spots"><span class="std std-ref">Cluster cells or spots</span></a></p></li>
+<li><p><a class="reference internal" href="giottoworkflowanalyses.html#identify-differentially-expressed-genes"><span class="std std-ref">Identify differentially expressed genes</span></a></p></li>
+<li><p><a class="reference internal" href="giottoworkflowanalyses.html#annotate-clusters"><span class="std std-ref">Annotate clusters</span></a></p></li>
+<li><p><a class="reference internal" href="giottoworkflowanalyses.html#cell-type-enrichment-or-deconvolution-per-spot"><span class="std std-ref">Cell-type enrichment or deconvolution per spot</span></a></p></li>
+<li><p><a class="reference internal" href="giottoworkflowanalyses.html#spatial-grid-or-network"><span class="std std-ref">Create a Spatial grid or Network</span></a></p></li>
+<li><p><a class="reference internal" href="giottoworkflowanalyses.html#spatially-coherent-gene-expression-pattern"><span class="std std-ref">Find genes with a spatially coherent gene expression pattern</span></a></p></li>
+<li><p><a class="reference internal" href="giottoworkflowanalyses.html#spatially-coexpressed-genes"><span class="std std-ref">Identify genes that are spatially co-expressed</span></a></p></li>
+<li><p><a class="reference internal" href="giottoworkflowanalyses.html#spatial-domains-with-hmrf"><span class="std std-ref">Explore spatial domains with HMRF</span></a></p></li>
+<li><p><a class="reference internal" href="giottoworkflowanalyses.html#calculate-spatial-cell-cell-interaction"><span class="std std-ref">Calculate spatial cell-cell interaction enrichment</span></a></p></li>
+<li><p><a class="reference internal" href="giottoworkflowanalyses.html#find-cell-cell-interactions-changed-genes"><span class="std std-ref">Find cell-cell interaction changed genes (ICG)</span></a></p></li>
+<li><p><a class="reference internal" href="giottoworkflowanalyses.html#enriched-or-depleted-ligand-receptor-interactions"><span class="std std-ref">Identify enriched or depleted ligand-receptor interactions in hetero and homo-typic cell interactions</span></a></p></li>
+<li><p><a class="reference internal" href="giottoworkflowanalyses.html#giotto-viewer-export"><span class="std std-ref">Export Giotto results to use in Giotto viewer</span></a></p></li>
 </ol>
 </div>
 <div class="section" id="giotto-analyzer-and-viewer-interaction-work-in-progress">
@@ -411,13 +428,13 @@ prefix: /Users/your_username/anaconda3/envs/giotto_env
 <div class="section" id="tips-and-tricks">
 <h3>Tips and Tricks<a class="headerlink" href="#tips-and-tricks" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p><span class="xref std std-ref">Different ways of subsetting Giotto results?</span></p></li>
-<li><p><span class="xref std std-ref">How to create global instructions and show or save your created plots?</span></p></li>
-<li><p><span class="xref std std-ref">Different ways to visualize your spatial data?</span></p></li>
-<li><p><span class="xref std std-ref">How to test and store multiple parameters or analyses?</span></p></li>
-<li><p><span class="xref std std-ref">Visualize spatial data with voronoi plots</span></p></li>
-<li><p><span class="xref std std-ref">Working with the Giotto class</span></p></li>
-<li><p><span class="xref std std-ref">Adding and Working with Images in Giotto</span></p></li>
+<li><p><a class="reference internal" href="subsections/tipsandtricks/howtosubsetgiottoobject.html#ways-of-subsetting"><span class="std std-ref">Different ways of subsetting Giotto results?</span></a></p></li>
+<li><p><a class="reference internal" href="subsections/tipsandtricks/waystovisualizespatialdata.html#global-instructions-and-save-plots"><span class="std std-ref">How to create global instructions and show or save your created plots?</span></a></p></li>
+<li><p><a class="reference internal" href="subsections/tipsandtricks/howtovisualizeandsaveplots.html#visualize-data"><span class="std std-ref">Different ways to visualize your spatial data?</span></a></p></li>
+<li><p><a class="reference internal" href="subsections/tipsandtricks/testandstoremultipleanayses.html#test-and-store"><span class="std std-ref">How to test and store multiple parameters or analyses?</span></a></p></li>
+<li><p><a class="reference internal" href="subsections/tipsandtricks/visualizewithvoronoiplots.html#voronoi-plots"><span class="std std-ref">Visualize spatial data with voronoi plots</span></a></p></li>
+<li><p><a class="reference internal" href="subsections/tipsandtricks/giottoclass.html#giotto-class"><span class="std std-ref">Working with the Giotto class</span></a></p></li>
+<li><p><a class="reference internal" href="subsections/tipsandtricks/workingwithimages.html#working-with-giotto-images"><span class="std std-ref">Adding and Working with Images in Giotto</span></a></p></li>
 </ul>
 <p><em>See :ref:`FAQs &lt;faqs&gt;` for more information.</em></p>
 </div>
@@ -430,7 +447,7 @@ prefix: /Users/your_username/anaconda3/envs/giotto_env
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="datasets.html" class="btn btn-neutral float-right" title="Mini Datasets" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="giottoworkflowanalyses.html" class="btn btn-neutral float-right" title="Giotto Workflow" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="general.html" class="btn btn-neutral float-left" title="General Information" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 

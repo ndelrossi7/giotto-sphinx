@@ -262,12 +262,12 @@ filterDistributions(merFISH_test, detection = &#39;genes&#39;,
             save_param = list(save_name = &#39;2_a_distribution_genes&#39;))
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/2_a_distribution_genes.png"><img alt="2_a_distribution_genes.png" src="../../_images/2_a_distribution_genes.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_merFISH_hypoth/vignette_200909/2_a_distribution_genes.png"><img alt="2_a_distribution_genes.png" src="images/other/mouse_merFISH_hypoth/vignette_200909/2_a_distribution_genes.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">filterDistributions</span><span class="p">(</span><span class="n">merFISH_test</span><span class="p">,</span> <span class="n">detection</span> <span class="o">=</span> <span class="s1">&#39;cells&#39;</span><span class="p">,</span>
             <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;2_b_distribution_cells&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/2_b_distribution_cells.png"><img alt="2_b_distribution_cells.png" src="../../_images/2_b_distribution_cells.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_merFISH_hypoth/vignette_200909/2_b_distribution_cells.png"><img alt="2_b_distribution_cells.png" src="images/other/mouse_merFISH_hypoth/vignette_200909/2_b_distribution_cells.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">filterCombinations</span><span class="p">(</span><span class="n">merFISH_test</span><span class="p">,</span>
            <span class="n">expression_thresholds</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mf">1e-6</span><span class="p">,</span><span class="mf">1e-5</span><span class="p">),</span>
            <span class="n">gene_det_in_min_cells</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="mi">500</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">1500</span><span class="p">),</span>
@@ -275,7 +275,7 @@ filterDistributions(merFISH_test, detection = &#39;genes&#39;,
            <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;2_c_filter_combos&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/2_c_filter_combos.png"><img alt="2_c_filter_combos.png" src="../../_images/2_c_filter_combos.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_merFISH_hypoth/vignette_200909/2_c_filter_combos.png"><img alt="2_c_filter_combos.png" src="images/other/mouse_merFISH_hypoth/vignette_200909/2_c_filter_combos.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># 2. filter data</span>
 <span class="n">merFISH_test</span> <span class="o">&lt;-</span> <span class="n">filterGiotto</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">merFISH_test</span><span class="p">,</span>
                      <span class="n">gene_det_in_min_cells</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
@@ -294,13 +294,13 @@ filterDistributions(merFISH_test, detection = &#39;genes&#39;,
         <span class="n">ave_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;2_d_spatial_locations2D&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/2_d_spatial_locations2D.png"><img alt="2_d_spatial_locations2D.png" src="../../_images/2_d_spatial_locations2D.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_merFISH_hypoth/vignette_200909/2_d_spatial_locations2D.png"><img alt="2_d_spatial_locations2D.png" src="images/other/mouse_merFISH_hypoth/vignette_200909/2_d_spatial_locations2D.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># 3D</span>
 <span class="n">spatPlot3D</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">merFISH_test</span><span class="p">,</span> <span class="n">point_size</span> <span class="o">=</span> <span class="mf">2.0</span><span class="p">,</span> <span class="n">axis_scale</span> <span class="o">=</span> <span class="s1">&#39;real&#39;</span><span class="p">,</span>
         <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;2_e_spatial_locations3D&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/2_e_spatial_locations3D.png"><img alt="2_e_spatial_locations3D.png" src="../../_images/2_e_spatial_locations3D.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_merFISH_hypoth/vignette_200909/2_e_spatial_locations3D.png"><img alt="2_e_spatial_locations3D.png" src="images/other/mouse_merFISH_hypoth/vignette_200909/2_e_spatial_locations3D.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="dimension-reduction">
 <h2>3. Dimension Reduction<a class="headerlink" href="#dimension-reduction" title="Permalink to this headline">¶</a></h2>
@@ -309,14 +309,14 @@ filterDistributions(merFISH_test, detection = &#39;genes&#39;,
 <span class="n">screePlot</span><span class="p">(</span><span class="n">merFISH_test</span><span class="p">,</span> <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;3_a_screeplot&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/3_a_screeplot.png"><img alt="3_a_screeplot.png" src="../../_images/3_a_screeplot.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_merFISH_hypoth/vignette_200909/3_a_screeplot.png"><img alt="3_a_screeplot.png" src="images/other/mouse_merFISH_hypoth/vignette_200909/3_a_screeplot.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">merFISH_test</span> <span class="o">&lt;-</span> <span class="n">runUMAP</span><span class="p">(</span><span class="n">merFISH_test</span><span class="p">,</span> <span class="n">dimensions_to_use</span> <span class="o">=</span> <span class="mi">1</span><span class="p">:</span><span class="mi">8</span><span class="p">,</span> <span class="n">n_components</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">n_threads</span> <span class="o">=</span> <span class="mi">4</span><span class="p">)</span>
 
 <span class="n">plotUMAP_3D</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">merFISH_test</span><span class="p">,</span> <span class="n">point_size</span> <span class="o">=</span> <span class="mf">1.5</span><span class="p">,</span>
         <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;3_b_UMAP_reduction&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/3_b_UMAP_reduction.png"><img alt="3_b_UMAP_reduction.png" src="../../_images/3_b_UMAP_reduction.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_merFISH_hypoth/vignette_200909/3_b_UMAP_reduction.png"><img alt="3_b_UMAP_reduction.png" src="images/other/mouse_merFISH_hypoth/vignette_200909/3_b_UMAP_reduction.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="clustering">
 <h2>4. Clustering<a class="headerlink" href="#clustering" title="Permalink to this headline">¶</a></h2>
@@ -329,7 +329,7 @@ filterDistributions(merFISH_test, detection = &#39;genes&#39;,
         <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;4_a_UMAP_leiden&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/4_a_UMAP_leiden.png"><img alt="4_a_UMAP_leiden.png" src="../../_images/4_a_UMAP_leiden.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_merFISH_hypoth/vignette_200909/4_a_UMAP_leiden.png"><img alt="4_a_UMAP_leiden.png" src="images/other/mouse_merFISH_hypoth/vignette_200909/4_a_UMAP_leiden.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="co-visualization">
 <h2>5. Co-Visualization<a class="headerlink" href="#co-visualization" title="Permalink to this headline">¶</a></h2>
@@ -344,7 +344,7 @@ filterDistributions(merFISH_test, detection = &#39;genes&#39;,
    <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;5_b_leiden_2D&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/5_b_leiden_2D.png"><img alt="5_b_leiden_2D.png" src="../../_images/5_b_leiden_2D.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_merFISH_hypoth/vignette_200909/5_b_leiden_2D.png"><img alt="5_b_leiden_2D.png" src="images/other/mouse_merFISH_hypoth/vignette_200909/5_b_leiden_2D.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="cell-type-marker-gene-detection">
 <h2>6. Cell-Type Marker Gene Detection<a class="headerlink" href="#cell-type-marker-gene-detection" title="Permalink to this headline">¶</a></h2>
@@ -361,7 +361,7 @@ violinPlot(merFISH_test, genes = topgini_genes, cluster_column = &#39;leiden_0.2
         save_param = c(save_name = &#39;6_a_violinplot&#39;))
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/6_a_violinplot.png"><img alt="6_a_violinplot.png" src="../../_images/6_a_violinplot.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_merFISH_hypoth/vignette_200909/6_a_violinplot.png"><img alt="6_a_violinplot.png" src="images/other/mouse_merFISH_hypoth/vignette_200909/6_a_violinplot.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>topgini_genes = unique(markers[, head(.SD, 6), by = &#39;cluster&#39;]$genes)
 plotMetaDataHeatmap(merFISH_test, expression_values = &#39;scaled&#39;,
             metadata_cols = c(&#39;leiden_0.2&#39;),
@@ -369,7 +369,7 @@ plotMetaDataHeatmap(merFISH_test, expression_values = &#39;scaled&#39;,
             save_param = c(save_name = &#39;6_b_clusterheatmap_markers&#39;))
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/6_b_clusterheatmap_markers.png"><img alt="6_b_clusterheatmap_markers.png" src="../../_images/6_b_clusterheatmap_markers.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_merFISH_hypoth/vignette_200909/6_b_clusterheatmap_markers.png"><img alt="6_b_clusterheatmap_markers.png" src="images/other/mouse_merFISH_hypoth/vignette_200909/6_b_clusterheatmap_markers.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="cell-type-annotation-and-visualization">
 <h2>7. Cell-Type Annotation and Visualization<a class="headerlink" href="#cell-type-annotation-and-visualization" title="Permalink to this headline">¶</a></h2>
@@ -388,7 +388,7 @@ plotMetaDataHeatmap(merFISH_test, expression_values = &#39;scaled&#39;,
             <span class="n">save_param</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;7_a_clusterheatmap_markers&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/7_a_clusterheatmap_markers.png"><img alt="7_a_clusterheatmap_markers.png" src="../../_images/7_a_clusterheatmap_markers.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_merFISH_hypoth/vignette_200909/7_a_clusterheatmap_markers.png"><img alt="7_a_clusterheatmap_markers.png" src="images/other/mouse_merFISH_hypoth/vignette_200909/7_a_clusterheatmap_markers.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## name clusters</span>
 <span class="n">clusters_cell_types_hypo</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s1">&#39;Inhibitory&#39;</span><span class="p">,</span> <span class="s1">&#39;Inhibitory&#39;</span><span class="p">,</span> <span class="s1">&#39;Excitatory&#39;</span><span class="p">,</span> <span class="s1">&#39;Astrocyte&#39;</span><span class="p">,</span><span class="s1">&#39;OD Mature&#39;</span><span class="p">,</span> <span class="s1">&#39;Endothelial&#39;</span><span class="p">,</span>
                      <span class="s1">&#39;OD Mature&#39;</span><span class="p">,</span> <span class="s1">&#39;OD Immature&#39;</span><span class="p">,</span> <span class="s1">&#39;Ependymal&#39;</span><span class="p">,</span> <span class="s1">&#39;Ambiguous&#39;</span><span class="p">,</span> <span class="s1">&#39;Endothelial&#39;</span><span class="p">,</span> <span class="s1">&#39;Microglia&#39;</span><span class="p">,</span> <span class="s1">&#39;OD Mature&#39;</span><span class="p">)</span>
@@ -405,7 +405,7 @@ plotMetaDataHeatmap(merFISH_test, expression_values = &#39;scaled&#39;,
             <span class="n">save_param</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;7_b_clusterheatmap_markers_celltypes&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/7_b_clusterheatmap_markers_celltypes.png"><img alt="7_b_clusterheatmap_markers_celltypes.png" src="../../_images/7_b_clusterheatmap_markers_celltypes.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_merFISH_hypoth/vignette_200909/7_b_clusterheatmap_markers_celltypes.png"><img alt="7_b_clusterheatmap_markers_celltypes.png" src="images/other/mouse_merFISH_hypoth/vignette_200909/7_b_clusterheatmap_markers_celltypes.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="visualization">
 <h3>7.1 Visualization<a class="headerlink" href="#visualization" title="Permalink to this headline">¶</a></h3>
@@ -417,7 +417,7 @@ plotMetaDataHeatmap(merFISH_test, expression_values = &#39;scaled&#39;,
         <span class="n">save_param</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;7_c_umap_cell_types&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/7_c_umap_cell_types.png"><img alt="7_c_umap_cell_types.png" src="../../_images/7_c_umap_cell_types.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_merFISH_hypoth/vignette_200909/7_c_umap_cell_types.png"><img alt="7_c_umap_cell_types.png" src="images/other/mouse_merFISH_hypoth/vignette_200909/7_c_umap_cell_types.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spatPlot3D</span><span class="p">(</span><span class="n">merFISH_test</span><span class="p">,</span>
         <span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;cell_types&#39;</span><span class="p">,</span> <span class="n">axis_scale</span> <span class="o">=</span> <span class="s1">&#39;real&#39;</span><span class="p">,</span>
         <span class="n">sdimx</span> <span class="o">=</span> <span class="s1">&#39;sdimx&#39;</span><span class="p">,</span> <span class="n">sdimy</span> <span class="o">=</span> <span class="s1">&#39;sdimy&#39;</span><span class="p">,</span> <span class="n">sdimz</span> <span class="o">=</span> <span class="s1">&#39;sdimz&#39;</span><span class="p">,</span>
@@ -425,14 +425,14 @@ plotMetaDataHeatmap(merFISH_test, expression_values = &#39;scaled&#39;,
         <span class="n">save_param</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;7_d_spatPlot_cell_types_all&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/7_d_spatPlot_cell_types_all.png"><img alt="7_d_spatPlot_cell_types_all.png" src="../../_images/7_d_spatPlot_cell_types_all.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_merFISH_hypoth/vignette_200909/7_d_spatPlot_cell_types_all.png"><img alt="7_d_spatPlot_cell_types_all.png" src="images/other/mouse_merFISH_hypoth/vignette_200909/7_d_spatPlot_cell_types_all.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spatPlot2D</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">merFISH_test</span><span class="p">,</span> <span class="n">point_size</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span>
         <span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;cell_types&#39;</span><span class="p">,</span> <span class="n">cell_color_code</span> <span class="o">=</span> <span class="n">mycolorcode</span><span class="p">,</span>
         <span class="n">group_by</span> <span class="o">=</span> <span class="s1">&#39;layer_ID&#39;</span><span class="p">,</span> <span class="n">cow_n_col</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">group_by_subset</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">seq</span><span class="p">(</span><span class="mi">260</span><span class="p">,</span> <span class="o">-</span><span class="mi">290</span><span class="p">,</span> <span class="o">-</span><span class="mi">100</span><span class="p">)),</span>
         <span class="n">save_param</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;7_e_spatPlot2D_cell_types_all&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/7_e_spatPlot2D_cell_types_all.png"><img alt="7_e_spatPlot2D_cell_types_all.png" src="../../_images/7_e_spatPlot2D_cell_types_all.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_merFISH_hypoth/vignette_200909/7_e_spatPlot2D_cell_types_all.png"><img alt="7_e_spatPlot2D_cell_types_all.png" src="images/other/mouse_merFISH_hypoth/vignette_200909/7_e_spatPlot2D_cell_types_all.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="excitatory-cells-only">
 <h3>7.3 Excitatory Cells Only<a class="headerlink" href="#excitatory-cells-only" title="Permalink to this headline">¶</a></h3>
@@ -444,7 +444,7 @@ plotMetaDataHeatmap(merFISH_test, expression_values = &#39;scaled&#39;,
         <span class="n">save_param</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;7_f_spatPlot_cell_types_excit&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/7_f_spatPlot_cell_types_excit.png"><img alt="7_f_spatPlot_cell_types_excit.png" src="../../_images/7_f_spatPlot_cell_types_excit.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_merFISH_hypoth/vignette_200909/7_f_spatPlot_cell_types_excit.png"><img alt="7_f_spatPlot_cell_types_excit.png" src="images/other/mouse_merFISH_hypoth/vignette_200909/7_f_spatPlot_cell_types_excit.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spatPlot2D</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">merFISH_test</span><span class="p">,</span> <span class="n">point_size</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span>
         <span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;cell_types&#39;</span><span class="p">,</span> <span class="n">cell_color_code</span> <span class="o">=</span> <span class="n">mycolorcode</span><span class="p">,</span>
         <span class="n">select_cell_groups</span> <span class="o">=</span> <span class="s1">&#39;Excitatory&#39;</span><span class="p">,</span> <span class="n">show_other_cells</span> <span class="o">=</span> <span class="n">F</span><span class="p">,</span>
@@ -452,7 +452,7 @@ plotMetaDataHeatmap(merFISH_test, expression_values = &#39;scaled&#39;,
         <span class="n">save_param</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;7_g_spatPlot2D_cell_types_excit&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/7_g_spatPlot2D_cell_types_excit.png"><img alt="7_g_spatPlot2D_cell_types_excit.png" src="../../_images/7_g_spatPlot2D_cell_types_excit.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_merFISH_hypoth/vignette_200909/7_g_spatPlot2D_cell_types_excit.png"><img alt="7_g_spatPlot2D_cell_types_excit.png" src="images/other/mouse_merFISH_hypoth/vignette_200909/7_g_spatPlot2D_cell_types_excit.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="inhibitory-cells-only">
 <h3>7.3 Inhibitory Cells Only<a class="headerlink" href="#inhibitory-cells-only" title="Permalink to this headline">¶</a></h3>
@@ -465,7 +465,7 @@ plotMetaDataHeatmap(merFISH_test, expression_values = &#39;scaled&#39;,
         <span class="n">save_param</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;7_h_spatPlot_cell_types_inhib&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/7_h_spatPlot_cell_types_inhib.png"><img alt="7_h_spatPlot_cell_types_inhib.png" src="../../_images/7_h_spatPlot_cell_types_inhib.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_merFISH_hypoth/vignette_200909/7_h_spatPlot_cell_types_inhib.png"><img alt="7_h_spatPlot_cell_types_inhib.png" src="images/other/mouse_merFISH_hypoth/vignette_200909/7_h_spatPlot_cell_types_inhib.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spatPlot2D</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">merFISH_test</span><span class="p">,</span> <span class="n">point_size</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span>
         <span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;cell_types&#39;</span><span class="p">,</span> <span class="n">cell_color_code</span> <span class="o">=</span> <span class="n">mycolorcode</span><span class="p">,</span>
         <span class="n">select_cell_groups</span> <span class="o">=</span> <span class="s1">&#39;Inhibitory&#39;</span><span class="p">,</span> <span class="n">show_other_cells</span> <span class="o">=</span> <span class="n">F</span><span class="p">,</span>
@@ -473,7 +473,7 @@ plotMetaDataHeatmap(merFISH_test, expression_values = &#39;scaled&#39;,
         <span class="n">save_param</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;7_i_spatPlot2D_cell_types_inhib&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/7_i_spatPlot2D_cell_types_inhib.png"><img alt="7_i_spatPlot2D_cell_types_inhib.png" src="../../_images/7_i_spatPlot2D_cell_types_inhib.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_merFISH_hypoth/vignette_200909/7_i_spatPlot2D_cell_types_inhib.png"><img alt="7_i_spatPlot2D_cell_types_inhib.png" src="images/other/mouse_merFISH_hypoth/vignette_200909/7_i_spatPlot2D_cell_types_inhib.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="od-and-astrocytes-only">
 <h3>7.4 OD and Astrocytes Only<a class="headerlink" href="#od-and-astrocytes-only" title="Permalink to this headline">¶</a></h3>
@@ -485,7 +485,7 @@ plotMetaDataHeatmap(merFISH_test, expression_values = &#39;scaled&#39;,
         <span class="n">save_param</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;7_j_spatPlot_cell_types_ODandAstro&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/7_j_spatPlot_cell_types_ODandAstro.png"><img alt="7_j_spatPlot_cell_types_ODandAstro.png" src="../../_images/7_j_spatPlot_cell_types_ODandAstro.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_merFISH_hypoth/vignette_200909/7_j_spatPlot_cell_types_ODandAstro.png"><img alt="7_j_spatPlot_cell_types_ODandAstro.png" src="images/other/mouse_merFISH_hypoth/vignette_200909/7_j_spatPlot_cell_types_ODandAstro.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spatPlot2D</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">merFISH_test</span><span class="p">,</span> <span class="n">point_size</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span>
         <span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;cell_types&#39;</span><span class="p">,</span> <span class="n">cell_color_code</span> <span class="o">=</span> <span class="n">mycolorcode</span><span class="p">,</span>
         <span class="n">select_cell_groups</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s1">&#39;Astrocyte&#39;</span><span class="p">,</span> <span class="s1">&#39;OD Mature&#39;</span><span class="p">,</span> <span class="s1">&#39;OD Immature&#39;</span><span class="p">),</span> <span class="n">show_other_cells</span> <span class="o">=</span> <span class="n">F</span><span class="p">,</span>
@@ -493,7 +493,7 @@ plotMetaDataHeatmap(merFISH_test, expression_values = &#39;scaled&#39;,
         <span class="n">save_param</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;7_k_spatPlot2D_cell_types_ODandAstro&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/7_k_spatPlot2D_cell_types_ODandAstro.png"><img alt="7_k_spatPlot2D_cell_types_ODandAstro.png" src="../../_images/7_k_spatPlot2D_cell_types_ODandAstro.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_merFISH_hypoth/vignette_200909/7_k_spatPlot2D_cell_types_ODandAstro.png"><img alt="7_k_spatPlot2D_cell_types_ODandAstro.png" src="images/other/mouse_merFISH_hypoth/vignette_200909/7_k_spatPlot2D_cell_types_ODandAstro.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="other-cells-only">
 <h3>7.5 Other Cells Only<a class="headerlink" href="#other-cells-only" title="Permalink to this headline">¶</a></h3>
@@ -505,7 +505,7 @@ plotMetaDataHeatmap(merFISH_test, expression_values = &#39;scaled&#39;,
         <span class="n">save_param</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;7_l_spatPlot_cell_types_other&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/7_l_spatPlot_cell_types_other.png"><img alt="7_l_spatPlot_cell_types_other.png" src="../../_images/7_l_spatPlot_cell_types_other.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_merFISH_hypoth/vignette_200909/7_l_spatPlot_cell_types_other.png"><img alt="7_l_spatPlot_cell_types_other.png" src="images/other/mouse_merFISH_hypoth/vignette_200909/7_l_spatPlot_cell_types_other.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spatPlot2D</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">merFISH_test</span><span class="p">,</span> <span class="n">point_size</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span>
         <span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;cell_types&#39;</span><span class="p">,</span> <span class="n">cell_color_code</span> <span class="o">=</span> <span class="n">mycolorcode</span><span class="p">,</span>
         <span class="n">select_cell_groups</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s1">&#39;Microglia&#39;</span><span class="p">,</span> <span class="s1">&#39;Ependymal&#39;</span><span class="p">,</span> <span class="s1">&#39;Endothelial&#39;</span><span class="p">),</span> <span class="n">show_other_cells</span> <span class="o">=</span> <span class="n">F</span><span class="p">,</span>
@@ -513,7 +513,7 @@ plotMetaDataHeatmap(merFISH_test, expression_values = &#39;scaled&#39;,
         <span class="n">save_param</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;7_m_spatPlot2D_cell_types_other&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="../../_images/7_m_spatPlot2D_cell_types_other.png"><img alt="7_m_spatPlot2D_cell_types_other.png" src="../../_images/7_m_spatPlot2D_cell_types_other.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="images/other/mouse_merFISH_hypoth/vignette_200909/7_m_spatPlot2D_cell_types_other.png"><img alt="7_m_spatPlot2D_cell_types_other.png" src="images/other/mouse_merFISH_hypoth/vignette_200909/7_m_spatPlot2D_cell_types_other.png" style="width: 400px;" /></a>
 </div>
 </div>
 </div>
