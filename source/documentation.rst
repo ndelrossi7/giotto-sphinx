@@ -465,9 +465,9 @@ Hidden Markov Random Field (HMRF)
 	* - :ref:`viewHMRFresults() <viewHMRFresults>`
 	  - View HMRF Results
 	* - :ref:`writeHMRFresults() <writeHMRFresults>`
-	  - Write `doHMRF() <doHMRF>`_ Results
+	  - Write `doHMRF() <doHMRF>` Results
 	* - :ref:`addHMRF() <addHMRF>`
-	  - Add `doHMRF() <doHMRF>`_ Results
+	  - Add `doHMRF() <doHMRF>` Results
 	* - :ref:`viewHMRFresults2D() <viewHMRFresults2D>`
 	  - View HMRF Results
 	* - :ref:`viewHMRFresults3D() <viewHMRFresults3D>`

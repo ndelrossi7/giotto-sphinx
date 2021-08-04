@@ -325,14 +325,14 @@ spatPlot(gobject = codex_test,point_size = 0.1,
         save_param = list(save_name = &#39;2_a_spatPlot&#39;))
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mouse_codex_spleen/vignette_200921/2_a_spatPlot.png"><img alt="2_a_spatPlot.png" src="images/other/mouse_codex_spleen/vignette_200921/2_a_spatPlot.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/2_a_spatPlot1.png"><img alt="2_a_spatPlot.png" src="../../_images/2_a_spatPlot1.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spatPlot</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">codex_test</span><span class="p">,</span> <span class="n">point_size</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">,</span>
         <span class="n">coord_fix_ratio</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;sample_Xtile_Ytile&#39;</span><span class="p">,</span>
         <span class="n">legend_symbol_size</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span><span class="n">legend_text</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span>
         <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;2_b_spatPlot&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mouse_codex_spleen/vignette_200921/2_b_spatPlot.png"><img alt="2_b_spatPlot.png" src="images/other/mouse_codex_spleen/vignette_200921/2_b_spatPlot.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/2_b_spatPlot.png"><img alt="2_b_spatPlot.png" src="../../_images/2_b_spatPlot.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="dimension-reduction">
 <h2>3. Dimension Reduction<a class="headerlink" href="#dimension-reduction" title="Permalink to this headline">¶</a></h2>
@@ -344,19 +344,19 @@ spatPlot(gobject = codex_test,point_size = 0.1,
                 <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;3_a_spatPlot&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mouse_codex_spleen/vignette_200921/3_a_spatPlot.png"><img alt="3_a_spatPlot.png" src="images/other/mouse_codex_spleen/vignette_200921/3_a_spatPlot.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/3_a_spatPlot.png"><img alt="3_a_spatPlot.png" src="../../_images/3_a_spatPlot.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">plotPCA</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">codex_test</span><span class="p">,</span> <span class="n">point_shape</span> <span class="o">=</span> <span class="s1">&#39;no_border&#39;</span><span class="p">,</span> <span class="n">point_size</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">,</span>
                 <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;3_b_PCA&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mouse_codex_spleen/vignette_200921/3_b_PCA.png"><img alt="3_b_PCA.png" src="images/other/mouse_codex_spleen/vignette_200921/3_b_PCA.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/3_b_PCA1.png"><img alt="3_b_PCA.png" src="../../_images/3_b_PCA1.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># UMAP</span>
 <span class="n">codex_test</span> <span class="o">&lt;-</span> <span class="n">runUMAP</span><span class="p">(</span><span class="n">codex_test</span><span class="p">,</span> <span class="n">dimensions_to_use</span> <span class="o">=</span> <span class="mi">1</span><span class="p">:</span><span class="mi">14</span><span class="p">,</span> <span class="n">n_components</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">n_threads</span> <span class="o">=</span> <span class="mi">12</span><span class="p">)</span>
 <span class="n">plotUMAP</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">codex_test</span><span class="p">,</span> <span class="n">point_shape</span> <span class="o">=</span> <span class="s1">&#39;no_border&#39;</span><span class="p">,</span> <span class="n">point_size</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">,</span>
         <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;3_c_UMAP&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mouse_codex_spleen/vignette_200921/3_c_UMAP.png"><img alt="3_c_UMAP.png" src="images/other/mouse_codex_spleen/vignette_200921/3_c_UMAP.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/3_c_UMAP1.png"><img alt="3_c_UMAP.png" src="../../_images/3_c_UMAP1.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="cluster">
 <h2>4. Cluster<a class="headerlink" href="#cluster" title="Permalink to this headline">¶</a></h2>
@@ -375,14 +375,14 @@ plotUMAP(gobject = codex_test,
         save_param = list(save_name = &#39;4_a_UMAP&#39;))
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mouse_codex_spleen/vignette_200921/4_a_UMAP.png"><img alt="4_a_UMAP.png" src="images/other/mouse_codex_spleen/vignette_200921/4_a_UMAP.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/4_a_UMAP2.png"><img alt="4_a_UMAP.png" src="../../_images/4_a_UMAP2.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spatPlot</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">codex_test</span><span class="p">,</span> <span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;leiden&#39;</span><span class="p">,</span> <span class="n">point_shape</span> <span class="o">=</span> <span class="s1">&#39;no_border&#39;</span><span class="p">,</span> <span class="n">point_size</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">,</span>
         <span class="n">cell_color_code</span> <span class="o">=</span> <span class="n">leiden_colors</span><span class="p">,</span> <span class="n">coord_fix_ratio</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span><span class="n">label_size</span> <span class="o">=</span><span class="mi">2</span><span class="p">,</span>
         <span class="n">legend_text</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span><span class="n">legend_symbol_size</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
         <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;4_b_spatplot&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mouse_codex_spleen/vignette_200921/4_b_spatplot.png"><img alt="4_b_spatplot.png" src="images/other/mouse_codex_spleen/vignette_200921/4_b_spatplot.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/4_b_spatplot.png"><img alt="4_b_spatplot.png" src="../../_images/4_b_spatplot.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="co-visualize">
 <h2>5. Co-Visualize<a class="headerlink" href="#co-visualize" title="Permalink to this headline">¶</a></h2>
@@ -392,7 +392,7 @@ plotUMAP(gobject = codex_test,
       <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;5_a_spatdimplot&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mouse_codex_spleen/vignette_200921/5_a_spatdimplot.png"><img alt="5_a_spatdimplot.png" src="images/other/mouse_codex_spleen/vignette_200921/5_a_spatdimplot.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/5_a_spatdimplot.png"><img alt="5_a_spatdimplot.png" src="../../_images/5_a_spatdimplot.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="differential-expression">
 <h2>6. Differential Expression<a class="headerlink" href="#differential-expression" title="Permalink to this headline">¶</a></h2>
@@ -408,14 +408,14 @@ plotUMAP(gobject = codex_test,
             <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;6_a_metaheatmap&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mouse_codex_spleen/vignette_200921/6_a_metaheatmap.png"><img alt="6_a_metaheatmap.png" src="images/other/mouse_codex_spleen/vignette_200921/6_a_metaheatmap.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/6_a_metaheatmap1.png"><img alt="6_a_metaheatmap.png" src="../../_images/6_a_metaheatmap1.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>topgenes_scran = markers_scran[, head(.SD, 1), by = &#39;cluster&#39;]$genes
 violinPlot(codex_test, genes = unique(topgenes_scran)[1:8], cluster_column = cluster_column,
    strip_text = 8, strip_position = &#39;right&#39;,
    save_param = list(save_name = &#39;6_b_violinplot&#39;))
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mouse_codex_spleen/vignette_200921/6_b_violinplot.png"><img alt="6_b_violinplot.png" src="images/other/mouse_codex_spleen/vignette_200921/6_b_violinplot.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/6_b_violinplot.png"><img alt="6_b_violinplot.png" src="../../_images/6_b_violinplot.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># gini</span>
 <span class="n">markers_gini</span> <span class="o">=</span> <span class="n">findMarkers_one_vs_all</span><span class="p">(</span><span class="n">gobject</span><span class="o">=</span><span class="n">codex_test</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s2">&quot;gini&quot;</span><span class="p">,</span> <span class="n">expression_values</span><span class="o">=</span><span class="s2">&quot;norm&quot;</span><span class="p">,</span>
                               <span class="n">cluster_column</span><span class="o">=</span><span class="n">cluster_column</span><span class="p">,</span> <span class="n">min_genes</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
@@ -426,14 +426,14 @@ violinPlot(codex_test, genes = unique(topgenes_scran)[1:8], cluster_column = clu
             <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;6_c_metaheatmap&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mouse_codex_spleen/vignette_200921/6_c_metaheatmap.png"><img alt="6_c_metaheatmap.png" src="images/other/mouse_codex_spleen/vignette_200921/6_c_metaheatmap.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/6_c_metaheatmap.png"><img alt="6_c_metaheatmap.png" src="../../_images/6_c_metaheatmap.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>topgenes_gini = markers_gini[, head(.SD, 1), by = &#39;cluster&#39;]$genes
 violinPlot(codex_test, genes = unique(topgenes_gini), cluster_column = cluster_column,
         strip_text = 8, strip_position = &#39;right&#39;,
         save_param = list(save_name = &#39;6_d_violinplot&#39;))
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mouse_codex_spleen/vignette_200921/6_d_violinplot.png"><img alt="6_d_violinplot.png" src="images/other/mouse_codex_spleen/vignette_200921/6_d_violinplot.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/6_d_violinplot.png"><img alt="6_d_violinplot.png" src="../../_images/6_d_violinplot.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="cell-type-annotation">
 <h2>7. Cell-Type Annotation<a class="headerlink" href="#cell-type-annotation" title="Permalink to this headline">¶</a></h2>
@@ -453,7 +453,7 @@ violinPlot(codex_test, genes = unique(topgenes_gini), cluster_column = cluster_c
             <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;7_a_metaheatmap&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mouse_codex_spleen/vignette_200921/7_a_metaheatmap.png"><img alt="7_a_metaheatmap.png" src="images/other/mouse_codex_spleen/vignette_200921/7_a_metaheatmap.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/7_a_metaheatmap1.png"><img alt="7_a_metaheatmap.png" src="../../_images/7_a_metaheatmap1.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span># create consistent color code
 mynames = unique(pDataDT(codex_test)$cell_types)
 mycolorcode = Giotto:::getDistinctColors(n = length(mynames))
@@ -468,7 +468,7 @@ plotUMAP(gobject = codex_test, cell_color = &#39;cell_types&#39;,point_shape = &
         save_param = list(save_name = &#39;7_b_umap&#39;))
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mouse_codex_spleen/vignette_200921/7_b_umap.png"><img alt="7_b_umap.png" src="images/other/mouse_codex_spleen/vignette_200921/7_b_umap.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/7_b_umap.png"><img alt="7_b_umap.png" src="../../_images/7_b_umap.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spatPlot</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">codex_test</span><span class="p">,</span> <span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;cell_types&#39;</span><span class="p">,</span> <span class="n">point_shape</span> <span class="o">=</span> <span class="s1">&#39;no_border&#39;</span><span class="p">,</span> <span class="n">point_size</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">,</span>
         <span class="n">cell_color_code</span> <span class="o">=</span> <span class="n">mycolorcode</span><span class="p">,</span>
         <span class="n">coord_fix_ratio</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
@@ -478,7 +478,7 @@ plotUMAP(gobject = codex_test, cell_color = &#39;cell_types&#39;,point_shape = &
         <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;7_c_spatplot&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mouse_codex_spleen/vignette_200921/7_c_spatplot.png"><img alt="7_c_spatplot.png" src="images/other/mouse_codex_spleen/vignette_200921/7_c_spatplot.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/7_c_spatplot1.png"><img alt="7_c_spatplot.png" src="../../_images/7_c_spatplot1.png" style="width: 400px;" /></a>
 </div>
 <div class="section" id="cell-type-visualization-and-gene-expression-of-selected-zones">
 <h2>8. Cell-Type Visualization and Gene Expression of Selected Zones<a class="headerlink" href="#cell-type-visualization-and-gene-expression-of-selected-zones" title="Permalink to this headline">¶</a></h2>
@@ -497,7 +497,7 @@ plotUMAP(gobject = codex_test_zone1,
         save_param = list(save_name = &#39;8_a_umap&#39;))
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mouse_codex_spleen/vignette_200921/8_a_umap.png"><img alt="8_a_umap.png" src="images/other/mouse_codex_spleen/vignette_200921/8_a_umap.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/8_a_umap.png"><img alt="8_a_umap.png" src="../../_images/8_a_umap.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spatPlot</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">codex_test_zone1</span><span class="p">,</span>
         <span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;cell_types&#39;</span><span class="p">,</span> <span class="n">point_shape</span> <span class="o">=</span> <span class="s1">&#39;no_border&#39;</span><span class="p">,</span> <span class="n">point_size</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
         <span class="n">cell_color_code</span> <span class="o">=</span> <span class="n">mycolorcode</span><span class="p">,</span>
@@ -508,7 +508,7 @@ plotUMAP(gobject = codex_test_zone1,
         <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;8_b_spatplot&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mouse_codex_spleen/vignette_200921/8_b_spatplot.png"><img alt="8_b_spatplot.png" src="images/other/mouse_codex_spleen/vignette_200921/8_b_spatplot.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/8_b_spatplot1.png"><img alt="8_b_spatplot.png" src="../../_images/8_b_spatplot1.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spatDimGenePlot</span><span class="p">(</span><span class="n">codex_test_zone1</span><span class="p">,</span>
         <span class="n">expression_values</span> <span class="o">=</span> <span class="s1">&#39;scaled&#39;</span><span class="p">,</span>
         <span class="n">genes</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">&quot;CD8a&quot;</span><span class="p">,</span><span class="s2">&quot;CD19&quot;</span><span class="p">),</span>
@@ -518,7 +518,7 @@ plotUMAP(gobject = codex_test_zone1,
         <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;8_c_spatdimplot&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mouse_codex_spleen/vignette_200921/8_c_spatdimplot.png"><img alt="8_c_spatdimplot.png" src="images/other/mouse_codex_spleen/vignette_200921/8_c_spatdimplot.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/8_c_spatdimplot.png"><img alt="8_c_spatdimplot.png" src="../../_images/8_c_spatdimplot.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cell_metadata = pDataDT(codex_test)
 subset_cell_ids = cell_metadata[sample_Xtile_Ytile==&quot;BALBc-3_X04_Y03&quot;]$cell_ID
 
@@ -533,7 +533,7 @@ plotUMAP(gobject = codex_test_zone2, cell_color = &#39;cell_types&#39;,point_sha
         save_param = list(save_name = &#39;8_d_umap&#39;))
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mouse_codex_spleen/vignette_200921/8_d_umap.png"><img alt="8_d_umap.png" src="images/other/mouse_codex_spleen/vignette_200921/8_d_umap.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/8_d_umap.png"><img alt="8_d_umap.png" src="../../_images/8_d_umap.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spatPlot</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">codex_test_zone2</span><span class="p">,</span> <span class="n">cell_color</span> <span class="o">=</span> <span class="s1">&#39;cell_types&#39;</span><span class="p">,</span> <span class="n">point_shape</span> <span class="o">=</span> <span class="s1">&#39;no_border&#39;</span><span class="p">,</span> <span class="n">point_size</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
         <span class="n">cell_color_code</span> <span class="o">=</span> <span class="n">mycolorcode</span><span class="p">,</span>
         <span class="n">coord_fix_ratio</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
@@ -543,7 +543,7 @@ plotUMAP(gobject = codex_test_zone2, cell_color = &#39;cell_types&#39;,point_sha
                 <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;8_e_spatPlot&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mouse_codex_spleen/vignette_200921/8_e_spatPlot.png"><img alt="8_e_spatPlot.png" src="images/other/mouse_codex_spleen/vignette_200921/8_e_spatPlot.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/8_e_spatPlot.png"><img alt="8_e_spatPlot.png" src="../../_images/8_e_spatPlot.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">spatDimGenePlot</span><span class="p">(</span><span class="n">codex_test_zone2</span><span class="p">,</span>
         <span class="n">expression_values</span> <span class="o">=</span> <span class="s1">&#39;scaled&#39;</span><span class="p">,</span>
         <span class="n">genes</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s2">&quot;CD4&quot;</span><span class="p">,</span> <span class="s2">&quot;CD106&quot;</span><span class="p">),</span>
@@ -553,7 +553,7 @@ plotUMAP(gobject = codex_test_zone2, cell_color = &#39;cell_types&#39;,point_sha
         <span class="n">save_param</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">save_name</span> <span class="o">=</span> <span class="s1">&#39;8_f_spatdimgeneplot&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/other/mouse_codex_spleen/vignette_200921/8_f_spatdimgeneplot.png"><img alt="8_f_spatdimgeneplot.png" src="images/other/mouse_codex_spleen/vignette_200921/8_f_spatdimgeneplot.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/8_f_spatdimgeneplot.png"><img alt="8_f_spatdimgeneplot.png" src="../../_images/8_f_spatdimgeneplot.png" style="width: 400px;" /></a>
 </div>
 </div>
 
