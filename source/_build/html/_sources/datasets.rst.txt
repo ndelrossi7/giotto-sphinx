@@ -1,9 +1,11 @@
-**DATASETS: WORK IN PROGRESS**
+##################################
+Dataset Information
+##################################
 
 See `Spatial Datasets <https://github.com/RubD/spatial-datasets>`_ to find raw and pre-processed input data and Giotto scripts (*work in progress*).
 
 The typical run time range for the different datasets on a personal computer is around 10~45 minutes. 
-All of the examples are gradually updated to the latest Giotto version! You can click on the imagees below to try out some of the example datasets. 
+All of the examples are gradually updated to the latest Giotto version! Click on the images below to try out some of the example datasets. 
 
 
 ##################################
@@ -26,7 +28,7 @@ Mini Datasets
     :column: col-lg-4 col-md-4 col-sm-6 col-xs-12 p-2
 
     .. image:: images/dataset_page/mini_seqFISH.png
-        :target: ../../build/html/subsections/datasets/mini_visium.html
+        :target: subsections/datasets/mini_visium.rst
 
     .. link-button:: /subsections/datasets/seqFISH_cortex.rst
         :type: ref
@@ -54,28 +56,6 @@ Mini Datasets
         :classes: btn-outline-primary btn-block stretched-link 
 
 
-
-
-
-|miniseqFISH|  |miniSTAR|   |minivisium|
-
-
-.. |miniseqFISH| image:: images/dataset_page/mini_seqFISH.png
-                    :width: 200
-                    :alt: Image showing the overview of Spatial Giotto
-
-
-.. |miniSTAR| image:: images/dataset_page/mini_STARmap.png
-                    :width: 200
-                    :alt: Image showing the overview of Spatial Giotto
-	                :target: `mini_3D_STARmap`_
-
-.. |minivisium| image:: images/dataset_page/mini_visium.png
-                    :width: 200
-                    :alt: Image showing the overview of Spatial Giotto
-	                :target: ../build/html/subsections/datasets/mini_visium.html
-
-
 ##################################
 Full Datasets
 ##################################
@@ -100,27 +80,61 @@ Full Datasets
     :container: container-md pb-3
     :column: col-lg-4 col-md-4 col-sm-6 col-xs-12 p-2
 
-    .. image:: images/dataset_page/mini_seqFISH.png
+    .. image:: images/dataset_page/human_cyCIF_PDAC_image_summary.png
 
-    .. link-button:: /subsections/datasets/mini_seqFISH.rst
+    .. link-button:: /subsections/datasets/human_CyCIF_PDAC.rst
         :type: ref
-        :text: Mini SeqFish
+        :text: Human CyCIF PDAC
         :classes: btn-outline-primary btn-block stretched-link
     
     ---
 
-    .. image:: images/dataset_page/mini_STARmap.png
+    .. image:: images/dataset_page/merFISH_hypoth_image_summary.png
 
-    .. link-button:: subsections/datasets/mini_3D_STARmap.rst
+    .. link-button:: subsections/datasets/merFISH_hypot_preopt_region.rst
         :type: ref
-        :text: Mini STARmap
+        :text: MerFISH Hypot. Preopt. Region
         :classes: btn-outline-primary btn-block stretched-link
     
     ---
     
-    .. image:: images/dataset_page/mini_visium.png
+    .. image:: images/dataset_page/CODEX_spleen_image_summary.png
 
-    .. link-button:: ../build/html/subsections/datasets/mini_visium.html
+    .. link-button:: subsections/datasets/mouse_CODEX_spleen.rst
         :type: ref
-        :text: Mini Visium
+        :text: Mouse CODEX Spleen
+        :classes: btn-outline-primary btn-block stretched-link 
+    ---
+    
+    .. image:: images/dataset_page/visium_brain_image_summary.png
+    
+    .. link-button:: subsections/datasets/mouse_visium_brain.rst
+        :type: ref
+        :text: Mouse Visium Brain 
+        :classes: btn-outline-primary btn-block stretched-link
+        
+    ---
+    
+    .. image:: images/dataset_page/visium_kidney_image_summary.png
+
+    .. link-button:: subsections/datasets/mouse_visium_kidney.rst
+        :type: ref
+        :text: Mouse Visium Kidney
+        :classes: btn-outline-primary btn-block stretched-link 
+    ---
+    
+    .. image:: images/dataset_page/osmFISH_SS_cortex_image_summary.png
+    
+    .. link-button:: subsections/datasets/osmFISH_mouse_SS_cortex.rst
+        :type: ref
+        :text: Mouse osmFISH SS Cortex
+        :classes: btn-outline-primary btn-block stretched-link
+        
+    ---
+    
+    .. image:: images/dataset_page/mouse_SS_cortex_and_subventricular.png
+    
+    .. link-button:: subsections/datasets/seqFISH_cortex.rst
+        :type: ref
+        :text: seqFISH Cortex
         :classes: btn-outline-primary btn-block stretched-link 

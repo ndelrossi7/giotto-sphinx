@@ -17,16 +17,17 @@ Welcome to the Giotto website!
    Giotto Workflow <giottoworkflowanalyses.rst>
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Giotto Example Datasets
    :hidden:
 
-   datasets.rst   
+   Example Datasets <datasets.rst>  
+   Try Giotto <trygiotto.rst>
 
 
 .. toctree::
    :maxdepth: 1
-   :caption: How Tos and Tutorials
+   :caption: Giotto Tutorials and HowTos
    :hidden:
 
    documentation.rst
