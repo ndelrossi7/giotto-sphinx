@@ -5,8 +5,6 @@ See `Spatial Datasets <https://github.com/RubD/spatial-datasets>`_ to find raw a
 The typical run time range for the different datasets on a personal computer is around 10~45 minutes. 
 All of the examples are gradually updated to the latest Giotto version! You can click on the imagees below to try out some of the example datasets. 
 
-.. Images of the mini dataset
-
 
 ##################################
 Mini Datasets
@@ -24,12 +22,13 @@ Mini Datasets
 
 .. panels::
     :body: text-center
-    :container: container-md pb-3
+    :container: container-md pb-4
     :column: col-lg-4 col-md-4 col-sm-6 col-xs-12 p-2
 
     .. image:: images/dataset_page/mini_seqFISH.png
+        :target: ../../build/html/subsections/datasets/mini_visium.html
 
-    .. link-button:: /subsections/datasets/mini_seqFISH.rst
+    .. link-button:: /subsections/datasets/seqFISH_cortex.rst
         :type: ref
         :text: Mini SeqFish
         :classes: btn-outline-primary btn-block stretched-link
@@ -37,8 +36,9 @@ Mini Datasets
     ---
 
     .. image:: images/dataset_page/mini_STARmap.png
+        :target: ../../build/html/subsections/datasets/mini_visium.html
 
-    .. link-button:: subsections/datasets/mini_3D_STARmap.rst
+    .. link-button:: subsections/datasets/human_CyCIF_PDAC.rst
         :type: ref
         :text: Mini STARmap
         :classes: btn-outline-primary btn-block stretched-link
@@ -46,8 +46,9 @@ Mini Datasets
     ---
     
     .. image:: images/dataset_page/mini_visium.png
+        :target: ../../build/html/subsections/datasets/mini_visium.html
 
-    .. link-button:: ../build/html/subsections/datasets/mini_visium.html
+    .. link-button:: ../../build/html/subsections/datasets/mini_visium.html
         :type: ref
         :text: Mini Visium
         :classes: btn-outline-primary btn-block stretched-link 
@@ -94,15 +95,32 @@ Full Datasets
 	Human CyCIF PDAC </subsections/datasets/mini_3D_STARmap.rst>
 	
 
-|seqFISH_cortex|
+.. panels::
+    :body: text-center
+    :container: container-md pb-3
+    :column: col-lg-4 col-md-4 col-sm-6 col-xs-12 p-2
 
-.. |seqFISH_cortex| image:: images/other/general_figs/cortex_image_summary.png
-    :width: 200
-    :alt: cortex_image_summary.png
-	:target: ../build/html/subsections/datasets/seqFISH_cortex.html
+    .. image:: images/dataset_page/mini_seqFISH.png
 
+    .. link-button:: /subsections/datasets/mini_seqFISH.rst
+        :type: ref
+        :text: Mini SeqFish
+        :classes: btn-outline-primary btn-block stretched-link
+    
+    ---
 
-.. image:: images/dataset_page/mini_STARmap.png
-    :width: 200
-    :alt: Image showing the overview of Spatial Giotto
-	:target: `mini_3D_STARmap`_
+    .. image:: images/dataset_page/mini_STARmap.png
+
+    .. link-button:: subsections/datasets/mini_3D_STARmap.rst
+        :type: ref
+        :text: Mini STARmap
+        :classes: btn-outline-primary btn-block stretched-link
+    
+    ---
+    
+    .. image:: images/dataset_page/mini_visium.png
+
+    .. link-button:: ../build/html/subsections/datasets/mini_visium.html
+        :type: ref
+        :text: Mini Visium
+        :classes: btn-outline-primary btn-block stretched-link 

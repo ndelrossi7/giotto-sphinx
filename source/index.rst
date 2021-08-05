@@ -29,11 +29,12 @@ Welcome to the Giotto website!
    :caption: How Tos and Tutorials
    :hidden:
 
+   documentation.rst
    Working with Giotto Class <subsections/tipsandtricks/giottoclass.rst>
    How to Subset Giotto <subsections/tipsandtricks/howtosubsetgiottoobject.rst>
    How to Visualize Giotto Object <subsections/tipsandtricks/howtovisualizeandsaveplots.rst>
-   How to Test and Store Multiple <subsections/tipsandtricks/testandstoremultipleanayses.rst>
-   Ways to Visualize <subsections/tipsandtricks/waystovisualizespatialdata.rst>
+   How to Test and Store Multiple Objects <subsections/tipsandtricks/testandstoremultipleanayses.rst>
+   Ways to Visualize A Giotto Object <subsections/tipsandtricks/waystovisualizespatialdata.rst>
    Working with Images <subsections/tipsandtricks/workingwithimages.rst>
    Visulize Voronoi <subsections/tipsandtricks/visualizewithvoronoiplots.rst>
  
@@ -46,6 +47,4 @@ Welcome to the Giotto website!
    Additional Information <additionalinformation.rst>
    Browse Source Code <https://​github.com/​RubD/​Giotto/​>
    Report a Bug <https://​github.com/​RubD/​Giotto/​issues>
-
-
 

@@ -444,7 +444,7 @@ Identify robust spatial co-expression patterns using the spatial network or grid
                      	color_breaks = c(-1.5, 0, 1.5), 
                      	color_names = c('blue', 'white', 'red'))
 
-.. image:: /images/other/mini_datasets/mini_seqfish/vignette_200921/12.2.png
+.. image:: /images/other/mini_datasets/mini_seqfish/vignette_200921/12.2_spatCellPlot2D.png
 			:width: 400
 			:alt: 12.2.png	
 .. code-block::

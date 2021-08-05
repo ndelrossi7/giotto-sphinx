@@ -38,7 +38,8 @@ extensions = ['sphinx.ext.autosectionlabel',
 'sphinx_autodoc_typehints', 
 'sphinx_panels', 
 'sphinx_togglebutton',
-'sphinx_rtd_theme' 
+'sphinx_rtd_theme',
+'sphinx_tabs'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -68,11 +69,14 @@ html_theme_options = {
     'navigation_depth': 4,
     #Toc Tree Options
     'collapse_navigation': True,
-    #'sticky_navigation': True,
+    'sticky_navigation': True,
 }
 
 html_sidebars = { '**': ['globaltoc.html', 'relations.html', 'sourcelink.html', 'searchbox.html'] }
+html_css_files = ["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"]
+panels_add_fontawesome_latex = True
+panels_add_bootstrap_css = True
 
 # Toc Tree options
 navtree_root_links = True
-navtree_shift = True
+navtree_shift = False

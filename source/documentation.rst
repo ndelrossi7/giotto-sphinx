@@ -1,10 +1,10 @@
 #########################
-Documentation 
+Function Documentation 
 #########################
 
-******************
+*************************
 Giotto Object 
-******************
+*************************
 *Create and operate on Giotto Object*
 
 .. list-table::
@@ -23,12 +23,12 @@ Giotto Object
 	  - Subset Giotto 
 	* - :ref:`subsetGiottoLocs() <subsetGiottoLocs>`
 	  - Subset Giotto Locs
-
-**************************	  
+  
+*************************  
 Giotto Environment 
-**************************
-
+*************************
 *Work with Giotto Python Environment*
+
 
 .. list-table::
 	:widths: 100 100 
@@ -42,6 +42,7 @@ Giotto Environment
 	  - Remove Giotto Environment 
 	* - :ref:`checkGiottoEnvironment() <checkGiottoEnvironment>`
 	  - Check Giotto Environment
+
 
 ***************************
 Import Raw Data
@@ -188,9 +189,9 @@ Giotto Processing Functions
 	* - :ref:`addCellIntMetadata() <addCellIntMetadata>`
 	  - Add Cell Metadata Information Column 
 
-############################
+******************************************
 Dimension Reduction
-############################
+******************************************
 *Functions to reduce dimensions.*
 
 .. list-table:: 
@@ -214,9 +215,9 @@ Dimension Reduction
 	* - :ref:`runtSNE() <runtSNE>`
 	  - Run a tSNE
 
-############################
+*************************
 Clustering
-############################
+*************************
 *Functions to cluster cells.*
 
 .. list-table:: 
@@ -254,9 +255,9 @@ Clustering
 	* - :ref:`getDendrogramSplits() <getDendrogramSplits>`
 	  - Split Dendrogram 
 
-############################
+*************************
 Marker Genes 
-############################
+*************************
 *Functions to detect cell type / cluster specific marker genes.*
 
 .. list-table:: 
@@ -284,9 +285,9 @@ Marker Genes
 	  - Identify Marker Genes Using MAST in One vs. All Manner
 
 
-############################
+*************************
 Auxiliary Visualizations
-############################
+*************************
 *Functions for different visualization options to explore gene, cell or cluster characteristics.*
 
 .. list-table:: 
@@ -308,10 +309,9 @@ Auxiliary Visualizations
 	* - :ref:`violinPlot() <violinPlot>`
 	  - Create Violin Plot 
 
-
-#######################################
+***************************************
 Spatial Enrichment & Deconvolution
-#######################################
+***************************************
 *Functions for algorithms to compute spatial enrichment of gene signatures or single-cell RNA-seq annotation.*
 
 .. list-table:: 
@@ -345,9 +345,9 @@ Spatial Enrichment & Deconvolution
 	* - :ref:`runDWLSDeconv() <runDWLSDeconv>`
 	  - Perform DWLS Deconvolution 
 
-#######################################
+***************************************
 Spatial Network Or Grid
-#######################################
+***************************************
 *Function to (help) create a spatial network or grid.*
 
 .. list-table:: 
@@ -381,9 +381,9 @@ Spatial Network Or Grid
 	* - :ref:`showGrids() <showGrids>`
 	  - Print Available Spatial Grids
 
-#######################################
+***************************************
 Spatial Genes
-#######################################
+***************************************
 *Functions to identify spatial genes.*
 
 .. list-table:: 
@@ -409,9 +409,9 @@ Spatial Genes
 	* - :ref:`spark() <spark>`
 	  - Compute Spatially Variable Genes With SPARK
 
-#######################################
+***************************************
 Spatial Gene Simulation
-#######################################
+***************************************
 *Functions to simulate a gene expression pattern.*
 
 .. list-table:: 
@@ -425,9 +425,9 @@ Spatial Gene Simulation
 	* - :ref:`runPatternSimulation() <runPatternSimulation>`
 	  - Create Known Spatial Pattern for Selected Genes
 
-#########################################
+***************************************
 Spatial Co-Expression Patterns/Modules
-#########################################
+***************************************
 *Functions to identify spatial co-expression patterns.*
 
 .. list-table:: 
@@ -447,9 +447,9 @@ Spatial Co-Expression Patterns/Modules
 	* - :ref:`rankSpatialCorGroups() <rankSpatialCorGroups>`
 	  - Rank Spatially Correlated Gene Clusters 
 
-#########################################
+***************************************
 Hidden Markov Random Field (HMRF) 
-#########################################
+***************************************
 *Functions to identify spatial domains with HMRF.*
 
 .. list-table:: 
@@ -465,17 +465,17 @@ Hidden Markov Random Field (HMRF)
 	* - :ref:`viewHMRFresults() <viewHMRFresults>`
 	  - View HMRF Results
 	* - :ref:`writeHMRFresults() <writeHMRFresults>`
-	  - Write `doHMRF() <doHMRF>` Results
+	  - Write `doHMRF() <doHMRF>`__ Results
 	* - :ref:`addHMRF() <addHMRF>`
-	  - Add `doHMRF() <doHMRF>` Results
+	  - Add `doHMRF() <doHMRF>`__ Results
 	* - :ref:`viewHMRFresults2D() <viewHMRFresults2D>`
 	  - View HMRF Results
 	* - :ref:`viewHMRFresults3D() <viewHMRFresults3D>`
 	  - View HMRF Results
 
-#########################################
+***************************************
 2D Visualization In Expression Space
-#########################################
+***************************************
 *Visualization of expression space (e.g. UMAP) in 2D.*
 
 .. list-table:: 
@@ -497,9 +497,9 @@ Hidden Markov Random Field (HMRF)
 	* - :ref:`dimCellPlot() <dimCellPlot>`
 	  - Visualize Cells Expression By Dimension Coordinates
 
-#########################################
+***************************************
 2D Visualization In Spatial Space
-#########################################
+***************************************
 *Visualization of expression space (e.g. UMAP) in 2D.*
 
 .. list-table:: 
@@ -515,9 +515,9 @@ Hidden Markov Random Field (HMRF)
 	* - :ref:`spatCellPlot() <spatCellPlot>`
 	  - Visualize Cells By Spatial Coordinates
 
-####################################################
+****************************************************
 2D Visualization In Spatial And Expression Space
-####################################################
+****************************************************
 *Visualization in both 2D spatial and expression space.*
 
 .. list-table:: 
@@ -533,9 +533,9 @@ Hidden Markov Random Field (HMRF)
 	* - :ref:`spatDimCellPlot() <spatDimCellPlot>`
 	  - Visualize Cells By Spatial And Dimension Coordinates in 2D
 
-####################################################
+****************************************************
 3D Dimension Reduction Visualization
-####################################################
+****************************************************
 *Visualization in both 2D spatial and expression space.*
 
 .. list-table:: 
@@ -555,9 +555,9 @@ Hidden Markov Random Field (HMRF)
 	* - :ref:`dimGenePlot3D() <dimGenePlot3D>`
 	  - Visualize Cells And Gene Expression By Dimension Reduction 
 
-####################################################
+****************************************************
 3D Visualization In Spatial Space
-####################################################
+****************************************************
 *Visualization in both 2D spatial and expression space.*
 
 .. list-table:: 
@@ -571,9 +571,9 @@ Hidden Markov Random Field (HMRF)
 	* - :ref:`spatDimGenePlot3D() <spatDimGenePlot3D>`
 	  - Visualize Cells By Spatial and Dimensional Coordinates Using Plotly
 
-####################################################
+****************************************************
 In Silico Cross Sections
-####################################################
+****************************************************
 *Functions to create an in silico 2D cross sections from 3D data.*
 
 .. list-table:: 
@@ -597,9 +597,9 @@ In Silico Cross Sections
 	* - :ref:`insertCrossSectionGenePlot3D() <insertCrossSectionGenePlot3D>`
 	  - Visualize Cells And Gene Expression In A Virtual Cross Section 
 
-####################################################
+**************************************************************
 Cell Neighborhood: Cell-Type/Cell-Type Enrichment
-####################################################
+**************************************************************
 *Functions to calculate and visualize cell-type/cell-type spatial enrichment or depletion.*
 
 .. list-table:: 
@@ -621,9 +621,9 @@ Cell Neighborhood: Cell-Type/Cell-Type Enrichment
 	* - :ref:`cellProximitySpatPlot3D() <cellProximitySpatPlot3D>`
 	  - Visualize Cell-Cell Interactions (3D)
 
-#############################################################
+**************************************************************
 Cell Neighborhood: Spatial Interaction Changed Genes (ICG)
-#############################################################
+**************************************************************
 *Identify and visualize genes that change in a source cell type due to interaction with another neighboring cell type.*
 
 .. list-table:: 
@@ -675,9 +675,9 @@ Cell Neighborhood: Spatial Interaction Changed Genes (ICG)
 	* - :ref:`plotCombineCPG() <plotCombineCPG>`
 	  - Visualize Combined ICG Scores 
 
-#########################################################
+******************************************************
 Cell Neighborhood: Ligand-Receptor Cell Communication
-#########################################################
+******************************************************
 *Functions to calculate and visualize cell-type/cell-type spatial enrichment or depletion.*
 
 .. list-table:: 
@@ -697,9 +697,9 @@ Cell Neighborhood: Ligand-Receptor Cell Communication
 	* - :ref:`plotRecovery() <plotRecovery>`
 	  - Plot Comparison of Ligand-Receptor Rankings 
 
-#########################################################
+****************************************************
 Export From Giotto Analyzer To Viewer
-#########################################################
+****************************************************
 *Export selected annotations to a folder that can be used as input for Giotto Viewer.*
 
 .. list-table:: 
@@ -711,9 +711,9 @@ Export From Giotto Analyzer To Viewer
 	* - :ref:`exportGiottoViewer() <exportGiottoViewer>`
 	  - Compute Highly Variable Genes 
 
-#########################################################
+****************************************************
 Interoperability
-#########################################################
+****************************************************
 *Convert other type of objects into a Giotto object.*
 
 .. list-table:: 

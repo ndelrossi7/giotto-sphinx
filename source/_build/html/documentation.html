@@ -7,13 +7,14 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Documentation &mdash; Giotto 1.0 documentation</title>
+  <title>Function Documentation &mdash; Giotto 1.0 documentation</title>
   
 
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="_static/togglebutton.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
   <link rel="stylesheet" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
   <link rel="stylesheet" href="_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
   <link rel="stylesheet" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
@@ -49,7 +50,9 @@
 
     
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Working with the Giotto class: How to create Giotto object with precomputed results?" href="subsections/tipsandtricks/giottoclass.html" />
+    <link rel="prev" title="seqFISh+ Cortex" href="subsections/datasets/seqFISH_cortex.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -109,12 +112,43 @@
 <li class="toctree-l1"><a class="reference internal" href="datasets.html#full-datasets">Full Datasets</a></li>
 </ul>
 <p class="caption"><span class="caption-text">How Tos and Tutorials</span></p>
-<ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Function Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#giotto-object">Giotto Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#giotto-environment">Giotto Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#import-raw-data">Import Raw Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#add-images">Add Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#giotto-instructions">Giotto Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#giotto-helper-functions">Giotto Helper Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#giotto-processing-functions">Giotto Processing Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dimension-reduction">Dimension Reduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#clustering">Clustering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#marker-genes">Marker Genes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#auxiliary-visualizations">Auxiliary Visualizations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#spatial-enrichment-deconvolution">Spatial Enrichment &amp; Deconvolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#spatial-network-or-grid">Spatial Network Or Grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#spatial-genes">Spatial Genes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#spatial-gene-simulation">Spatial Gene Simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#spatial-co-expression-patterns-modules">Spatial Co-Expression Patterns/Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hidden-markov-random-field-hmrf">Hidden Markov Random Field (HMRF)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#d-visualization-in-expression-space">2D Visualization In Expression Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#d-visualization-in-spatial-space">2D Visualization In Spatial Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#d-visualization-in-spatial-and-expression-space">2D Visualization In Spatial And Expression Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#d-dimension-reduction-visualization">3D Dimension Reduction Visualization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">3D Visualization In Spatial Space</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#in-silico-cross-sections">In Silico Cross Sections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cell-neighborhood-cell-type-cell-type-enrichment">Cell Neighborhood: Cell-Type/Cell-Type Enrichment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cell-neighborhood-spatial-interaction-changed-genes-icg">Cell Neighborhood: Spatial Interaction Changed Genes (ICG)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cell-neighborhood-ligand-receptor-cell-communication">Cell Neighborhood: Ligand-Receptor Cell Communication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#export-from-giotto-analyzer-to-viewer">Export From Giotto Analyzer To Viewer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interoperability">Interoperability</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/giottoclass.html">Working with Giotto Class</a></li>
 <li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/howtosubsetgiottoobject.html">How to Subset Giotto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/howtovisualizeandsaveplots.html">How to Visualize Giotto Object</a></li>
-<li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/testandstoremultipleanayses.html">How to Test and Store Multiple</a></li>
-<li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/waystovisualizespatialdata.html">Ways to Visualize</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/testandstoremultipleanayses.html">How to Test and Store Multiple Objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/waystovisualizespatialdata.html">Ways to Visualize A Giotto Object</a></li>
 <li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/workingwithimages.html">Working with Images</a></li>
 <li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/visualizewithvoronoiplots.html">Visulize Voronoi</a></li>
 </ul>
@@ -173,7 +207,7 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Documentation</li>
+      <li>Function Documentation</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -192,8 +226,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="documentation">
-<h1>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="function-documentation">
+<h1>Function Documentation<a class="headerlink" href="#function-documentation" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="giotto-object">
 <h2>Giotto Object<a class="headerlink" href="#giotto-object" title="Permalink to this headline">¶</a></h2>
 <p><em>Create and operate on Giotto Object</em></p>
@@ -463,9 +497,8 @@
 </tbody>
 </table>
 </div>
-</div>
 <div class="section" id="dimension-reduction">
-<h1>Dimension Reduction<a class="headerlink" href="#dimension-reduction" title="Permalink to this headline">¶</a></h1>
+<h2>Dimension Reduction<a class="headerlink" href="#dimension-reduction" title="Permalink to this headline">¶</a></h2>
 <p><em>Functions to reduce dimensions.</em></p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -503,7 +536,7 @@
 </table>
 </div>
 <div class="section" id="clustering">
-<h1>Clustering<a class="headerlink" href="#clustering" title="Permalink to this headline">¶</a></h1>
+<h2>Clustering<a class="headerlink" href="#clustering" title="Permalink to this headline">¶</a></h2>
 <p><em>Functions to cluster cells.</em></p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -562,7 +595,7 @@
 </table>
 </div>
 <div class="section" id="marker-genes">
-<h1>Marker Genes<a class="headerlink" href="#marker-genes" title="Permalink to this headline">¶</a></h1>
+<h2>Marker Genes<a class="headerlink" href="#marker-genes" title="Permalink to this headline">¶</a></h2>
 <p><em>Functions to detect cell type / cluster specific marker genes.</em></p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -603,7 +636,7 @@
 </table>
 </div>
 <div class="section" id="auxiliary-visualizations">
-<h1>Auxiliary Visualizations<a class="headerlink" href="#auxiliary-visualizations" title="Permalink to this headline">¶</a></h1>
+<h2>Auxiliary Visualizations<a class="headerlink" href="#auxiliary-visualizations" title="Permalink to this headline">¶</a></h2>
 <p><em>Functions for different visualization options to explore gene, cell or cluster characteristics.</em></p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -638,7 +671,7 @@
 </table>
 </div>
 <div class="section" id="spatial-enrichment-deconvolution">
-<h1>Spatial Enrichment &amp; Deconvolution<a class="headerlink" href="#spatial-enrichment-deconvolution" title="Permalink to this headline">¶</a></h1>
+<h2>Spatial Enrichment &amp; Deconvolution<a class="headerlink" href="#spatial-enrichment-deconvolution" title="Permalink to this headline">¶</a></h2>
 <p><em>Functions for algorithms to compute spatial enrichment of gene signatures or single-cell RNA-seq annotation.</em></p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -691,7 +724,7 @@
 </table>
 </div>
 <div class="section" id="spatial-network-or-grid">
-<h1>Spatial Network Or Grid<a class="headerlink" href="#spatial-network-or-grid" title="Permalink to this headline">¶</a></h1>
+<h2>Spatial Network Or Grid<a class="headerlink" href="#spatial-network-or-grid" title="Permalink to this headline">¶</a></h2>
 <p><em>Function to (help) create a spatial network or grid.</em></p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -744,7 +777,7 @@
 </table>
 </div>
 <div class="section" id="spatial-genes">
-<h1>Spatial Genes<a class="headerlink" href="#spatial-genes" title="Permalink to this headline">¶</a></h1>
+<h2>Spatial Genes<a class="headerlink" href="#spatial-genes" title="Permalink to this headline">¶</a></h2>
 <p><em>Functions to identify spatial genes.</em></p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -785,7 +818,7 @@
 </table>
 </div>
 <div class="section" id="spatial-gene-simulation">
-<h1>Spatial Gene Simulation<a class="headerlink" href="#spatial-gene-simulation" title="Permalink to this headline">¶</a></h1>
+<h2>Spatial Gene Simulation<a class="headerlink" href="#spatial-gene-simulation" title="Permalink to this headline">¶</a></h2>
 <p><em>Functions to simulate a gene expression pattern.</em></p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -808,7 +841,7 @@
 </table>
 </div>
 <div class="section" id="spatial-co-expression-patterns-modules">
-<h1>Spatial Co-Expression Patterns/Modules<a class="headerlink" href="#spatial-co-expression-patterns-modules" title="Permalink to this headline">¶</a></h1>
+<h2>Spatial Co-Expression Patterns/Modules<a class="headerlink" href="#spatial-co-expression-patterns-modules" title="Permalink to this headline">¶</a></h2>
 <p><em>Functions to identify spatial co-expression patterns.</em></p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -840,7 +873,7 @@
 </table>
 </div>
 <div class="section" id="hidden-markov-random-field-hmrf">
-<h1>Hidden Markov Random Field (HMRF)<a class="headerlink" href="#hidden-markov-random-field-hmrf" title="Permalink to this headline">¶</a></h1>
+<h2>Hidden Markov Random Field (HMRF)<a class="headerlink" href="#hidden-markov-random-field-hmrf" title="Permalink to this headline">¶</a></h2>
 <p><em>Functions to identify spatial domains with HMRF.</em></p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -878,7 +911,7 @@
 </table>
 </div>
 <div class="section" id="d-visualization-in-expression-space">
-<h1>2D Visualization In Expression Space<a class="headerlink" href="#d-visualization-in-expression-space" title="Permalink to this headline">¶</a></h1>
+<h2>2D Visualization In Expression Space<a class="headerlink" href="#d-visualization-in-expression-space" title="Permalink to this headline">¶</a></h2>
 <p><em>Visualization of expression space (e.g. UMAP) in 2D.</em></p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -913,7 +946,7 @@
 </table>
 </div>
 <div class="section" id="d-visualization-in-spatial-space">
-<h1>2D Visualization In Spatial Space<a class="headerlink" href="#d-visualization-in-spatial-space" title="Permalink to this headline">¶</a></h1>
+<h2>2D Visualization In Spatial Space<a class="headerlink" href="#d-visualization-in-spatial-space" title="Permalink to this headline">¶</a></h2>
 <p><em>Visualization of expression space (e.g. UMAP) in 2D.</em></p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -939,7 +972,7 @@
 </table>
 </div>
 <div class="section" id="d-visualization-in-spatial-and-expression-space">
-<h1>2D Visualization In Spatial And Expression Space<a class="headerlink" href="#d-visualization-in-spatial-and-expression-space" title="Permalink to this headline">¶</a></h1>
+<h2>2D Visualization In Spatial And Expression Space<a class="headerlink" href="#d-visualization-in-spatial-and-expression-space" title="Permalink to this headline">¶</a></h2>
 <p><em>Visualization in both 2D spatial and expression space.</em></p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -965,7 +998,7 @@
 </table>
 </div>
 <div class="section" id="d-dimension-reduction-visualization">
-<h1>3D Dimension Reduction Visualization<a class="headerlink" href="#d-dimension-reduction-visualization" title="Permalink to this headline">¶</a></h1>
+<h2>3D Dimension Reduction Visualization<a class="headerlink" href="#d-dimension-reduction-visualization" title="Permalink to this headline">¶</a></h2>
 <p><em>Visualization in both 2D spatial and expression space.</em></p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -996,8 +1029,8 @@
 </tbody>
 </table>
 </div>
-<div class="section" id="id2">
-<h1>3D Visualization In Spatial Space<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>3D Visualization In Spatial Space<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p><em>Visualization in both 2D spatial and expression space.</em></p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -1020,7 +1053,7 @@
 </table>
 </div>
 <div class="section" id="in-silico-cross-sections">
-<h1>In Silico Cross Sections<a class="headerlink" href="#in-silico-cross-sections" title="Permalink to this headline">¶</a></h1>
+<h2>In Silico Cross Sections<a class="headerlink" href="#in-silico-cross-sections" title="Permalink to this headline">¶</a></h2>
 <p><em>Functions to create an in silico 2D cross sections from 3D data.</em></p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -1058,7 +1091,7 @@
 </table>
 </div>
 <div class="section" id="cell-neighborhood-cell-type-cell-type-enrichment">
-<h1>Cell Neighborhood: Cell-Type/Cell-Type Enrichment<a class="headerlink" href="#cell-neighborhood-cell-type-cell-type-enrichment" title="Permalink to this headline">¶</a></h1>
+<h2>Cell Neighborhood: Cell-Type/Cell-Type Enrichment<a class="headerlink" href="#cell-neighborhood-cell-type-cell-type-enrichment" title="Permalink to this headline">¶</a></h2>
 <p><em>Functions to calculate and visualize cell-type/cell-type spatial enrichment or depletion.</em></p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -1093,7 +1126,7 @@
 </table>
 </div>
 <div class="section" id="cell-neighborhood-spatial-interaction-changed-genes-icg">
-<h1>Cell Neighborhood: Spatial Interaction Changed Genes (ICG)<a class="headerlink" href="#cell-neighborhood-spatial-interaction-changed-genes-icg" title="Permalink to this headline">¶</a></h1>
+<h2>Cell Neighborhood: Spatial Interaction Changed Genes (ICG)<a class="headerlink" href="#cell-neighborhood-spatial-interaction-changed-genes-icg" title="Permalink to this headline">¶</a></h2>
 <p><em>Identify and visualize genes that change in a source cell type due to interaction with another neighboring cell type.</em></p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -1173,7 +1206,7 @@
 </table>
 </div>
 <div class="section" id="cell-neighborhood-ligand-receptor-cell-communication">
-<h1>Cell Neighborhood: Ligand-Receptor Cell Communication<a class="headerlink" href="#cell-neighborhood-ligand-receptor-cell-communication" title="Permalink to this headline">¶</a></h1>
+<h2>Cell Neighborhood: Ligand-Receptor Cell Communication<a class="headerlink" href="#cell-neighborhood-ligand-receptor-cell-communication" title="Permalink to this headline">¶</a></h2>
 <p><em>Functions to calculate and visualize cell-type/cell-type spatial enrichment or depletion.</em></p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -1205,7 +1238,7 @@
 </table>
 </div>
 <div class="section" id="export-from-giotto-analyzer-to-viewer">
-<h1>Export From Giotto Analyzer To Viewer<a class="headerlink" href="#export-from-giotto-analyzer-to-viewer" title="Permalink to this headline">¶</a></h1>
+<h2>Export From Giotto Analyzer To Viewer<a class="headerlink" href="#export-from-giotto-analyzer-to-viewer" title="Permalink to this headline">¶</a></h2>
 <p><em>Export selected annotations to a folder that can be used as input for Giotto Viewer.</em></p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -1225,7 +1258,7 @@
 </table>
 </div>
 <div class="section" id="interoperability">
-<h1>Interoperability<a class="headerlink" href="#interoperability" title="Permalink to this headline">¶</a></h1>
+<h2>Interoperability<a class="headerlink" href="#interoperability" title="Permalink to this headline">¶</a></h2>
 <p><em>Convert other type of objects into a Giotto object.</em></p>
 <table class="colwidths-given docutils align-default">
 <colgroup>
@@ -1244,12 +1277,17 @@
 </tbody>
 </table>
 </div>
+</div>
 
 
            </div>
            
           </div>
           <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="subsections/tipsandtricks/giottoclass.html" class="btn btn-neutral float-right" title="Working with the Giotto class: How to create Giotto object with precomputed results?" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="subsections/datasets/seqFISH_cortex.html" class="btn btn-neutral float-left" title="seqFISh+ Cortex" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
 
   <hr/>
 
