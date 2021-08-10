@@ -1,3 +1,5 @@
+.. _datasets:
+
 ##################################
 Dataset Information
 ##################################
@@ -7,10 +9,45 @@ See `Spatial Datasets <https://github.com/RubD/spatial-datasets>`_ to find raw a
 The typical run time range for the different datasets on a personal computer is around 10~45 minutes. 
 All of the examples are gradually updated to the latest Giotto version! Click on the images below to try out some of the example datasets. 
 
+##################
+Data Availability
+##################
+.. admonition:: Where to find seqFISH+ and other ready-to-use datasets? 
+    
+    Checkout `https://github.com/RubD/spatial-datasets <https://github.com/RubD/spatial-datasets>`_ to find already preprocessed datasets.
+
+.. admonition:: Where to find other spatial datasets?
+
+    Checkout `https://www.spatialomics.org/SpatialDB/ <https://www.spatialomics.org/SpatialDB/>`_ to download expression matrix and location information.
+
+How to automatically download tutorial datasets? 
+=====================================================================
+merFISH Example
+
+.. code-block::
+    
+    # choose your directory
+    my_working_dir = getwd()
+
+    # standard download data to working directory
+    getSpatialDataset(dataset = 'merfish_preoptic', directory = my_working_dir)
+
+    # use wget to  download data to working directory (much faster)
+    getSpatialDataset(dataset = 'merfish_preoptic', directory = my_working_dir, method = 'wget')
+
+    # avoid certification issues with wget
+    getSpatialDataset(dataset = 'merfish_preoptic', directory = my_working_dir, method = 'wget', extra = '--no-check-certificate')
+
+    # see download.file for more options
+    ?download.file
 
 ##################################
-Mini Datasets
+Examples
 ##################################
+
+
+Mini Datasets
+==================
 
 .. toctree::
 	:maxdepth: 2
@@ -56,9 +93,8 @@ Mini Datasets
         :classes: btn-outline-primary btn-block stretched-link 
 
 
-##################################
 Full Datasets
-##################################
+====================
                     
 .. toctree::
     :maxdepth: 2

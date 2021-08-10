@@ -28,7 +28,7 @@ Description
 
 .. _Giotto Viewer: http://spatial.rc.fas.harvard.edu/spatialgiotto/giotto.install.native.html
 
-Make sure to check out the **Datasets** section to see examples of the Giotto workflow.
+Make sure to check out the `Datasets <datasets>`_ section to see examples of the Giotto workflow.
 
 *************
 Requirements
@@ -43,9 +43,17 @@ Requirements
 *************
 Installation
 *************
+Giotto must be installed in both Python and R. Below, you will find the instructions for both `R Installation <R_Installation>`__ and `Python Installation <Python_Installation>`__. Please make sure that your system has satisfied all of the requirements needed to sucessfully install Giotto.
+In addition, we have provided a way for users to install both complete both the Python and R Installation simutaneously (see: `Automatic Installation <AutomaticInstallation>`__). 
+Checkout our `Errors and FAQs Section <faqs>`__ for more information and troubleshooting tips on some common installation issues.  
+
+.. _R_Installation: 
 
 R Installation 
 ==================
+If this is your first time installing an R Package please proceed to `First Time R Package Installation <FirstTimeR>`__. If you are already familiar with installing R packages please proceed to `First Time Giotto Installation <FirstTimeGiotto>`__.
+
+.. _FirstTimeR:
 
 First Time R Package Installation 
 ------------------------------------
@@ -59,10 +67,13 @@ To specifically install the command-line tools of Xcode for Mac OSX you might al
 
   xcode-select -- install 
 
+.. _FirstTimeGiotto: 
 
 First Time Giotto Installation 
 --------------------------------
 You can install Giotto with (~1-5 mins)
+
+**This version requires C Compilation**
 
 .. code-block::
 
@@ -70,15 +81,24 @@ You can install Giotto with (~1-5 mins)
 	library(remotes)  #If not installed: install.packages('remotes')
 	remotes::install_github("RubD/Giotto") 
 
-	# Compilation (gfortran) problems? Check goftran.
-	# This version does not require C compilation
+.. warning:: 	
+	If you are having compilation (gfortran) problems check goftran.
+
+**This version does not require C Compliation**	
+
+.. code-block::
+
 	remotes::install_github("RubD/Giotto@cless") 
 
 
-.. _manualinstallation: 
+.. _Python_Installation:
 
 Python Installation 
 =========================
+First Time Python Module Installation 
+---------------------------------------
+Information on how to install a Python package can be found `here <https://packaging.python.org/tutorials/installing-packages/>`__. 
+
 
 Required Modules
 --------------------------
@@ -93,6 +113,13 @@ These are necessary to run all available analyses, but can be installed automati
 * python.app (**OSX only**)
 * scikit-learn
 
+There are two ways in which users can install Giotto via Python: 
+
+1. `Install with Pip in Python3 <InstallWithPip>`__
+2. `Install with Conda <InstallWithConda>`__
+
+.. _InstallWithPip:
+
 Install with Pip
 ------------------
 **Install with pip in python3**
@@ -102,6 +129,8 @@ Install with Pip
 .. code-block:: 
 
 	pip3 install pandas python-igraph networkx python-louvain leidenalg scikit-learn smfishHmrf
+
+.. _InstallWithConda:
 
 Install with Conda
 ---------------------
@@ -156,13 +185,19 @@ If pip install does not work, try installing them within a `conda environment <h
 
 	/Users/your_username/anaconda3/envs/giotto_env/python.exe
 
+
 .. _automaticinstallation:
 
-Automatic Installation (2 Methods)
+Installation Tool (2 Methods)
 =====================================
 The python modules will be installed automatically in a miniconda environment when installing Giotto. However, it will ask you whether you want to install them and you can opt out and select your preferred python path. In that case you need to do a manual installation of the python modules.
 
 To perform all potential steps and analysis in the Giotto spatial toolbox the user needs to have a number of python modules installed. To make this process as flexible and easy as possible we have provided two different strategies can be used:
+
+(1) `User Instlalation of Necessary Modules <UserInstall>`__ which allows users to manually instll all of the necessary modules and provide a Python path, and 
+(2) `Installation of the Giotto Environment <InstallGiottoEnvironment>`__ which allows users to install the required Python environment via MiniConda. 
+
+.. _UserInstall: 
 
 1. User Installation of Necessary Modules 
 --------------------------------------------
@@ -178,9 +213,11 @@ With this option, the user can install all the necessary modules themself and th
                                       spatial_locs = '...', 
                                       instructions = my_instructions)
 
+.. _InstallGiottoEnvironment: 
+
 2. Installation of Giotto Environment 
 --------------------------------------
-Alternatively, with this option, the user can just install a giotto python environment using r-miniconda
+Alternatively, with this option, the user can just install a Giotto python environment using r-miniconda
 
 .. code-block::
 
@@ -212,13 +249,13 @@ Remove Giotto Environment
 	removeGiottoEnvironment()
 
 
-
 .. _howtolabel:
 
 *******
 HowTos
 *******
 Giotto provides a lot of analyses, visualizations and other options to facilitate your spatial dataset analysis. We are working on providing easy-to-understand examples or tutorials, but if anything is not clear or if there is something you would like to see in particular, then do not hesitate to `contact us.`_
+In addition to our HowTos we have also created a way for users to test out Giotto via `Binder <BinderInformation>`_ and `Docker <DockerInformation>`_ (see: `Try Giotto <TryGiotto>`_)
 
 .. _contact us.: https://github.com/RubD/Giotto/issues
 
@@ -260,5 +297,5 @@ Tips and Tricks
 * :ref:`Adding and Working with Images in Giotto <working-with-giotto-images>`
 
 
-*See :ref:`FAQs <faqs>` for more information.*
-
+.. seealso:: 
+	`FAQs <faqs>`_ for more information

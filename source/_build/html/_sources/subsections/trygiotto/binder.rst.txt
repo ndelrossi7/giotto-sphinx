@@ -1,6 +1,9 @@
+.. _BinderInformation:
+
 ##############
 Binder
 ##############
+
 If you’d like to test out/learn more about how to use Giotto, you can use the tutorial Binder we’ve created. For more information on how this works and what you can do with Giotto, please go to this `link <https://github.com/ndelrossi7/giotto-tutorial-binder>`__.
 
 Simply click this button |Binder| and a Docker image will be generated.

@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Welcome to the Giotto website! &mdash; Giotto 1.0 documentation</title>
+  <title>Giotto &mdash; Giotto 1.0 documentation</title>
   
 
   
@@ -51,7 +51,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="General Information" href="general.html" /> 
+    <link rel="next" title="Getting Started" href="gettingstarted.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -101,20 +101,18 @@
             
               <p class="caption"><span class="caption-text">Introduction</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="general.html">General Information</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">How to Get Started With Giotto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="giottoworkflowanalyses.html">Giotto Workflow</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Giotto Example Datasets</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="datasets.html">Dataset Information</a></li>
-<li class="toctree-l1"><a class="reference internal" href="datasets.html#mini-datasets">Mini Datasets</a></li>
-<li class="toctree-l1"><a class="reference internal" href="datasets.html#full-datasets">Full Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datasets.html#data-availability">Data Availability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datasets.html#examples">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trygiotto.html">Try Giotto</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Giotto Tutorials and HowTos</span></p>
+<p class="caption"><span class="caption-text">Functions and HowTos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="documentation.html">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation.html">Giotto Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/giottoclass.html">Working with Giotto Class</a></li>
 <li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/howtosubsetgiottoobject.html">How to Subset Giotto</a></li>
 <li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/howtovisualizeandsaveplots.html">How to Visualize Giotto Object</a></li>
@@ -127,9 +125,9 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="errorsfaqsandtips.html">Errors and FAQS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="additionalinformation.html">Changelog</a></li>
-<li class="toctree-l1"><a class="reference internal" href="additionalinformation.html#how-to-contribute">How to contribute?</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://​github.com/​RubD/​Giotto/​">Browse Source Code</a></li>
-<li class="toctree-l1"><a class="reference external" href="https://​github.com/​RubD/​Giotto/​issues">Report a Bug</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/RubD/Giotto/">Browse Source Code</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/RubD/Giotto/issues">Report a Bug</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Contribute</a></li>
 </ul>
 
             
@@ -178,7 +176,7 @@
     
       <li><a href="#" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Welcome to the Giotto website!</li>
+      <li>Giotto</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -197,8 +195,68 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="welcome-to-the-giotto-website">
-<h1>Welcome to the Giotto website!<a class="headerlink" href="#welcome-to-the-giotto-website" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="giotto">
+<h1>Giotto<a class="headerlink" href="#giotto" title="Permalink to this headline">¶</a></h1>
+<p>The Giotto package consists of two modules, Giotto Analyzer and  <a class="reference external" href="www.spatialgiotto.com">Giotto Viewer</a>, which provide tools to process, analyze and visualize <strong>single-cell spatial expression data</strong>. The underlying framework is generalizable to virtually all currently available spatial datasets. We recently demonstrated the general applicability on 10 different datasets created by 9 different state-of-the-art spatial technologies, including in situ hybridization (seqFISH+, merFISH, osmFISH), sequencing (Slide-seq, Visium, STARmap) and imaging-based multiplexing/proteomics (CyCIF, MIBI, CODEX). These technologies differ in terms of resolution (single cell vs multiple cells), spatial dimension (2D vs 3D), molecular modality (protein vs RNA), and throughput (number of cells and genes). More information and documentation about the latest version of Giotto Analyzer can be found at <a class="reference external" href="https://rubd.github.io/Giotto_site/">https://rubd.github.io/Giotto_site/</a> (<strong>URL CHANGE</strong>).</p>
+<a class="reference internal image-reference" href="_images/overview_datasets.png"><img alt="Image showing the overview of Spatial Giotto" class="align-center" src="_images/overview_datasets.png" style="width: 400px;" /></a>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/29775597/">Han X, Wang R, Zhou Y, Fei L, Sun H, Lai S, et al. Mapping the mouse cell atlas by microwell-Seq. Cell. 2018;173:1307. doi: 10.1016/j.cell.2018.05.012.</a></p></li>
+<li><p><a class="reference external" href="https://www.nature.com/articles/s41586-019-1049-y">Tabula Muris Consortium, overall coordination, logistical coordination, organ collection and processing, library preparation and sequencing, Computational data analysis, et al. Single-cell transcriptomics of 20 mouse organs creates a Tabula Muris. Nature. 2018;562:367–72.</a></p></li>
+<li><p><a class="reference external" href="https://www.nature.com/articles/nbt.4260">Lubeck E, Coskun AF, Zhiyentayev T, Ahmad M, Cai L. Single-cell in situ RNA profiling by sequential hybridization. Nat. Methods. 2014. p. 360–361.</a></p></li>
+<li><p><a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/25858977/">Chen KH, Boettiger AN, Moffitt JR, Wang S, Zhuang X. RNA imaging. Spatially resolved, highly multiplexed RNA profiling in single cells. Science. 2015;348:aaa6090. doi: 10.1126/science.aaa6090.</a></p></li>
+<li><p><a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/27365449/">Ståhl PL, Salmén F, Vickovic S, Lundmark A, Navarro JF, Magnusson J, et al. Visualization and analysis of gene expression in tissue sections by spatial transcriptomics. Science. 2016;353:78–82. doi: 10.1126/science.aaf2403.</a></p></li>
+</ol>
+</div>
+<div class="section" id="other-relevant-information">
+<h2>Other Relevant information<a class="headerlink" href="#other-relevant-information" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="relevant-links">
+<h3>Relevant Links<a class="headerlink" href="#relevant-links" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="source-code">
+<h4><a class="reference external" href="https://github.com/RubD/Giotto/">Source code</a><a class="headerlink" href="#source-code" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="report-a-bug">
+<h4><a class="reference external" href="https://github.com/RubD/Giotto/issues">Report a bug</a><a class="headerlink" href="#report-a-bug" title="Permalink to this headline">¶</a></h4>
+</div>
+</div>
+<div class="section" id="license">
+<h3>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://opensource.org/licenses/mit-license.php">MIT</a> | <a class="reference external" href="https://rubd.github.io/Giotto_site/LICENSE-text.html">File License</a></p>
+</div>
+<div class="section" id="how-to-cite-giotto">
+<h3>How to Cite Giotto?<a class="headerlink" href="#how-to-cite-giotto" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02286-2">Dries et al. Giotto, a toolbox for integrative analysis and visualization of spatial expression data. bioRxiv (2020).</a></p></li>
+<li><p><a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/33685491/">Dries, R., Zhu, Q., Dong, R., Eng, C. H. L., Li, H., Liu, K., … &amp; Yuan, G. C. (2021). Giotto: a toolbox for integrative analysis and visualization of spatial expression data. Genome biology, 22(1), 1-31.</a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="authors-and-developers">
+<h2>Authors and Developers<a class="headerlink" href="#authors-and-developers" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 58%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.drieslab.com">Ruben Dries</a></p></td>
+<td><p><em>Author, Maintainer</em></p></td>
+</tr>
+<tr class="row-even"><td><p>Qian Zhu</p></td>
+<td><p><em>Author</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>Huipeng Li</p></td>
+<td><p><em>Author</em></p></td>
+</tr>
+<tr class="row-even"><td><p>Rui Dong</p></td>
+<td><p><em>Author</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>Guo-Cheng Yuan</p></td>
+<td><p><em>Author</em></p></td>
+</tr>
+</tbody>
+</table>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
@@ -206,6 +264,7 @@
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
+</div>
 </div>
 </div>
 
@@ -215,7 +274,7 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="general.html" class="btn btn-neutral float-right" title="General Information" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="gettingstarted.html" class="btn btn-neutral float-right" title="Getting Started" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
