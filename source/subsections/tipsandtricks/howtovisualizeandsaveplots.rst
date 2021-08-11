@@ -3,6 +3,7 @@
 ##################################################
 How to Visualize and Save Plots in Giotto?
 ##################################################
+
 Each Giotto function that creates a plot as **3 important parameters**:
 
 * **show_plot**: to print the plot to the console, default is TRUE
@@ -13,18 +14,19 @@ These parameters are automatically provided by **createGiottoObject**, but can a
 
 Besides those 3 parameters **createGiottoInstructions** also allows to provide other general Giotto parameters, such as your python path and other information for automatically saving a plot, like size, plotting format, etc.
 
-In total there are **4 functions** to work with setting instructions:
+.. admonition::  **There are 4 Function To Set Instructions:**
 
-* **createGiottoInstructions**: creates instructions that can be provided to createGiottoObject
-* **showGiottoInstructions**: to view the instructions of a Giotto object
-* **changeGiottoInstructions**: to replace 1 or more of the instruction parameters (e.g. plotting format)
-* **replaceGiottoInstructions**: to replace all instructions with new instructions (e.g after subsetting)
+  * **createGiottoInstructions**: creates instructions that can be provided to createGiottoObject
+  * **showGiottoInstructions**: to view the instructions of a Giotto object
+  * **changeGiottoInstructions**: to replace 1 or more of the instruction parameters (e.g. plotting format)
+  * **replaceGiottoInstructions**: to replace all instructions with new instructions (e.g after subsetting)
 
 In addition, for each plot the parameters can always be manually overwritten within the plotting function itself.
 
 *Here we use the osmFISH as an example:*
+
 **************************************************
-1. Create Giotto instructions and Giotto object
+1. Create Giotto Instructions and Giotto object
 **************************************************
 
 * We will override automatically showing plots by setting show_plot = FALSE

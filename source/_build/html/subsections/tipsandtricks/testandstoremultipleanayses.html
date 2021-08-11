@@ -13,12 +13,14 @@
   
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2/css/lightbox.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
 
   
   
@@ -35,13 +37,12 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/language_data.js"></script>
         <script src="../../_static/togglebutton.js"></script>
-        <script >var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
         <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2/js/jquery-1.11.0.min.js"></script>
         <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2/js/lightbox.min.js"></script>
         <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
@@ -51,7 +52,7 @@
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Different ways to visualize your spatial data?" href="waystovisualizespatialdata.html" />
+    <link rel="next" title="Different Ways to Visualize Spatial Data" href="waystovisualizespatialdata.html" />
     <link rel="prev" title="How to Visualize and Save Plots in Giotto?" href="howtovisualizeandsaveplots.html" /> 
 </head>
 
@@ -100,45 +101,42 @@
               
             
             
-              <p class="caption"><span class="caption-text">Introduction</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../gettingstarted.html">How to Get Started With Giotto</a></li>
+              <p class="caption" role="heading"><span class="caption-text">General</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../gettingstarted.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../giottoworkflowanalyses.html">Giotto Workflow</a></li>
-</ul>
-<ul>
 <li class="toctree-l1"><a class="reference internal" href="../../datasets.html">Dataset Information</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../datasets.html#data-availability">Data Availability</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../datasets.html#examples">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../documentation.html">Giotto Functions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../tipsandtricks.html">Tips and Tricks</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="giottoclass.html">Working With The Giotto Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="howtosubsetgiottoobject.html">How To Subset Giotto Objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="howtovisualizeandsaveplots.html">How To Visualize And Save Plots in Giotto</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">How to Test and Store Multiple Parameters or Analyses</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#calculate-highly-variable-genes-2-methods">1. Calculate Highly Variable Genes <em>(2 Methods)</em></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#perform-multiple-pcas">2. Perform Multiple PCAs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-multiple-umaps">3. Create Multiple UMAPs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-multiple-spatial-networks">4. Create Multiple Spatial Networks</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#spatial-network"><em>Spatial Network</em></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#large-network"><em>Large Network</em></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#distance-network"><em>Distance Network</em></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#find-spatial-genes-multiple-methods">5. Find Spatial Genes <em>(Multiple Methods)</em></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#large-network-spatial-genes"><em>Large Network Spatial Genes</em></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#distance-network-spatial-genes"><em>Distance Network Spatial Genes</em></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="waystovisualizespatialdata.html">Different Ways to Visualize Spatial Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workingwithimages.html">How To Add And Work With Images in Giotto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualizewithvoronoiplots.html">How To Visualize Spatial Data with Voronoi Plots</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../trygiotto.html">Try Giotto</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Functions and HowTos</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../documentation.html">Giotto Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="giottoclass.html">Working with Giotto Class</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howtosubsetgiottoobject.html">How to Subset Giotto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howtovisualizeandsaveplots.html">How to Visualize Giotto Object</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">How to Test and Store Multiple Objects</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#calculate-highly-variable-genes-in-two-different-manners">1. Calculate highly variable genes in two different manners</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#perform-multiple-pcas">2. Perform Multiple PCAs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#create-multiple-umaps">3. Create Multiple UMAPs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#create-multiple-spatial-networks">4. Create Multiple Spatial Networks</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#spatial-network"><em>Spatial Network</em></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#large-network"><em>Large Network</em></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#distance-network"><em>Distance Network</em></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#find-spatial-genes-in-multiple-ways">5. Find Spatial Genes in Multiple Ways</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#large-network-spatial-genes"><em>Large Network Spatial Genes</em></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#distance-network-spatial-genes"><em>Distance Network Spatial Genes</em></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="waystovisualizespatialdata.html">Ways to Visualize A Giotto Object</a></li>
-<li class="toctree-l1"><a class="reference internal" href="workingwithimages.html">Working with Images</a></li>
-<li class="toctree-l1"><a class="reference internal" href="visualizewithvoronoiplots.html">Visulize Voronoi</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Supplemental Information</span></p>
+<p class="caption" role="heading"><span class="caption-text">Supplemental Information</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../errorsfaqsandtips.html">Errors and FAQS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../additionalinformation.html">Changelog</a></li>
@@ -193,6 +191,8 @@
     
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
+          <li><a href="../../tipsandtricks.html">Tips and Tricks</a> &raquo;</li>
+        
       <li>How to Test and Store Multiple Parameters or Analyses?</li>
     
     
@@ -214,7 +214,8 @@
             
   <div class="section" id="how-to-test-and-store-multiple-parameters-or-analyses">
 <span id="test-and-store"></span><h1>How to Test and Store Multiple Parameters or Analyses?<a class="headerlink" href="#how-to-test-and-store-multiple-parameters-or-analyses" title="Permalink to this headline">¶</a></h1>
-<p>The default Giotto workflow is similar to other scRNA-seq workflows and does not require you to provide a custom name for each analysis (e.g. PCA, UMAP, …), but running an analysis twice will overwrite the previous results with a warning. However, there are situations where being able to run and store multiple analyses can be advantageous:</p>
+<p>The default Giotto workflow is similar to other scRNA-seq workflows and does not require you to provide a custom name for each analysis (e.g. PCA, UMAP, …), but running an analysis twice will overwrite the previous results with a warning.</p>
+<p>However, there are situations where being able to run and store multiple analyses can be advantageous:</p>
 <ul class="simple">
 <li><p>Test multiple parameters for a single analysis</p></li>
 <li><p>Test multiple combinations across functions (See Example: <strong>hvg-&gt;pca-&gt;umap</strong>)</p></li>
@@ -222,8 +223,8 @@
 </ul>
 <a class="reference internal image-reference" href="../../_images/ppt_store_multiple_analyses2.png"><img alt="Multiple Analysis" class="align-center" src="../../_images/ppt_store_multiple_analyses2.png" style="width: 600px;" /></a>
 <p>We will use the seqFish+ somatosensory cortex as an example dataset after creating and processing a Giotto object.</p>
-<div class="section" id="calculate-highly-variable-genes-in-two-different-manners">
-<h2>1. Calculate highly variable genes in two different manners<a class="headerlink" href="#calculate-highly-variable-genes-in-two-different-manners" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="calculate-highly-variable-genes-2-methods">
+<h2>1. Calculate Highly Variable Genes <em>(2 Methods)</em><a class="headerlink" href="#calculate-highly-variable-genes-2-methods" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># using the loess method</span>
 <span class="n">VC_test</span> <span class="o">&lt;-</span> <span class="n">calculateHVG</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">VC_test</span><span class="p">,</span>
                     <span class="n">method</span> <span class="o">=</span> <span class="s1">&#39;cov_loess&#39;</span><span class="p">,</span> <span class="n">difference_in_cov</span> <span class="o">=</span> <span class="mf">0.1</span><span class="p">,</span>
@@ -330,8 +331,8 @@ spatPlot(gobject = subVC_test, show_network = T,
 <a class="reference internal image-reference" href="../../_images/4_distance_network.png"><img alt="Group" src="../../_images/4_distance_network.png" style="width: 300px;" /></a>
 </div>
 </div>
-<div class="section" id="find-spatial-genes-in-multiple-ways">
-<h2>5. Find Spatial Genes in Multiple Ways<a class="headerlink" href="#find-spatial-genes-in-multiple-ways" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="find-spatial-genes-multiple-methods">
+<h2>5. Find Spatial Genes <em>(Multiple Methods)</em><a class="headerlink" href="#find-spatial-genes-multiple-methods" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Use the different spatial networks as input to identify spatial genes with the rank method</p></li>
 <li><p>Visualize top spatial genes for 2 methods</p></li>
@@ -369,7 +370,7 @@ spatGenePlot(VC_test,
              genes_high_color = &#39;red&#39;, genes_mid_color = &#39;white&#39;, genes_low_color = &#39;darkblue&#39;, midpoint = 0)
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/howtos/work_with_multiple_analyses/vignette_1/5_large_distance_network_genes.png"><img alt="Group" src="images/howtos/work_with_multiple_analyses/vignette_1/5_large_distance_network_genes.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../../_images/5_large_distance_network_genes.png"><img alt="Group" src="../../_images/5_large_distance_network_genes.png" style="width: 300px;" /></a>
 </div>
 </div>
 </div>
@@ -380,7 +381,7 @@ spatGenePlot(VC_test,
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="waystovisualizespatialdata.html" class="btn btn-neutral float-right" title="Different ways to visualize your spatial data?" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="waystovisualizespatialdata.html" class="btn btn-neutral float-right" title="Different Ways to Visualize Spatial Data" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="howtovisualizeandsaveplots.html" class="btn btn-neutral float-left" title="How to Visualize and Save Plots in Giotto?" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 

@@ -4,14 +4,10 @@
 How to Subset a Giotto Object?
 ##################################
 
-There are several ways to subset a Giotto object or visualize a subset of the data. Here we will use the already analyzed Visium 10X brain dataset object to:
+There are several ways to subset a Giotto object or visualize a subset of the data. Below are some subsetting examples. 
 
-* Show how to visualize a subset of cells
-* Show how to visualize data by group (example clustering, layers in 3D images, …)
-* Subset the dataset based on cell IDs (cluster name(s) or individual cell IDs)
-* Subset the dataset based on spatial locations/coordinates
-
-Figures may not be identical, because examples might have been updated, but the subsetting principles remain the same.
+.. note:: 
+	Figures may not be identical, because examples might have been updated, but the subsetting principles remain the same.
 
 ********************************
 1. The Visium 10X Whole Brain 
@@ -27,7 +23,7 @@ Figures may not be identical, because examples might have been updated, but the 
 	:alt: Visium 10X Whole Brain Image
 
 **********************************
-2. Show only a subset of clusters
+2. Show Only A Subset of Clusters 
 **********************************
 
 .. code-block:: 
@@ -41,7 +37,7 @@ Figures may not be identical, because examples might have been updated, but the 
 			:alt: Show only a subset of clusters
 
 *********************************************************************
-3. Show only a subset of the clusters, excluding not selected cells
+3. Show Only A Subset of Clusters (excluding not selected cells)
 *********************************************************************
 
 .. code-block:: 
@@ -55,8 +51,9 @@ Figures may not be identical, because examples might have been updated, but the 
 			:alt: Excluding not selected cells
 
 *********************************************************************
-4. Create spatial plots grouped by the leiden clustering result
+4. Create Spatial Plots
 *********************************************************************
+These spatial plots have been grouped by the Leiden Clustering results
 
 .. code-block:: 
 
@@ -83,9 +80,9 @@ Figures may not be identical, because examples might have been updated, but the 
 			 :alt: Leiden group 2
 
 *********************************************************************
-5. Create dimension plots grouped by the HMRF result
+5. Create Dimension Plots
 *********************************************************************
-
+These dimension plots have been grouped by the HMRF results.
 
 .. code-block:: 
 
@@ -121,9 +118,8 @@ Figures may not be identical, because examples might have been updated, but the 
 			 :alt: HMRF Whole Brain by group 2
 
 *********************************************************************
-6. Create a new Giotto object by subsetting selected clusters
+6. Create A New Giotto Object By Subsetting Selected Clusters
 *********************************************************************
-
 
 .. code-block:: 
 
@@ -151,7 +147,7 @@ Figures may not be identical, because examples might have been updated, but the 
 			 :alt: Subset brain nr
 
 ************************************************************************************
-7. Create a new Giotto object by subsetting based on spatial coordinates/locations
+7. Create A New Giotto Object By Subsetting Spatial Coordinates/Locations
 ************************************************************************************
 
 .. code-block:: 

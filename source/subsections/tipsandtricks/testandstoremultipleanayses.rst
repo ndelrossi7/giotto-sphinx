@@ -4,23 +4,23 @@
 How to Test and Store Multiple Parameters or Analyses?
 ##########################################################
 
-The default Giotto workflow is similar to other scRNA-seq workflows and does not require you to provide a custom name for each analysis (e.g. PCA, UMAP, …), but running an analysis twice will overwrite the previous results with a warning. However, there are situations where being able to run and store multiple analyses can be advantageous:
+The default Giotto workflow is similar to other scRNA-seq workflows and does not require you to provide a custom name for each analysis (e.g. PCA, UMAP, …), but running an analysis twice will overwrite the previous results with a warning. 
+
+However, there are situations where being able to run and store multiple analyses can be advantageous:
 
 * Test multiple parameters for a single analysis
 * Test multiple combinations across functions (See Example: **hvg->pca->umap**)
 * Use different output results as input for downstream analyses (See Example:  **spatial genes**)
-
 
 .. image:: /images/howtos/work_with_multiple_analyses/ppt_store_multiple_analyses2.png
 	:width: 600 
 	:alt: Multiple Analysis 
 	:align: center
 
-
 We will use the seqFish+ somatosensory cortex as an example dataset after creating and processing a Giotto object.
 
 ***************************************************************
-1. Calculate highly variable genes in two different manners
+1. Calculate Highly Variable Genes *(2 Methods)*
 ***************************************************************
 
 .. code-block:: 
@@ -174,7 +174,7 @@ We will use the seqFish+ somatosensory cortex as an example dataset after creati
 	:alt: Group
 
 ***************************************************************
-5. Find Spatial Genes in Multiple Ways 
+5. Find Spatial Genes *(Multiple Methods)* 
 ***************************************************************
 
 * Use the different spatial networks as input to identify spatial genes with the rank method
@@ -221,8 +221,6 @@ We will use the seqFish+ somatosensory cortex as an example dataset after creati
                  expression_values = 'scaled',
                  genes = ranktest_dist$genes[1:6], cow_n_col = 2, point_size = 1,
                  genes_high_color = 'red', genes_mid_color = 'white', genes_low_color = 'darkblue', midpoint = 0)
-
-
 
 .. image:: /images/howtos/work_with_multiple_analyses/vignette_1/5_large_distance_network_genes.png			
 	:width: 300 

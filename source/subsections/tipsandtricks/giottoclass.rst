@@ -34,10 +34,15 @@ The minimum requirements to make a Giotto class object are:
 ============================
 
 * **norm_expr**: slot to keep matrix with normalized expression values
-    * Use expression_values = ‘normalized’ to access this slot in downstream functions
+  
+  * Use expression_values = ‘normalized’ to access this slot in downstream functions
+  
 * **norm_scaled_expr**: slot to keep matrix with normalized and scaled expression values
-    * Use expression_values = ‘scaled’ to access this slot in downstream functions
+    
+  * Use expression_values = ‘scaled’ to access this slot in downstream functions
+
 * **custom_expr**: slot to keep matrix with custom values
-    * Use expression_values = ‘custom’ to access this slot in downstream functions
+    
+  * Use expression_values = ‘custom’ to access this slot in downstream functions
 
 

@@ -1,0 +1,12 @@
+	/*
+ * This stylesheet is applied after the theme's default one,
+ * and thus any overrides or additions can be added here.
+ *
+ * More info:
+rBM6714
+ *		https://www.sphinx-doc.org/en/master/extdev/appapi.html#sphinx.application.Sphinx.add_css_file
+rBM816
+ */
+ .wy-side-nav-search, .wy-nav-top {
+    background: #0b750a;
+}

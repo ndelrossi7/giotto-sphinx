@@ -13,12 +13,14 @@
   
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2/css/lightbox.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
 
   
   
@@ -35,13 +37,12 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/language_data.js"></script>
         <script src="../../_static/togglebutton.js"></script>
-        <script >var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
         <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2/js/jquery-1.11.0.min.js"></script>
         <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2/js/lightbox.min.js"></script>
         <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
@@ -51,7 +52,7 @@
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="FAQs and Solutions to Errors" href="../../errorsfaqsandtips.html" />
+    <link rel="next" title="Try Giotto" href="../../trygiotto.html" />
     <link rel="prev" title="Adding and Working with Images in Giotto: How to Work with Background Images?" href="workingwithimages.html" /> 
 </head>
 
@@ -100,35 +101,32 @@
               
             
             
-              <p class="caption"><span class="caption-text">Introduction</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../gettingstarted.html">How to Get Started With Giotto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../giottoworkflowanalyses.html">Giotto Workflow</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../datasets.html">Dataset Information</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../datasets.html#data-availability">Data Availability</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../datasets.html#examples">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../trygiotto.html">Try Giotto</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Functions and HowTos</span></p>
+              <p class="caption" role="heading"><span class="caption-text">General</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../gettingstarted.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../giottoworkflowanalyses.html">Giotto Workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../datasets.html">Dataset Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../datasets.html#examples">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../documentation.html">Giotto Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="giottoclass.html">Working with Giotto Class</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howtosubsetgiottoobject.html">How to Subset Giotto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howtovisualizeandsaveplots.html">How to Visualize Giotto Object</a></li>
-<li class="toctree-l1"><a class="reference internal" href="testandstoremultipleanayses.html">How to Test and Store Multiple Objects</a></li>
-<li class="toctree-l1"><a class="reference internal" href="waystovisualizespatialdata.html">Ways to Visualize A Giotto Object</a></li>
-<li class="toctree-l1"><a class="reference internal" href="workingwithimages.html">Working with Images</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Visulize Voronoi</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#start-with-the-analysis-of-the-mini-seqfish-dataset">1. Start with the analysis of the mini seqFISH+ dataset</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#voronoi-plot-examples">2. Voronoi Plot Examples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#creating-neighbors-and-showing-neighbors">3. Creating Neighbors and Showing Neighbors</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#gene-expression-and-voronoi-plots">4. Gene Expression and Voronoi Plots</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../tipsandtricks.html">Tips and Tricks</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="giottoclass.html">Working With The Giotto Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="howtosubsetgiottoobject.html">How To Subset Giotto Objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="howtovisualizeandsaveplots.html">How To Visualize And Save Plots in Giotto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="testandstoremultipleanayses.html">How to Test and Store Multiple Parameters or Analyses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="waystovisualizespatialdata.html">Different Ways to Visualize Spatial Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workingwithimages.html">How To Add And Work With Images in Giotto</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">How To Visualize Spatial Data with Voronoi Plots</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#analysis-of-the-mini-seqfish-dataset">1. Analysis of the mini seqFISH+ dataset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#example-voronoi-plot">2. Example: Voronoi Plot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#creating-and-showing-neighbors">3. Creating and Showing Neighbors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gene-expression-and-voronoi-plots">4. Gene Expression and Voronoi Plots</a></li>
 </ul>
 </li>
 </ul>
-<p class="caption"><span class="caption-text">Supplemental Information</span></p>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../trygiotto.html">Try Giotto</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Supplemental Information</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../errorsfaqsandtips.html">Errors and FAQS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../additionalinformation.html">Changelog</a></li>
@@ -183,6 +181,8 @@
     
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
+          <li><a href="../../tipsandtricks.html">Tips and Tricks</a> &raquo;</li>
+        
       <li>Visualize Spatial Data with Voronoi Plots</li>
     
     
@@ -204,9 +204,11 @@
             
   <div class="section" id="visualize-spatial-data-with-voronoi-plots">
 <span id="voronoi-plots"></span><h1>Visualize Spatial Data with Voronoi Plots<a class="headerlink" href="#visualize-spatial-data-with-voronoi-plots" title="Permalink to this headline">¶</a></h1>
-<p>Voronoi plots are an attractive way to visualize spatial expression data since it reduces whitespace between single cells or spots, however the voronoi borders do NOT necessarily mimick the true cell borders. Nevertheless it has been used to ‘segment’ cells and assign transcripts to individual cells. Here we merely use it as a beautifull visualization alternative to simple ‘points’.</p>
-<div class="section" id="start-with-the-analysis-of-the-mini-seqfish-dataset">
-<h2>1. Start with the analysis of the mini seqFISH+ dataset<a class="headerlink" href="#start-with-the-analysis-of-the-mini-seqfish-dataset" title="Permalink to this headline">¶</a></h2>
+<p>Voronoi plots are an attractive way to visualize spatial expression data since it reduces whitespace between single cells or spots,
+however the voronoi borders do <strong>NOT</strong> necessarily mimick the true cell borders. Nevertheless it has been used to ‘segment’ cells and
+assign transcripts to individual cells. Here we merely use it as a beautifull visualization alternative to simple ‘points’.</p>
+<div class="section" id="analysis-of-the-mini-seqfish-dataset">
+<h2>1. Analysis of the mini seqFISH+ dataset<a class="headerlink" href="#analysis-of-the-mini-seqfish-dataset" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>This dataset is part of the Giotto package</p></li>
 <li><p>It is very small and easy to run</p></li>
@@ -238,8 +240,8 @@ VC_small = createSpatialGrid(gobject = VC_small, sdimx_stepsize = 500, sdimy_ste
 </pre></div>
 </div>
 </div>
-<div class="section" id="voronoi-plot-examples">
-<h2>2. Voronoi Plot Examples<a class="headerlink" href="#voronoi-plot-examples" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="example-voronoi-plot">
+<h2>2. Example: Voronoi Plot<a class="headerlink" href="#example-voronoi-plot" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># spatial voronoi plot with selected clusters</span>
 <span class="n">spatPlot</span><span class="p">(</span><span class="n">VC_small</span><span class="p">,</span> <span class="n">point_shape</span> <span class="o">=</span> <span class="s1">&#39;voronoi&#39;</span><span class="p">,</span> <span class="n">cell_color</span> <span class="o">=</span><span class="s1">&#39;leiden_clus&#39;</span><span class="p">,</span> <span class="n">select_cell_groups</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
 </pre></div>
@@ -261,8 +263,8 @@ VC_small = createSpatialGrid(gobject = VC_small, sdimx_stepsize = 500, sdimy_ste
 </div>
 <a class="reference internal image-reference" href="../../_images/4_voronoi_spat_dim.png"><img alt="voronoi plots" src="../../_images/4_voronoi_spat_dim.png" style="width: 400px;" /></a>
 </div>
-<div class="section" id="creating-neighbors-and-showing-neighbors">
-<h2>3. Creating Neighbors and Showing Neighbors<a class="headerlink" href="#creating-neighbors-and-showing-neighbors" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="creating-and-showing-neighbors">
+<h2>3. Creating and Showing Neighbors<a class="headerlink" href="#creating-and-showing-neighbors" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nb_annot</span> <span class="o">=</span> <span class="n">findNetworkNeighbors</span><span class="p">(</span><span class="n">VC_small</span><span class="p">,</span>
                             <span class="n">spatial_network_name</span> <span class="o">=</span> <span class="s1">&#39;Delaunay_network&#39;</span><span class="p">,</span>
                             <span class="n">source_cell_ids</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="s1">&#39;cell_1&#39;</span><span class="p">,</span> <span class="s1">&#39;cell_6&#39;</span><span class="p">,</span> <span class="s1">&#39;cell_10&#39;</span><span class="p">,</span> <span class="s1">&#39;cell_91&#39;</span><span class="p">,</span> <span class="s1">&#39;cell_92&#39;</span><span class="p">,</span> <span class="s1">&#39;cell_93&#39;</span><span class="p">))</span>
@@ -289,7 +291,7 @@ VC_small = createSpatialGrid(gobject = VC_small, sdimx_stepsize = 500, sdimy_ste
              <span class="n">expression_values</span> <span class="o">=</span> <span class="s1">&#39;scaled&#39;</span><span class="p">,</span> <span class="n">vor_border_color</span> <span class="o">=</span> <span class="s1">&#39;black&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<a class="reference internal image-reference" href="images/howtos/voronoi_plots/vignette_1/7_voronoi_genes.png"><img alt="voronoi plots" src="images/howtos/voronoi_plots/vignette_1/7_voronoi_genes.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/7_voronoi_genes.png"><img alt="voronoi plots" src="../../_images/7_voronoi_genes.png" style="width: 400px;" /></a>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># one gene + black background and white borders</span>
 <span class="n">spatGenePlot</span><span class="p">(</span><span class="n">gobject</span> <span class="o">=</span> <span class="n">VC_small</span><span class="p">,</span> <span class="n">genes</span> <span class="o">=</span> <span class="s1">&#39;Cldn5&#39;</span><span class="p">,</span> <span class="n">point_size</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">point_shape</span> <span class="o">=</span> <span class="s1">&#39;voronoi&#39;</span><span class="p">,</span>
              <span class="n">expression_values</span> <span class="o">=</span> <span class="s1">&#39;scaled&#39;</span><span class="p">,</span> <span class="n">vor_border_color</span> <span class="o">=</span> <span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">show_network</span> <span class="o">=</span> <span class="n">T</span><span class="p">,</span> <span class="n">network_color</span> <span class="o">=</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span>
@@ -306,7 +308,7 @@ VC_small = createSpatialGrid(gobject = VC_small, sdimx_stepsize = 500, sdimy_ste
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="../../errorsfaqsandtips.html" class="btn btn-neutral float-right" title="FAQs and Solutions to Errors" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../../trygiotto.html" class="btn btn-neutral float-right" title="Try Giotto" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="workingwithimages.html" class="btn btn-neutral float-left" title="Adding and Working with Images in Giotto: How to Work with Background Images?" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 

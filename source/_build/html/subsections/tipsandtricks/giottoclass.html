@@ -13,12 +13,14 @@
   
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2/css/lightbox.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
 
   
   
@@ -35,13 +37,12 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/language_data.js"></script>
         <script src="../../_static/togglebutton.js"></script>
-        <script >var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
         <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2/js/jquery-1.11.0.min.js"></script>
         <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2/js/lightbox.min.js"></script>
         <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
@@ -52,7 +53,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="How to Subset a Giotto Object?" href="howtosubsetgiottoobject.html" />
-    <link rel="prev" title="Function Documentation" href="../../documentation.html" /> 
+    <link rel="prev" title="Tips and Tricks" href="../../tipsandtricks.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -100,38 +101,34 @@
               
             
             
-              <p class="caption"><span class="caption-text">Introduction</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../gettingstarted.html">How to Get Started With Giotto</a></li>
+              <p class="caption" role="heading"><span class="caption-text">General</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../gettingstarted.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../giottoworkflowanalyses.html">Giotto Workflow</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Giotto Example Datasets</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../datasets.html">Information About Datasets</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../datasets.html#data-availability">Data Availability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../datasets.html">Dataset Information</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../datasets.html#examples">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../documentation.html">Giotto Functions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../tipsandtricks.html">Tips and Tricks</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Working With The Giotto Class</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-giotto-class">1. The Giotto Class</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#giotto-slots">2. Giotto Slots</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#required-slots">2.1 Required Slots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#additional-matrix-slots">2.2 Additional Matrix Slots</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="howtosubsetgiottoobject.html">How To Subset Giotto Objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="howtovisualizeandsaveplots.html">How To Visualize And Save Plots in Giotto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="testandstoremultipleanayses.html">How to Test and Store Multiple Parameters or Analyses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="waystovisualizespatialdata.html">Different Ways to Visualize Spatial Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workingwithimages.html">How To Add And Work With Images in Giotto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="visualizewithvoronoiplots.html">How To Visualize Spatial Data with Voronoi Plots</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../trygiotto.html">Try Giotto</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Functions and HowTos</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../documentation.html">Giotto Functions</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Working with Giotto Class</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#the-giotto-class">1. The Giotto Class</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#giotto-slots">2. Giotto Slots</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#required-slots">2.1 Required Slots</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#additional-matrix-slots">2.2 Additional Matrix Slots</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="howtosubsetgiottoobject.html">How to Subset Giotto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howtovisualizeandsaveplots.html">How to Visualize Giotto Object</a></li>
-<li class="toctree-l1"><a class="reference internal" href="testandstoremultipleanayses.html">How to Test and Store Multiple Objects</a></li>
-<li class="toctree-l1"><a class="reference internal" href="waystovisualizespatialdata.html">Ways to Visualize A Giotto Object</a></li>
-<li class="toctree-l1"><a class="reference internal" href="workingwithimages.html">Working with Images</a></li>
-<li class="toctree-l1"><a class="reference internal" href="visualizewithvoronoiplots.html">Visulize Voronoi</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Supplemental Information</span></p>
+<p class="caption" role="heading"><span class="caption-text">Supplemental Information</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../errorsfaqsandtips.html">Errors and FAQS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../additionalinformation.html">Changelog</a></li>
@@ -186,6 +183,8 @@
     
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
+          <li><a href="../../tipsandtricks.html">Tips and Tricks</a> &raquo;</li>
+        
       <li>Working with the Giotto class: <em>How to create Giotto object with precomputed results?</em></li>
     
     
@@ -230,26 +229,20 @@
 <div class="section" id="additional-matrix-slots">
 <h3>2.2 Additional Matrix Slots<a class="headerlink" href="#additional-matrix-slots" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><dl class="simple">
-<dt><strong>norm_expr</strong>: slot to keep matrix with normalized expression values</dt><dd><ul>
+<li><p><strong>norm_expr</strong>: slot to keep matrix with normalized expression values</p>
+<ul>
 <li><p>Use expression_values = ‘normalized’ to access this slot in downstream functions</p></li>
 </ul>
-</dd>
-</dl>
 </li>
-<li><dl class="simple">
-<dt><strong>norm_scaled_expr</strong>: slot to keep matrix with normalized and scaled expression values</dt><dd><ul>
+<li><p><strong>norm_scaled_expr</strong>: slot to keep matrix with normalized and scaled expression values</p>
+<ul>
 <li><p>Use expression_values = ‘scaled’ to access this slot in downstream functions</p></li>
 </ul>
-</dd>
-</dl>
 </li>
-<li><dl class="simple">
-<dt><strong>custom_expr</strong>: slot to keep matrix with custom values</dt><dd><ul>
+<li><p><strong>custom_expr</strong>: slot to keep matrix with custom values</p>
+<ul>
 <li><p>Use expression_values = ‘custom’ to access this slot in downstream functions</p></li>
 </ul>
-</dd>
-</dl>
 </li>
 </ul>
 </div>
@@ -263,7 +256,7 @@
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
         <a href="howtosubsetgiottoobject.html" class="btn btn-neutral float-right" title="How to Subset a Giotto Object?" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="../../documentation.html" class="btn btn-neutral float-left" title="Function Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../tipsandtricks.html" class="btn btn-neutral float-left" title="Tips and Tricks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

@@ -73,34 +73,16 @@ Authors and Developers
 
 .. toctree::
    :maxdepth: 2
-   :caption: Introduction 
+   :caption: General 
    :hidden:
 
-   How to Get Started With Giotto <gettingstarted.rst> 
+   Installation <gettingstarted.rst> 
    Giotto Workflow <giottoworkflowanalyses.rst>
-
-.. toctree::
-   :maxdepth: 0
-   :hidden:
-
    Example Datasets <datasets.rst>  
-   Try Giotto <trygiotto.rst>
-
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Functions and HowTos
-   :hidden:
-
    Giotto Functions <documentation.rst>
-   Working with Giotto Class <subsections/tipsandtricks/giottoclass.rst>
-   How to Subset Giotto <subsections/tipsandtricks/howtosubsetgiottoobject.rst>
-   How to Visualize Giotto Object <subsections/tipsandtricks/howtovisualizeandsaveplots.rst>
-   How to Test and Store Multiple Objects <subsections/tipsandtricks/testandstoremultipleanayses.rst>
-   Ways to Visualize A Giotto Object <subsections/tipsandtricks/waystovisualizespatialdata.rst>
-   Working with Images <subsections/tipsandtricks/workingwithimages.rst>
-   Visulize Voronoi <subsections/tipsandtricks/visualizewithvoronoiplots.rst>
- 
+   Tips and Tricks <tipsandtricks.rst>
+   Try Giotto <trygiotto.rst>
+   
 .. toctree::
    :maxdepth: 1
    :caption: Supplemental Information

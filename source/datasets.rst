@@ -9,9 +9,10 @@ See `Spatial Datasets <https://github.com/RubD/spatial-datasets>`_ to find raw a
 The typical run time range for the different datasets on a personal computer is around 10~45 minutes. 
 All of the examples are gradually updated to the latest Giotto version! Click on the images below to try out some of the example datasets. 
 
-##################
-Data Availability
-##################
+
+Dataset Availability
+=====================
+
 .. admonition:: Where to find seqFISH+ and other ready-to-use datasets? 
     
     Checkout `https://github.com/RubD/spatial-datasets <https://github.com/RubD/spatial-datasets>`_ to find already preprocessed datasets.

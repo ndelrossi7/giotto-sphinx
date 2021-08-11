@@ -13,12 +13,14 @@
   
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/togglebutton.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/sphinxcontrib-images/LightBox2/lightbox2/css/lightbox.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
 
   
   
@@ -35,13 +37,12 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
         <script src="../../_static/jquery.js"></script>
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/language_data.js"></script>
         <script src="../../_static/togglebutton.js"></script>
-        <script >var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
         <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2/js/jquery-1.11.0.min.js"></script>
         <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2/js/lightbox.min.js"></script>
         <script src="../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
@@ -98,30 +99,17 @@
               
             
             
-              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <p class="caption" role="heading"><span class="caption-text">General</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../gettingstarted.html">How to Get Started With Giotto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gettingstarted.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../giottoworkflowanalyses.html">Giotto Workflow</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Giotto Example Datasets</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../datasets.html">Information About Datasets</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../datasets.html#data-availability">Data Availability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../datasets.html">Dataset Information</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../datasets.html#examples">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../documentation.html">Giotto Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tipsandtricks.html">Tips and Tricks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../trygiotto.html">Try Giotto</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Functions and HowTos</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../documentation.html">Giotto Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tipsandtricks/giottoclass.html">Working with Giotto Class</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tipsandtricks/howtosubsetgiottoobject.html">How to Subset Giotto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tipsandtricks/howtovisualizeandsaveplots.html">How to Visualize Giotto Object</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tipsandtricks/testandstoremultipleanayses.html">How to Test and Store Multiple Objects</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tipsandtricks/waystovisualizespatialdata.html">Ways to Visualize A Giotto Object</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tipsandtricks/workingwithimages.html">Working with Images</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../tipsandtricks/visualizewithvoronoiplots.html">Visulize Voronoi</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Supplemental Information</span></p>
+<p class="caption" role="heading"><span class="caption-text">Supplemental Information</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../errorsfaqsandtips.html">Errors and FAQS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../additionalinformation.html">Changelog</a></li>
@@ -198,8 +186,8 @@
   <div class="section" id="cluster-cells">
 <span id="clustercells"></span><h1>Cluster Cells<a class="headerlink" href="#cluster-cells" title="Permalink to this headline">¶</a></h1>
 <dl class="describe">
-<dt>
-<code class="sig-name descname">clusterCells()</code></dt>
+<dt class="sig sig-object">
+<span class="sig-name descname"><span class="pre">clusterCells()</span></span></dt>
 <dd></dd></dl>
 
 <p><em>Cluster cells using a variety of different methods.</em></p>

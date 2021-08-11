@@ -13,12 +13,14 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/togglebutton.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
   <link rel="stylesheet" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
   <link rel="stylesheet" href="_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
   <link rel="stylesheet" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
   <link rel="stylesheet" href="_static/sphinxcontrib-images/LightBox2/lightbox2/css/lightbox.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
 
   
   
@@ -35,13 +37,12 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
         <script src="_static/togglebutton.js"></script>
-        <script >var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
         <script src="_static/sphinxcontrib-images/LightBox2/lightbox2/js/jquery-1.11.0.min.js"></script>
         <script src="_static/sphinxcontrib-images/LightBox2/lightbox2/js/lightbox.min.js"></script>
         <script src="_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
@@ -52,7 +53,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Changelog" href="additionalinformation.html" />
-    <link rel="prev" title="Visualize Spatial Data with Voronoi Plots" href="subsections/tipsandtricks/visualizewithvoronoiplots.html" /> 
+    <link rel="prev" title="Docker Image" href="subsections/trygiotto/docker.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -100,30 +101,17 @@
               
             
             
-              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <p class="caption" role="heading"><span class="caption-text">General</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">How to Get Started With Giotto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="giottoworkflowanalyses.html">Giotto Workflow</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Giotto Example Datasets</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="datasets.html">Information About Datasets</a></li>
-<li class="toctree-l1"><a class="reference internal" href="datasets.html#data-availability">Data Availability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="datasets.html">Dataset Information</a></li>
 <li class="toctree-l1"><a class="reference internal" href="datasets.html#examples">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation.html">Giotto Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tipsandtricks.html">Tips and Tricks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trygiotto.html">Try Giotto</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Functions and HowTos</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="documentation.html">Giotto Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/giottoclass.html">Working with Giotto Class</a></li>
-<li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/howtosubsetgiottoobject.html">How to Subset Giotto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/howtovisualizeandsaveplots.html">How to Visualize Giotto Object</a></li>
-<li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/testandstoremultipleanayses.html">How to Test and Store Multiple Objects</a></li>
-<li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/waystovisualizespatialdata.html">Ways to Visualize A Giotto Object</a></li>
-<li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/workingwithimages.html">Working with Images</a></li>
-<li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/visualizewithvoronoiplots.html">Visulize Voronoi</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Supplemental Information</span></p>
+<p class="caption" role="heading"><span class="caption-text">Supplemental Information</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Errors and FAQS</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#errors-on-macos">Errors on MacOS</a><ul>
@@ -137,7 +125,6 @@
 <li class="toctree-l3"><a class="reference internal" href="#issue-2-error-converted-from-warning">Issue 2: Error Converted from Warning</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#giotto-tips-and-tricks">Giotto Tips and Tricks</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="additionalinformation.html">Changelog</a></li>
@@ -319,10 +306,8 @@ The Giotto branch <strong>cless</strong> is a version of Giotto without C++ code
 <span class="n">remotes</span><span class="p">::</span><span class="n">install_github</span><span class="p">(</span><span class="s2">&quot;RubD/Giotto&quot;</span><span class="p">,</span> <span class="n">build_vignettes</span> <span class="o">=</span> <span class="n">F</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="giotto-tips-and-tricks">
-<h2>Giotto Tips and Tricks<a class="headerlink" href="#giotto-tips-and-tricks" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-giotto-howtos admonition">
+<p class="admonition-title">Giotto HowTos</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="subsections/tipsandtricks/howtosubsetgiottoobject.html#ways-of-subsetting"><span class="std std-ref">Different ways of subsetting Giotto results?</span></a></p></li>
 <li><p><a class="reference internal" href="subsections/tipsandtricks/waystovisualizespatialdata.html#global-instructions-and-save-plots"><span class="std std-ref">How to create global instructions and show or save your created plots?</span></a></p></li>
@@ -334,6 +319,8 @@ The Giotto branch <strong>cless</strong> is a version of Giotto without C++ code
 </ul>
 </div>
 </div>
+</div>
+</div>
 
 
            </div>
@@ -342,7 +329,7 @@ The Giotto branch <strong>cless</strong> is a version of Giotto without C++ code
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
         <a href="additionalinformation.html" class="btn btn-neutral float-right" title="Changelog" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="subsections/tipsandtricks/visualizewithvoronoiplots.html" class="btn btn-neutral float-left" title="Visualize Spatial Data with Voronoi Plots" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="subsections/trygiotto/docker.html" class="btn btn-neutral float-left" title="Docker Image" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

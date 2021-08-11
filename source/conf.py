@@ -56,11 +56,12 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 
-html_theme = "sphinx_rtd_theme"
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+html_theme = "sphinx_rtd_theme"
+html_static_path = ["_static"]
 html_logo = "images/GiottoLogo.png"
 
 html_theme_options = {
@@ -76,7 +77,16 @@ html_sidebars = { '**': ['globaltoc.html', 'relations.html', 'sourcelink.html', 
 html_css_files = ["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"]
 panels_add_fontawesome_latex = True
 panels_add_bootstrap_css = True
-
+panels_css_variables = {
+    "tabs-color-label-active": "hsla(231, 99%, 66%, 1)",
+    "tabs-color-label-inactive": "rgba(178, 206, 245, 0.62)",
+    "tabs-color-overline": "rgb(207, 236, 238)",
+    "tabs-color-underline": "rgb(207, 236, 238)",
+    "tabs-size-label": "1rem",
+}
 # Toc Tree options
 navtree_root_links = True
 navtree_shift = False
+
+def setup(app):
+    app.add_css_file("css/theme_edits.css")

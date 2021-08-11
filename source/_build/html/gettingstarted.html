@@ -13,12 +13,14 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/togglebutton.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
   <link rel="stylesheet" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
   <link rel="stylesheet" href="_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
   <link rel="stylesheet" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
   <link rel="stylesheet" href="_static/sphinxcontrib-images/LightBox2/lightbox2/css/lightbox.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
 
   
   
@@ -35,13 +37,12 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
         <script src="_static/togglebutton.js"></script>
-        <script >var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
         <script src="_static/sphinxcontrib-images/LightBox2/lightbox2/js/jquery-1.11.0.min.js"></script>
         <script src="_static/sphinxcontrib-images/LightBox2/lightbox2/js/lightbox.min.js"></script>
         <script src="_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
@@ -100,27 +101,24 @@
               
             
             
-              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <p class="caption" role="heading"><span class="caption-text">General</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">How to Get Started With Giotto</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#description">Description</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#giotto-installation-workflow">Giotto Installation Workflow</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#r-installation">R Installation</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#first-time-r-package-installation">First Time R Package Installation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#first-time-giotto-installation">First Time Giotto Installation</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#python-installation">Python Installation</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#first-time-python-module-installation">First Time Python Module Installation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#required-modules">Required Modules</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#install-with-pip">Install with Pip</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#install-with-conda">Install with Conda</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#installation-tool-2-methods">Installation Tool (2 Methods)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#user-installation-of-necessary-modules">1. User Installation of Necessary Modules</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#installation-of-giotto-environment">2. Installation of Giotto Environment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#first-time-python-module-installation">First Time Python Module Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#manual-installation">Manual Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#specify-python-path-after-manual-installation">Specify Python Path After Manual Installation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#automaticinstallation">Automatic Installation</a></li>
 </ul>
 </li>
 </ul>
@@ -134,25 +132,13 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="giottoworkflowanalyses.html">Giotto Workflow</a></li>
-</ul>
-<ul>
 <li class="toctree-l1"><a class="reference internal" href="datasets.html">Dataset Information</a></li>
-<li class="toctree-l1"><a class="reference internal" href="datasets.html#data-availability">Data Availability</a></li>
 <li class="toctree-l1"><a class="reference internal" href="datasets.html#examples">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation.html">Giotto Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tipsandtricks.html">Tips and Tricks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trygiotto.html">Try Giotto</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Functions and HowTos</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="documentation.html">Giotto Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/giottoclass.html">Working with Giotto Class</a></li>
-<li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/howtosubsetgiottoobject.html">How to Subset Giotto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/howtovisualizeandsaveplots.html">How to Visualize Giotto Object</a></li>
-<li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/testandstoremultipleanayses.html">How to Test and Store Multiple Objects</a></li>
-<li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/waystovisualizespatialdata.html">Ways to Visualize A Giotto Object</a></li>
-<li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/workingwithimages.html">Working with Images</a></li>
-<li class="toctree-l1"><a class="reference internal" href="subsections/tipsandtricks/visualizewithvoronoiplots.html">Visulize Voronoi</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Supplemental Information</span></p>
+<p class="caption" role="heading"><span class="caption-text">Supplemental Information</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="errorsfaqsandtips.html">Errors and FAQS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="additionalinformation.html">Changelog</a></li>
@@ -267,8 +253,13 @@
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>Giotto must be installed in both Python and R. Below, you will find the instructions for both <a class="reference external" href="R_Installation">R Installation</a> and <a class="reference external" href="Python_Installation">Python Installation</a>. Please make sure that your system has satisfied all of the requirements needed to sucessfully install Giotto.
-In addition, we have provided a way for users to install both complete both the Python and R Installation simutaneously (see: <a class="reference external" href="AutomaticInstallation">Automatic Installation</a>).
+In addition, we have provided a way for users to automatically install all of the necessary python modules via R (see: <a class="reference external" href="AutomaticInstallation">Automatic Installation</a>).
 Checkout our <a class="reference external" href="faqs">Errors and FAQs Section</a> for more information and troubleshooting tips on some common installation issues.</p>
+<div class="section" id="giotto-installation-workflow">
+<h3>Giotto Installation Workflow<a class="headerlink" href="#giotto-installation-workflow" title="Permalink to this headline">¶</a></h3>
+<p>This workflow image is designed to help with Giotto Installation. Users should follow any of the three potential paths aimed to guide them through the installation process.</p>
+<a class="reference internal image-reference" href="_images/Giotto_Installation_Workflow.png"><img alt="Image of Giotto Installation Workflow" class="align-center" src="_images/Giotto_Installation_Workflow.png" style="width: 600px;" /></a>
+</div>
 <div class="section" id="r-installation">
 <span id="id1"></span><h3>R Installation<a class="headerlink" href="#r-installation" title="Permalink to this headline">¶</a></h3>
 <p>If this is your first time installing an R Package please proceed to <a class="reference external" href="FirstTimeR">First Time R Package Installation</a>. If you are already familiar with installing R packages please proceed to <a class="reference external" href="FirstTimeGiotto">First Time Giotto Installation</a>.</p>
@@ -299,13 +290,11 @@ Checkout our <a class="reference external" href="faqs">Errors and FAQs Section</
 </div>
 <div class="section" id="python-installation">
 <span id="id2"></span><h3>Python Installation<a class="headerlink" href="#python-installation" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="first-time-python-module-installation">
-<h4>First Time Python Module Installation<a class="headerlink" href="#first-time-python-module-installation" title="Permalink to this headline">¶</a></h4>
-<p>Information on how to install a Python package can be found <a class="reference external" href="https://packaging.python.org/tutorials/installing-packages/">here</a>.</p>
-</div>
+<p>To perform all potential steps and analysis in the Giotto spatial toolbox the user needs to have a number of python modules installed.
+To make this process as flexible and easy as possible two different strategies can be used</p>
 <div class="section" id="required-modules">
 <h4>Required Modules<a class="headerlink" href="#required-modules" title="Permalink to this headline">¶</a></h4>
-<p>These are necessary to run all available analyses, but can be installed automatically:</p>
+<p>These are necessary to run all available analyses, but can be installed automatically (see <a class="reference external" href="automaticinstallation">Automatic Installation</a>) or manually (see <a class="reference external" href="maualinstallation">Manual Installation</a>):</p>
 <ul class="simple">
 <li><p>pandas</p></li>
 <li><p>python-igraph (igraph)</p></li>
@@ -316,14 +305,25 @@ Checkout our <a class="reference external" href="faqs">Errors and FAQs Section</
 <li><p>python.app (<strong>OSX only</strong>)</p></li>
 <li><p>scikit-learn</p></li>
 </ul>
-<p>There are two ways in which users can install Giotto via Python:</p>
+</div>
+<div class="section" id="first-time-python-module-installation">
+<h4>First Time Python Module Installation<a class="headerlink" href="#first-time-python-module-installation" title="Permalink to this headline">¶</a></h4>
+<p>Information on how to install a Python package can be found <a class="reference external" href="https://packaging.python.org/tutorials/installing-packages/">here</a>.</p>
+</div>
+<div class="section" id="manual-installation">
+<span id="manualinstallation"></span><h4>Manual Installation<a class="headerlink" href="#manual-installation" title="Permalink to this headline">¶</a></h4>
+<p>There are two methods thorugh which users can install the necessary Python modules manually:</p>
 <ol class="arabic simple">
 <li><p><a class="reference external" href="InstallWithPip">Install with Pip in Python3</a></p></li>
 <li><p><a class="reference external" href="InstallWithConda">Install with Conda</a></p></li>
 </ol>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>With either of the <a class="reference external" href="manualinstallation">Manual Installation</a> options (<a class="reference external" href="InstallWithPip">Install with Pip in Python3</a> or <a class="reference external" href="InstallWithConda">Install with Conda</a>) the user will have to provide the python path to <a class="reference external" href="createGiottoInstructions">createGiottoInstructions</a>.
+If this is not done, Giotto will not be able to use the installed python modules.</p>
 </div>
 <div class="section" id="install-with-pip">
-<span id="installwithpip"></span><h4>Install with Pip<a class="headerlink" href="#install-with-pip" title="Permalink to this headline">¶</a></h4>
+<span id="installwithpip"></span><h5>Install with Pip<a class="headerlink" href="#install-with-pip" title="Permalink to this headline">¶</a></h5>
 <p><strong>Install with pip in python3</strong></p>
 <p><em>For OSX, Windows, or Linux:</em></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip3</span> <span class="n">install</span> <span class="n">pandas</span> <span class="n">python</span><span class="o">-</span><span class="n">igraph</span> <span class="n">networkx</span> <span class="n">python</span><span class="o">-</span><span class="n">louvain</span> <span class="n">leidenalg</span> <span class="n">scikit</span><span class="o">-</span><span class="n">learn</span> <span class="n">smfishHmrf</span>
@@ -331,7 +331,7 @@ Checkout our <a class="reference external" href="faqs">Errors and FAQs Section</
 </div>
 </div>
 <div class="section" id="install-with-conda">
-<span id="installwithconda"></span><h4>Install with Conda<a class="headerlink" href="#install-with-conda" title="Permalink to this headline">¶</a></h4>
+<span id="installwithconda"></span><h5>Install with Conda<a class="headerlink" href="#install-with-conda" title="Permalink to this headline">¶</a></h5>
 <p>If pip install does not work, try installing them within a <a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands">conda environment</a>. Something like this might work, see also this <a class="reference external" href="https://heartbeat.fritz.ai/creating-python-virtual-environments-with-conda-why-and-how-180ebd02d1db">link</a>.</p>
 <ol class="arabic simple">
 <li><p>Create yaml file (e.g. environment.yml) with the following information:</p></li>
@@ -374,30 +374,27 @@ prefix: /Users/your_username/anaconda3/envs/giotto_env
 </div>
 </div>
 </div>
-<div class="section" id="installation-tool-2-methods">
-<span id="automaticinstallation"></span><h3>Installation Tool (2 Methods)<a class="headerlink" href="#installation-tool-2-methods" title="Permalink to this headline">¶</a></h3>
-<p>The python modules will be installed automatically in a miniconda environment when installing Giotto. However, it will ask you whether you want to install them and you can opt out and select your preferred python path. In that case you need to do a manual installation of the python modules.</p>
-<p>To perform all potential steps and analysis in the Giotto spatial toolbox the user needs to have a number of python modules installed. To make this process as flexible and easy as possible we have provided two different strategies can be used:</p>
-<ol class="arabic simple">
-<li><p><a class="reference external" href="UserInstall">User Instlalation of Necessary Modules</a> which allows users to manually instll all of the necessary modules and provide a Python path, and</p></li>
-<li><p><a class="reference external" href="InstallGiottoEnvironment">Installation of the Giotto Environment</a> which allows users to install the required Python environment via MiniConda.</p></li>
-</ol>
-<div class="section" id="user-installation-of-necessary-modules">
-<span id="userinstall"></span><h4>1. User Installation of Necessary Modules<a class="headerlink" href="#user-installation-of-necessary-modules" title="Permalink to this headline">¶</a></h4>
-<p>With this option, the user can install all the necessary modules themself and then the path to their python or environment (e.g. Conda) can be provided as an instruction.</p>
+<div class="section" id="specify-python-path-after-manual-installation">
+<h4>Specify Python Path After Manual Installation<a class="headerlink" href="#specify-python-path-after-manual-installation" title="Permalink to this headline">¶</a></h4>
+<p>With this option, once the user has installed all of the necessary modules, via either of the methods above (e.g. <a class="reference external" href="InstallWithConda">Conda</a>), the path to their python environment can be provided as an instruction in R.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Within R</span>
 
 <span class="n">library</span><span class="p">(</span><span class="n">Giotto</span><span class="p">)</span>
 <span class="n">my_instructions</span> <span class="o">=</span> <span class="n">createGiottoInstructions</span><span class="p">(</span><span class="n">python_path</span> <span class="o">=</span> <span class="s1">&#39;your/python/path&#39;</span><span class="p">)</span>
-<span class="n">my_giotto_object</span> <span class="o">=</span> <span class="n">createGiottoObject</span><span class="p">(</span><span class="n">raw_exprs</span> <span class="o">=</span> <span class="s1">&#39;...&#39;</span><span class="p">,</span>
-                              <span class="n">spatial_locs</span> <span class="o">=</span> <span class="s1">&#39;...&#39;</span><span class="p">,</span>
-                              <span class="n">instructions</span> <span class="o">=</span> <span class="n">my_instructions</span><span class="p">)</span>
+<span class="n">my_giotto_object</span> <span class="o">=</span> <span class="n">createGiottoObject</span><span class="p">(</span>
+        <span class="n">raw_exprs</span> <span class="o">=</span> <span class="s1">&#39;...&#39;</span><span class="p">,</span>
+        <span class="n">spatial_locs</span> <span class="o">=</span> <span class="s1">&#39;...&#39;</span><span class="p">,</span>
+        <span class="n">instructions</span> <span class="o">=</span> <span class="n">my_instructions</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+<div class="section" id="automaticinstallation">
+<span id="id3"></span><h4>Automatic Installation<a class="headerlink" href="#automaticinstallation" title="Permalink to this headline">¶</a></h4>
+<p>The python modules will be installed automatically in a miniconda environment when installing Giotto. However, it will ask you whether you want to install them and you can opt out and select your preferred python path. In that case you need to do a manual installation of the python modules.</p>
+<p>To perform all potential steps and analysis in the Giotto spatial toolbox the user needs to have a number of python modules installed. <a class="reference external" href="InstallGiottoEnvironment">Installation of the Giotto Environment</a>  allows users to install the required Python environment via MiniConda without specifying their python path.</p>
 <div class="section" id="installation-of-giotto-environment">
-<span id="installgiottoenvironment"></span><h4>2. Installation of Giotto Environment<a class="headerlink" href="#installation-of-giotto-environment" title="Permalink to this headline">¶</a></h4>
-<p>Alternatively, with this option, the user can just install a Giotto python environment using r-miniconda</p>
+<span id="installgiottoenvironment"></span><h5>Installation of Giotto Environment<a class="headerlink" href="#installation-of-giotto-environment" title="Permalink to this headline">¶</a></h5>
+<p>With this option, the user can just install a Giotto python environment using r-miniconda</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">Giotto</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -416,6 +413,11 @@ prefix: /Users/your_username/anaconda3/envs/giotto_env
 <p>Remove Giotto Environment</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">removeGiottoEnvironment</span><span class="p">()</span>
 </pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>With the automatic installation option, the user <strong>WILL NOT</strong> have to specify a python path.</p>
+</div>
 </div>
 </div>
 </div>

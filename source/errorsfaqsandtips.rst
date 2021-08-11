@@ -133,14 +133,13 @@ If you encounter this or similar error:
 	library(remotes) # if not installed do install.package('remotes')
 	remotes::install_github("RubD/Giotto", build_vignettes = F)
 
-*************************    
-Giotto Tips and Tricks
-*************************
-* :ref:`Different ways of subsetting Giotto results? <ways-of-subsetting>`
-* :ref:`How to create global instructions and show or save your created plots? <global-instructions-and-save-plots>`
-* :ref:`Different ways to visualize your spatial data? <visualize-data>`
-* :ref:`How to test and store multiple parameters or analyses? <test-and-store>`
-* :ref:`Visualize spatial data with voronoi plots <voronoi-plots>`
-* :ref:`Working with the Giotto class <giotto-class>`
-* :ref:`Adding and Working with Images in Giotto <working-with-giotto-images>`
+.. admonition:: Giotto HowTos
+
+   * :ref:`Different ways of subsetting Giotto results? <ways-of-subsetting>`
+   * :ref:`How to create global instructions and show or save your created plots? <global-instructions-and-save-plots>`
+   * :ref:`Different ways to visualize your spatial data? <visualize-data>`
+   * :ref:`How to test and store multiple parameters or analyses? <test-and-store>`
+   * :ref:`Visualize spatial data with voronoi plots <voronoi-plots>`
+   * :ref:`Working with the Giotto class <giotto-class>`
+   * :ref:`Adding and Working with Images in Giotto <working-with-giotto-images>`
     

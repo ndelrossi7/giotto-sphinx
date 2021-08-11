@@ -4,10 +4,12 @@
 Visualize Spatial Data with Voronoi Plots
 ############################################
 
-Voronoi plots are an attractive way to visualize spatial expression data since it reduces whitespace between single cells or spots, however the voronoi borders do NOT necessarily mimick the true cell borders. Nevertheless it has been used to ‘segment’ cells and assign transcripts to individual cells. Here we merely use it as a beautifull visualization alternative to simple ‘points’.
+Voronoi plots are an attractive way to visualize spatial expression data since it reduces whitespace between single cells or spots, 
+however the voronoi borders do **NOT** necessarily mimick the true cell borders. Nevertheless it has been used to ‘segment’ cells and 
+assign transcripts to individual cells. Here we merely use it as a beautifull visualization alternative to simple ‘points’.
 
 *************************************************************
-1. Start with the analysis of the mini seqFISH+ dataset
+1. Analysis of the mini seqFISH+ dataset
 *************************************************************
 * This dataset is part of the Giotto package
 * It is very small and easy to run
@@ -39,16 +41,14 @@ Voronoi plots are an attractive way to visualize spatial expression data since i
     VC_small = createSpatialNetwork(gobject = VC_small, minimum_k = 2)
     VC_small = createSpatialGrid(gobject = VC_small, sdimx_stepsize = 500, sdimy_stepsize = 500)
 
-
 *************************************************************
-2. Voronoi Plot Examples 
+2. Example: Voronoi Plot  
 *************************************************************
 
 .. code-block::
 
     # spatial voronoi plot with selected clusters
     spatPlot(VC_small, point_shape = 'voronoi', cell_color ='leiden_clus', select_cell_groups = c(1,2,3))
-
 
 .. image:: /images/howtos/voronoi_plots/vignette_1/1_voronoi.png
 	:width: 400
@@ -59,7 +59,6 @@ Voronoi plots are an attractive way to visualize spatial expression data since i
     # spatial voronoi plot without showing not selected clusters
     spatPlot(VC_small, point_shape = 'voronoi', cell_color ='leiden_clus', select_cell_groups = c(1,2,3), show_other_cells = F)
 
-
 .. image:: /images/howtos/voronoi_plots/vignette_1/2_voronoi_no_others.png	
 	:width: 400
 	:alt: voronoi plots
@@ -68,7 +67,6 @@ Voronoi plots are an attractive way to visualize spatial expression data since i
 
 	# spatial voronoi plot without showing not selected cells, but showing the voronoi borders
 	spatPlot(VC_small, point_shape = 'voronoi', cell_color ='leiden_clus', select_cell_groups = c(1,2,3), show_other_cells = F, vor_border_color = 'black')
-
 
 .. image:: /images/howtos/voronoi_plots/vignette_1/3_voronoi_no_others_black_border.png
 	:width: 400
@@ -79,13 +77,12 @@ Voronoi plots are an attractive way to visualize spatial expression data since i
     # visualization of both dimension reduction and spatial results
     spatDimPlot(gobject = VC_small, cell_color = 'leiden_clus', spat_point_shape = 'voronoi', dim_point_size = 3)
 
-
 .. image:: /images/howtos/voronoi_plots/vignette_1/4_voronoi_spat_dim.png	
 	:width: 400
 	:alt: voronoi plots
 
 *************************************************************
-3. Creating Neighbors and Showing Neighbors 
+3. Creating and Showing Neighbors
 *************************************************************
 .. code-block::
 
@@ -123,11 +120,9 @@ Voronoi plots are an attractive way to visualize spatial expression data since i
     spatGenePlot(gobject = VC_small, genes = selected_genes, point_shape = 'voronoi',
                  expression_values = 'scaled', vor_border_color = 'black')
 
-
 .. image:: /images/howtos/voronoi_plots/vignette_1/7_voronoi_genes.png
 	:width: 400
 	:alt: voronoi plots
-
 
 .. code-block::
 

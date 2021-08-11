@@ -1,58 +1,72 @@
 .. _global-instructions-and-save-plots:
 
 ########################################################
-Different ways to visualize your spatial data?
+Different Ways to Visualize Spatial Data
 ########################################################
-*Giotto provides multiple different ways to visualize your spatial data:*
+This section delves into the mutliple different ways that Giotto provides to visualize your spatial data.
+
+.. tip::
+	Check out the different `dataset examples <datasets>`_ to see the wide range of visualization options.
 
 ************************************************
-1. Functions specific to a task or analysis:
+1. Task/Analysis Specific Functions
 ************************************************
+
 * **plotHeatmap**
 * **plotMetadataHeatmap**
 * **violinPlot**
 
-
-*Check out the different dataset examples to see the wide range of visualization options*
-
 ***********************************************************************************************************
-2. Functions that use the spatial coordinates of each cell or spot, they usually start with spatXXX
+2. Functions that use the Spatial Coordinates of a Cell/Spot
 ***********************************************************************************************************
 
-* **spatPlot**, to plot cell annotation information (e.g. cluster or cell type)
-* **spatGenePlot**, to overlay (multiple) gene expression values
-* **spatCellPlot**, to overlay (multiple) numerical cell values (e.g. spatial enrichment)
+.. note::
+	These functions generally start with spatXXX
+
+* `spatPlot() <spatPlot>`_, to plot cell annotation information (e.g. cluster or cell type)
+* `spatGenePlot() <spatGenePlot>`_, to overlay (multiple) gene expression values
+* `spatCellPlot() <spatCellPlot>`_, to overlay (multiple) numerical cell values (e.g. spatial enrichment)
 
 *******************************************************************************************************************
-3. Functions that use the dimension reduction coordinates of each cell or spot, they usually start with dimXXX
+3. Functions that use the Dimension Reduction Coordinates of a Cell/Spot
 *******************************************************************************************************************
-* **dimPlot**, to plot cell annotation information (e.g. cluster or cell type)
-* **dimGenePlot**, to overlay (multiple) gene expression values
-* **dimCellPlot**, to overlay (multiple) numerical cell values (e.g. spatial enrichment)
-* **plotPCA**, **plotUMAP** and **plotTSNE** are shortcuts for **dimPlot**
+
+.. note::
+	These functions generally start with dimXXX
+
+
+* `dimPlot() <dimPlot>`__, to plot cell annotation information (e.g. cluster or cell type)
+* `dimGenePlot() <dimGenePlot>`_, to overlay (multiple) gene expression values
+* `dimCellPlot() <dimCellPlot>`_, to overlay (multiple) numerical cell values (e.g. spatial enrichment)
+* `plotPCA() <plotPCA>`_, `plotUMAP() <plotUMAP>`_ and `plotTSNE() <plotTSNE>`_ are shortcuts for `dimPlot() <dimPlot>`__
 
 ***********************************************************************************************************
 4. Functions for co-visualization that combine spat (2) and dim (3)
 ***********************************************************************************************************
-* **spatDimPlot**, to plot cell annotation information (e.g. cluster or cell type)
-* **spatDimGenePlot**, to overlay (multiple) gene expression values
-* **spatDimCellPlot**, to overlay (multiple) numerical cell values (e.g. spatial enrichment)
+* spatDimPlot() <spatDimPlot>`_, to plot cell annotation information (e.g. cluster or cell type)
+* `spatDimGenePlot() <spatDimGenePlot>`_, to overlay (multiple) gene expression values
+* `spatDimCellPlot() <spatDimCellPlot>`_, to overlay (multiple) numerical cell values (e.g. spatial enrichment)
 
 ***********************************************************************************************************
 5. Both in 2D and 3D
 ***********************************************************************************************************
-Most functions both have a 2D and 3D version, like **spatDimPlot2D** and **spatDimPlot3D**. In those cases the **spatDimPlot2D** is the same as **spatDimPlot**. So only in case you want to plot your spatial or dimension reduction data in 3D, you need to specifically say so.
+
+Most functions both have a 2D and 3D version, like `spatDimPlot2D() <spatDimPlot2D>`__ and `spatDimPlot3D() <spatDimPlot3D>`__. In those cases the `spatDimPlot2D() <spatDimPlot2D>`__ is the same as `spatDimPlot() <spatDimPlot>`__. 
+So only in case you want to plot your spatial or dimension reduction data in 3D, you need to specifically say so.
 
 ***********************************************************************************************************
 6. Ways to Save Plots
 ***********************************************************************************************************
 
-See also Giotto Tips and Tricks: How to create global instructions and show or save your created plots? For more information. 
+.. seealso::
+	Giotto Tips and Tricks: `How to visualize and save plots in Giotto? <visualize-data>`_ for more information. 
 
-All parameters available to **save_param** are found on the help page of **?Giotto::all_plots_save_function**
+All parameters available to `save_param() <save_param>`_ are found on the help page of **?Giotto::all_plots_save_function**
 
-*Hypothetical example showing a number of options:*
-====================================================
+
+***************************
+7. *Hypothetical Example*
+***************************
 
 .. code-block:: 
 
